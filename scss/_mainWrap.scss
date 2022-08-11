@@ -1,70 +1,147 @@
-.mainWrap {
+ .mainWrap {
     width: 100%;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 
     .center {
-        max-width: 1650px;
+        width: 1400px;
         height: auto;
         margin: 0 auto;
 
-        //快速選擇
-        .quickBox {
-            width: auto;
+        //marqueeWrap
+        .marqueeWrap {
+            width: 100%;
             height: auto;
-            margin: 20px 0;
-            display: flex;
-            justify-content: center;
+            margin: 30px 0;
 
-            li {
-                width: auto;
-                height: auto;
-                margin: 0 10px;
+            .marquee {
+                width: 100%;
+                height: 52px;
+                border: solid 1px $marquee_Border;
+                border-radius: 30px;
+                box-shadow: 0 2px 5px 0 $marquee_Shadow inset;
+                display: flex;
 
-                &.love {
-                    display: none;
+                .title {
+                    width: 165px;
+                    height: 100%;
+                    background: $mainLinear_1;
+                    border-radius: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
 
-                    &.display {
-                        display: block;
+                    p {
+                        color: $mainLinear_Word;
+                        font-size: 20px;
+                        font-weight: bold;
                     }
                 }
 
-                &:hover,&:active,&.active {
+                .textBox {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
                     
-                    button {
-                        transform: rotateY(-90deg);
+                    p {
+                        color: $marquee_Word;
+                        font-size: 20px;
+                        font-weight: bold;
+                        white-space: nowrap;
+                        padding-left: 100%;
+                        animation: marquee 5s linear 0s infinite;
+                    }
+                }
 
-                        .inner {
-                            opacity: 1;
-                            transform: rotateY(90deg);
-                            transition: 0.5s all;
-                            transition-delay: 0.2s;
+                @keyframes marquee {
+                    0% {
+                        transform: translateX(0%);
+                    }
+
+                    100% {
+                        transform: translateX(-100%);
+                    }
+                }
+            }
+        }
+
+        //遊戲平台選單
+        .typeList {
+            width: 100%;
+            height: auto;
+
+            .typeBox {
+                width: 100%;
+                height: auto;
+                position: relative;
+
+                &.hotGame {
+
+                    .pageBtn {
+
+                        &.prev,
+                        &.next {
+                            top: 145px;
                         }
                     }
                 }
-                
-                button {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    background: $quick_BG;
-                    width: 160px;
-                    height: 160px;
-                    border-radius: 8px;
-                    transition: all .2s;
-                    transform-style: preserve-3d;
-                    transform-origin: bottom;
-                    position: relative;
+
+                .pageBtn {
+                    width: 52px;
+                    height: 52px;
+                    background: $gameType_pageBtn_BG;
+                    border-radius: 50%;
+                    position: absolute;
                     cursor: pointer;
+                    z-index: 10;
+                    pointer-events: none;
 
+                    &.active {
+                        background: $gameType_pageBtn_Active;
+                        pointer-events: visible;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-67%,-50%) rotate(45deg);
+                        width: 14px;
+                        height: 14px;
+                        border-style: solid;
+                        border-width: 2px 2px 0 0;
+                        border-color: $gameType_pageBtn_Arrow;
+                    }
+
+                    &.prev {
+                        left: -26px;
+                        top: 160px;
+                        transform: scaleX(-1);
+                    }
+                    &.next {
+                        right: -26px;
+                        top: 160px;
+                    }
+                }
+
+                .title {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+    
                     i {
-                        display: block;
-                        width: 50px;
-                        height: 50px;
-                        margin-bottom: 25px;
+                        width: 62px;
+                        height: 68px;
+                        flex-shrink: 0;
+                        margin-right: 10px;
 
-                        &.love_ic {
+                        &.hot_ic {
                             background-position-x: 0;
                         }
                         &.sport_ic {
@@ -83,184 +160,61 @@
                             background-position-x: 100%;
                         }
                     }
-
+    
                     p {
-                        color: $quick_Word;
-                        font-size: 16px;
+                        width: 185px;
+                        color: $mainFont_1;
+                        font-size: 24px;
                         font-weight: bold;
+                        flex-shrink: 0;
                     }
-
-                    .inner {
-                        position: absolute;
-                        left: 0;
-                        bottom: 0;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: column;
-                        background: linear-gradient(180deg,#ff9b00 0,#ffb600);
+    
+                    .line {
                         width: 100%;
-                        height: 100%;
-                        border-radius: 8px;
-                        opacity: 0;
-
-                        i {
-                            background-position-y: 100%;
-                        }
-
-                        p {
-                            color: $quick_Hover;
-                        }
+                        height: 3px;
+                        background: $line;
+                    }
+    
+                    .star {
+                        width: 112px;
+                        height: 12px;
+                        margin-left: 15px;
+                        flex-shrink: 0;
                     }
                 }
-            }
-        }
-
-        //遊戲平台選單
-        .typeList {
-            display: none;
-            max-width: 1650px;
-            min-width: 1400px;
-            height: auto;
-            margin: 40px auto 60px;
-            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-            grid-gap: 60px 20px;
-            box-sizing: border-box;
-
-            &.loveMode {
-                max-width: unset;
-                width: 1400px;
-                padding: 0 20px;
-                grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
-                grid-gap: 20px;
-            }
-
-            &.display {
-                display: grid;
-            }
-
-            li:not(.loveGame) {
-                width: auto;
-                height: auto;
-                position: relative;
-                cursor: pointer;
-                display: none;
-
-                &.display {
-                    display: block;
-                }
-
-                &:nth-of-type(4n) {
-                    margin-right: 0px;
-                }
-
-                p {
-                    color: $type_Word;
+    
+                ul {
                     width: 100%;
-                    text-align: center;
-                    font-size: 16px;
-                    font-weight: bold;
-                    padding-top: 10px;
-                }
-
-                .fixBox {
-                    display: none;
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 5px;
-                    background: $filter;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
-                    top: 0;
-                    left: 0;
-                    cursor: not-allowed;
-
-                    &.display {
-                        display: flex;
-                    }
-
-                    p {
-                        color: $topGameList_fixWord;
-                        font-size: 14px;
-                        font-weight: bold;
-                        line-height: 24px;
-
-                        &.title {
-                            margin-bottom: 30px;
-                            font-size: 26px;
-                        }
-                    }
-                }
-            }
-
-            .loveGame {
-                width: auto;
-                height: auto;
-                border: solid 1px $gameWrap_Border;
-                border-radius: 5px;
-                overflow: hidden;
-                cursor: pointer;
-                box-sizing: border-box;
-                font-size: 0px;
-                position: relative;
-
-                &:hover,&:active,&.active {
+                    height: auto;
+                    overflow: hidden;
                     
-                    .btnBox {
-                        opacity: 1;
-                    }
-                }
+                    ol {
+                        width: auto;
+                        height: auto;
+                        display: flex;
+                        transition: 0.5s all;
 
-                .textBox {
-                    width: 100%;
-                    height: 35px;
-                    display: flex;
-                    align-items: center;
-                    padding: 0 20px;
-                    box-sizing: border-box;
-                    justify-content: space-between;
-                    position: relative;
-                    z-index: 1;
-                    border-top: solid 1px $gameWrap_Border;
-                    background: $gameWrap_WordBG;
+                        li {
+                            width: 344px;
+                            height: auto;
+                            flex-shrink: 0;
+                            margin-right: 8px;
+                            cursor: pointer;
+                            user-select: none;
 
-                    p {
-                        font-size: 18px;
-                        font-weight: bold;
-                        color: $gameWrap_Word;
-                    }
+                            &.game {
+                                width: 274px;
+                                margin-right: 7.5px;
+                            }
 
-                    .love {
-                        width: 23px;
-                        height: 21px;
-                    }
-                }
-
-                .btnBox {
-                    opacity: 0;
-                    position: absolute;
-                    width: 100%;
-                    height: 120px;
-                    background: $filter;
-                    top: 0px;
-                    left: 0px;
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                    justify-content: space-evenly;
-                    box-sizing: border-box;
-                    padding: 10px 0;
-                    transition: 0.3s all;
-
-                    button {
-                        width: 140px;
-                        height: 35px;
-                        @include eventBtn;
-
-                        &:nth-of-type(2) {
-                            @include eventBtn_2;
+                            p {
+                                width: 100%;
+                                color: $mainFont_2;
+                                font-size: 18px;
+                                font-weight: bold;
+                                text-align: center;
+                                margin-top: 5px;
+                            }
                         }
                     }
                 }

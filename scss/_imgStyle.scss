@@ -1,176 +1,180 @@
-//忘記密碼
+//bg
+.bg {
+    background: url('../images/bg.jpg') top center;
+    background-size: 100%;
+}
+.bg.inner {
+    background: url('../images/gameBG.jpg') top center;
+    background-size: 100%;
+}
+
+//header
 header .forget i {
     background: url('../images/icon/question.png') no-repeat;
     background-size: 100%;
 }
-//header 登入後下選單旋轉圖
+header .gameNav .empty,
+header .gameNav ol li div {
+    background: url('../images/headerNav_02.png');
+}
+header .gameNav .empty:first-child::before,
+header .gameNav ol li::after {
+    background: url('../images/headerNav_03.png') no-repeat;
+}
+header .gameNav .empty:last-child::before,
+header .gameNav ol li::before {
+    background: url('../images/headerNav_01.png') no-repeat;
+}
 header .transferInfo .money i {
     background: url('../images/icon/svg/loading_g.svg') no-repeat;
     background-size: 100%;
 }
 
-//下拉選單 topGameList arrow
-.topGameList .prev::before,
-.topGameList .next::before {
-    background: url('../images/icon/svg/arrow_w.svg') no-repeat;
-    background-size: 100%;
-}
-
 //mainWrap
-.mainWrap .quickBox i {
-    background: url('../images/icon/quick_ic.png') no-repeat;
+.mainWrap .title i {
+    background: url('../images/icon/mainWrap_quickIcon.png') no-repeat;
     background-size: 600%;
 }
-.mainWrap .loveGame .textBox .love {
-    background: url('../images/icon/svg/love1.svg') no-repeat;
-    background-size: 100%;
-}
-.mainWrap .loveGame .textBox .love.active {
-    background: url('../images/icon/svg/love2.svg') no-repeat;
-    background-size: 100%;
-}
-
-//側邊 sideBar img
-.sideBar .inviteBtn a {
-    background: url('../images/icon/invite.gif') no-repeat;
+.mainWrap .title .star {
+    background: url('../images/icon/mainWrap_star.png') no-repeat;
     background-size: contain;
 }
+
+//sidebar
 .sideBar .goTop i {
     background: url('../images/icon/goTop.png') no-repeat;
     background-size: contain;
 }
 
 //footer
+footer {
+    background: url('../images/footerBG.jpg') no-repeat;
+    background-size: cover;
+}
 footer .twitter {
-    background: url('../images/icon/svg/twitter.svg') no-repeat !important;
+    background: url('../images/icon/svg/twitter.svg') no-repeat;
     background-size: contain;
 }
-footer .payments .bank {
-    background: url('../images/partner/footer_payments/bank.png') no-repeat center;
+footer .star {
+    background: url('../images/icon/mainWrap_star.png') no-repeat;
+    background-size: contain;
 }
-footer .payments .usdt {
-    background: url('../images/partner/footer_payments/usdt.png') no-repeat center;
-}
-footer .payments .vega {
-    background: url('../images/partner/footer_payments/vega.png') no-repeat center;
-}
-footer .payments .imove {
-    background: url('../images/partner/footer_payments/imove.png') no-repeat center;
-}
-footer .payments .sticpay {
-    background: url('../images/partner/footer_payments/sticpay.png') no-repeat center;
-}
-footer .payments .iwallet {
-    background: url('../images/partner/footer_payments/iwallet.png') no-repeat center;
-}
-footer .payments .tigerpay {
-    background: url('../images/partner/footer_payments/tigerpay.png') no-repeat center;
-}
-footer .partner .ag {
+footer .ag {
     background: url('../images/partner/footer_partner/ag.png') no-repeat center;
 }
-footer .partner .sa {
+footer .sa {
     background: url('../images/partner/footer_partner/sa.png') no-repeat center;
 }
-footer .partner .dg {
+footer .dg {
     background: url('../images/partner/footer_partner/dg.png') no-repeat center;
 }
-footer .partner .tpg {
+footer .tpg {
     background: url('../images/partner/footer_partner/tpg.png') no-repeat center;
 }
-footer .partner .og {
+footer .og {
     background: url('../images/partner/footer_partner/og.png') no-repeat center;
 }
-footer .partner .sp {
+footer .sp {
     background: url('../images/partner/footer_partner/sp.png') no-repeat center;
 }
-footer .partner .mg {
+footer .mg {
     background: url('../images/partner/footer_partner/mg.png') no-repeat center;
 }
-footer .partner .pp {
+footer .pp {
     background: url('../images/partner/footer_partner/pp.png') no-repeat center;
 }
-footer .partner .gh {
+footer .gh {
     background: url('../images/partner/footer_partner/gh.png') no-repeat center;
 }
-footer .partner .elk {
+footer .elk {
     background: url('../images/partner/footer_partner/elk.png') no-repeat center;
 }
-footer .partner .ftp {
+footer .ftp {
     background: url('../images/partner/footer_partner/ftp.png') no-repeat center;
 }
-footer .partner .pg {
+footer .pg {
     background: url('../images/partner/footer_partner/pg.png') no-repeat center;
 }
-footer .partner .bng {
+footer .bng {
     background: url('../images/partner/footer_partner/bng.png') no-repeat center;
 }
-footer .partner .ab {
+footer .ab {
     background: url('../images/partner/footer_partner/ab.png') no-repeat center;
 }
-footer .partner .pls {
+footer .pls {
     background: url('../images/partner/footer_partner/pls.png') no-repeat center;
 }
-footer .partner .rsg {
+footer .rsg {
     background: url('../images/partner/footer_partner/rsg.png') no-repeat center;
 }
-footer .partner .bp {
+footer .bp {
     background: url('../images/partner/footer_partner/bp.png') no-repeat center;
 }
-footer .partner .redtiger {
+footer .redtiger {
     background: url('../images/partner/footer_partner/redtiger.png') no-repeat center;
 }
-footer .partner .ifun {
+footer .ifun {
     background: url('../images/partner/footer_partner/ifun.png') no-repeat center;
 }
-footer .partner .redrake {
+footer .redrake {
     background: url('../images/partner/footer_partner/redrake.png') no-repeat center;
 }
-footer .partner .ely {
+footer .ely {
     background: url('../images/partner/footer_partner/ely.png') no-repeat center;
 }
-footer .partner .atux {
+footer .atux {
     background: url('../images/partner/footer_partner/atux.png') no-repeat center;
 }
-footer .partner .evoplay {
+footer .evoplay {
     background: url('../images/partner/footer_partner/evoplay.png') no-repeat center;
 }
-footer .partner .sport {
+footer .sport {
     background: url('../images/partner/footer_partner/sport.png') no-repeat center;
 }
-footer .partner .png {
+footer .png {
     background: url('../images/partner/footer_partner/png.png') no-repeat center;
 }
-footer .partner .relax {
+footer .relax {
     background: url('../images/partner/footer_partner/relax.png') no-repeat center;
 }
-footer .partner .wm {
+footer .wm {
     background: url('../images/partner/footer_partner/wm.png') no-repeat center;
 }
-footer .partner .ygg {
+footer .ygg {
     background: url('../images/partner/footer_partner/ygg.png') no-repeat center;
 }
-footer .partner .net {
+footer .net {
     background: url('../images/partner/footer_partner/net.png') no-repeat center;
 }
-footer .partner .jili {
+footer .jili {
     background: url('../images/partner/footer_partner/jili.png') no-repeat center;
 }
-footer .partner .nolimit {
+footer .nolimit {
     background: url('../images/partner/footer_partner/nolimit.png') no-repeat center;
 }
-footer .partner .evo {
+footer .evo {
     background: url('../images/partner/footer_partner/evo.png') no-repeat center;
+}
+footer .qs {
+    background: url('../images/partner/footer_partner/qs.png') no-repeat center;
 }
 
 //jumpWindow ic
 .jumpWindow .close_ic {
-    background: url('../images/icon/svg/close_w.svg') no-repeat;
+    background: url('../images/icon/svg/close.svg') no-repeat;
     background-size: 100%;
 }
-.jumpWindow.betWindow .trans_arrow {
-    background: url('../images/icon/svg/transfer_arrow.svg') no-repeat;
-    background-size: 100%;
+.jumpWindow .flower_ic {
+    background: url('../images/icon/jumpWindow_flower.png') no-repeat;
+    background-size: contain;
+}
+.jumpWindow .arrow_ic {
+    background: url('../images/icon/arrow_1.png') no-repeat;
+    background-size: contain;
+}
+.jumpWindow .selectBox .arrow_ic {
+    background: url('../images/icon/arrow_2.png') no-repeat;
+    background-size: contain;
 }
 //loading
 .jumpWindow.loading .content div {
@@ -183,10 +187,47 @@ footer .partner .evo {
 }
 
 //gameWrap background
-.gameWrap {
-    background: url('../images/gameBG.jpg') no-repeat;
+.gameWrap .content .banner {
+    background: url('../images/gameWrap_TitleBG.png') no-repeat;
     background-size: contain;
-    background-attachment: fixed;
+}
+.gameWrap .search_ic {
+    background: url('../images/icon/search.png') no-repeat;
+    background-size: contain;
+}
+.gameWrap .platformBox li {
+    background: url('../images/gameWrapNav_02.png');
+}
+.gameWrap .platformBox li::before {
+    background: url('../images/gameWrapNav_01.png');
+}
+.gameWrap .platformBox li::after {
+    background: url('../images/gameWrapNav_03.png');
+}
+.gameWrap .platformBox li.active {
+    background: url('../images/gameWrapNav_02_active.png');
+}
+.gameWrap .platformBox li.active::before {
+    background: url('../images/gameWrapNav_01_active.png');
+}
+.gameWrap .platformBox li.active::after {
+    background: url('../images/gameWrapNav_03_active.png');
+}
+.gameWrap .gameBox .love {
+    background: url('../images/icon/love_1.png') no-repeat;
+    background-size: contain;
+}
+.gameWrap .gameBox .love.active {
+    background: url('../images/icon/love_1_active.png') no-repeat;
+    background-size: contain;
+}
+.gameWrap .gameBox.notPlat .love {
+    background: url('../images/icon/love_2.png') no-repeat;
+    background-size: contain;
+}
+.gameWrap .gameBox.notPlat .love.active {
+    background: url('../images/icon/love_2_active.png') no-repeat;
+    background-size: contain;
 }
 
 //.slotCenter .slotBody .nav .serach
@@ -606,48 +647,62 @@ footer .partner .evo {
     background-size: 100%;
 }
 
+//agentPage
+.agentPage .topBanner {
+    background: url('../images/agentBn.jpg') no-repeat;
+    background-size: 100%;
+}
+
+.agentPage .title::before,
+.agentPage .title::after {
+    background: url('../images/icon/agentTitle.png') no-repeat;
+    background-size: 200%;
+}
+
+.agentPage .icon_1 {
+    background: url('../images/icon/svg/icon-01.svg') no-repeat;
+    background-size: 100%;
+}
+
+.agentPage .icon_2 {
+    background: url('../images/icon/svg/icon-02.svg') no-repeat;
+    background-size: 100%;
+}
+
+.agentPage .icon_3 {
+    background: url('../images/icon/svg/icon-03.svg') no-repeat;
+    background-size: 100%;
+}
+
+.agentPage .icon_4 {
+    background: url('../images/icon/svg/icon-04.svg') no-repeat;
+    background-size: 100%;
+}
+
+.agentPage .icon_5 {
+    background: url('../images/icon/svg/icon-05.svg') no-repeat;
+    background-size: 100%;
+}
+
+.agentPage .rulePic {
+    background: url('../images/icon/rule.png') no-repeat;
+    background-size: 100%;
+}
+
 
 ////////img↓↓↓↓↓↓↓↓↓
 
 
 //logo
-header .logo {
-    width: 190px;
-    height: 80px;
-    object-fit: cover;
-}
-//header 下拉選單
-header .topGameList li div {
-    width: 195px;
-    height: 168px;
-    box-sizing: border-box;
-    padding: 0 8px;
+// header .logo {
+//     width: 190px;
+//     height: 80px;
+//     object-fit: cover;
+// }
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-}
-header .topGameList .hot li div {
-    width: 257px;
-    height: 171px;
-    box-sizing: border-box;
-    padding: 0 8px;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: solid 1px #ffc13c;
-        border-radius: 5px;
-    }
-}
 //banner
 .single-item img {
     width: 100%;
-    max-height: 478px;
-    object-fit: cover;
 }
 
 //入口頁中央遊戲enter .mainWrap .img
@@ -657,19 +712,9 @@ header .topGameList .hot li div {
 }
 
 //gameWrap img
-.gameWrap .mainImg {
-    width: 675px;
-    height: 732px;
-}
-.gameWrap .btnBox img {
-    width: 189px;
-    height: 185px;
-    object-fit: cover;
-    object-position: top;
-
-    &:hover,&:active,&.active {
-        object-position: bottom;
-    }
+.gameWrap .gameBox img {
+    width: 100%;
+    object-fit: contain;
 }
 
 //pfName 廠商icon
@@ -747,47 +792,4 @@ header .topGameList .hot li div {
 //help
 .helpWrap img {
     width: 100%;
-}
-
-
-//agentPage
-.agentPage .topBanner {
-    background: url('../images/agentBn.jpg') no-repeat;
-    background-size: 100%;
-}
-
-.agentPage .title::before,
-.agentPage .title::after {
-    background: url('../images/icon/agentTitle.png') no-repeat;
-    background-size: 200%;
-}
-
-.agentPage .icon_1 {
-    background: url('../images/icon/svg/icon-01.svg') no-repeat;
-    background-size: 100%;
-}
-
-.agentPage .icon_2 {
-    background: url('../images/icon/svg/icon-02.svg') no-repeat;
-    background-size: 100%;
-}
-
-.agentPage .icon_3 {
-    background: url('../images/icon/svg/icon-03.svg') no-repeat;
-    background-size: 100%;
-}
-
-.agentPage .icon_4 {
-    background: url('../images/icon/svg/icon-04.svg') no-repeat;
-    background-size: 100%;
-}
-
-.agentPage .icon_5 {
-    background: url('../images/icon/svg/icon-05.svg') no-repeat;
-    background-size: 100%;
-}
-
-.agentPage .rulePic {
-    background: url('../images/icon/rule.png') no-repeat;
-    background-size: 100%;
 }

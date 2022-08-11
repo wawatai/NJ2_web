@@ -7,17 +7,21 @@ $thirdBG: #181818;
 $lightBG: #2e2e2e;
 
 //主border
-$Border: #b5833b;
+$Border: #daaf6d;
 
 //主字色
-$mainFont_1: #ffc13c;
-$mainFont_2: #e2e2e2;
+$mainFont_1: #b8151a;
+$mainFont_2: #ba9141;
 $mainFont_3: #fb770a;
 $time: #d78f3a;
 $disable: #999999;
 
+//主漸層
+$mainLinear_1: linear-gradient(to top,#bc9c64 4%,#f3d197 93%);
+$mainLinear_Word: #ffffff;
+
 //提醒字色
-$remind: #35b751;
+$remind: #292CFF;
 $remind_sp: #e11515;
 
 //選擇色
@@ -38,14 +42,26 @@ $link_register: #1c39af;
 //背景半透明黑
 $filter: #0000009e;
 
-//goTop
-$goTop_BG: #ddb90fe6;
-
 //彈窗色
-$jumpWindow_Header: linear-gradient(90deg,#ffae00,#fec026);
-$jumpWindow_Title: #181818;
-$jumpWindow_BG: #181818;
-$jumpWindow_Border: #ffc13c;
+$jumpWindow_Title: linear-gradient(to top,#970707 0%,#cf0505 98%);
+$jumpWindow_BG: #f9f9f9;
+$jumpWindow_Border: #daaf6d;
+$jumpWindow_TitleBorder: #c30000;
+$jumpWindow_smallTitle_1: #ba9141;
+$jumpWindow_smallTitle_2: #c9a567;
+@mixin newsBox {
+    background: linear-gradient(to top,#eeeeee 0%,#ffffff 100%);
+    border-radius: 5px;
+    border: solid 1px #9b0707;
+    overflow: hidden;
+
+    &.active {
+        background: #ffffff;
+        border-color: #daaf6d;
+        box-shadow: 0 2px 5px 0 #0000001d inset;
+    }
+}
+$jumpWindow_News_Border: #b74f4e;
 
 //帳號低中高強度
 $low: #ff0000;
@@ -87,49 +103,29 @@ $fakeTable_Word: #ffc13c;
 }
 
 //header色
-$header_BG_1: #1f1f1f;
-$header_BG_2: #181818;
-$header_Color1: #ff9b1f;
-$header_Color2: #ffc13c;
-$header_Hover: #ff4719;
-$header_Forget: #ff9b1f;
-$header_langBorder: #5a481c;
-$header_langBtn: #f0cc6d;
-//header用按鈕
-@mixin headerBtn_1 {
-    background: linear-gradient(to right,#ff4b33 0%,#d8001f 98%);
-    border: none;
+$header_BG_1: #ffffff;
+$header_Color1: #5a6569;
+$header_Color2: #daaf6d;
+$header_Hover: #c9a567;
+$header_langBorder: #daaf6d;
+$header_langBtn: #e5bb85;
+@mixin headerBtn_3 {
+    background: #c9a76c;
+    border-radius: 50%;
     color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 0 5px;
-    border-radius: 5px;
 
     &:hover,&:active,&.active {
-        background: #b9001b;
-    }
-}
-@mixin headerBtn_2 {
-    background: linear-gradient(to right,#a4dd41 0%,#329e36 100%);
-    border: none;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 0 5px;
-    border-radius: 3px;
-
-    &:hover,&:active,&.active {
-        background: #329e36;
+        background: #b8151a;
+        color: #ffffff;
     }
 }
 @mixin headerMoney {
-    display: block;
-    padding-right: 15px;
-    user-select: none;
-    color: #ff0000;
+    color: #b8151a;
     font-size: 16px;
     font-weight: bold;
     position: relative;
+    padding-right: 15px;
+    user-select: none;
     cursor: pointer;
 
     &::before {
@@ -142,7 +138,7 @@ $header_langBtn: #f0cc6d;
         transform: translateY(-50%);
         border-style: solid;
         border-width: 6px 4px 0 4px;
-        border-color: #ff0000 transparent;
+        border-color: #b8151a transparent;
     }
 }
 @mixin headerMoneyList {
@@ -186,76 +182,113 @@ $header_langBtn: #f0cc6d;
     }
 }
 @mixin headerLang {
-    background: #181818;
-    border: none;
-    color: #ffd86e;
+    background: #ffffff;
+    border: solid 1px #daaf6d;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px 0 #0000001a inset;
+    color: #daaf6d;
     font-size: 15px;
     font-weight: bold;
     padding: 0 67px 0 15px;
     appearance: none;
     cursor: pointer;
-
-    option {
-        background: #181818;
-        color: #ffd86e;
-    }
 }
 @mixin headerMailRemind {
+    background: #ed1c24;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
     position: absolute;
+    top: 12px;
+    right: -9px;
     display: none;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
-    top: 12px;
-    right: -9px;
     padding-bottom: 2px;
-    box-sizing: border-box;
-    border-radius: 30px;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    background: #ed1c24;
 
     &.display {
         display: flex;
     }
 }
+@mixin headerInput {
+    background: #ffffff;
+    border: solid 1px #daaf6d;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px 0 #0000001a inset;
+    color: #b11319;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 5px 0 12px;
+
+    &::placeholder {
+        color: #b11319;
+    }
+}
 //headerNav
-$headerNav_Word: #ffc13c;
-$headerNav_Hover: #ff4719;
-//header下拉式選單
-$topGameList_BG: #1f1f1f;
-$topGameList_Title: #ffc13c;
-$topGameList_ArrowBG: #ffc13c;
-$topGameList_fixWord: #ffffff;
+$headerNav_Word: #ffffff;
+$headerNav_Hover: #b37d1f;
 
 //ad
-$ad_Arrow: #ffffff;
+@mixin ad_Dot {
+    background: #f9f9f9;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 #00000049 inset;
+    border: none;
+    color: transparent;
+    opacity: 1;
+}
+@mixin ad_Dot_Active {
+    background: linear-gradient(to top,#bc9c64 4%,#f3d197 93%);
+    box-shadow: none;
+}
 
 //mainWrap
-$quick_BG: #0000009e;
-$quick_Word: #ffffff;
-$quick_Hover: #181818;
-$type_Word: #f9d369;
+$line: #c30505;
+$gameType_pageBtn_BG: #00000033;
+$gameType_pageBtn_Active: linear-gradient(to top,#970707 0%,#cf0505 98%);
+$gameType_pageBtn_Arrow: #ffffff;
 
 //marquee
-$marquee_Title: #ffc13c;
-$marquee_Word: #cd9c33;
-$marquee_BG: #272727;
+$marquee_Border: #daaf6d;
+$marquee_Shadow: #0000002c;
+$marquee_Word: #b37d1f;
 
 //footer
-$footer_BG1: #2c2c2c;
-$footer_BG2: #191919;
-$footer_Title: #b1b1b1;
-$footer_Hover: #ff4b33;
-$footer_Partner_Title: #fefefe;
-$footer_Partner_Title: #fefefe;
+$footer_Border: #f3d197;
+$footer_List_BG: #f3f3f3;
+$footer_List_Shadow: #0000001c;
+$footer_List_Word: #1f2629;
+$footer_List_Active: linear-gradient(to top,#970707 0%,#cf0505 98%);
+$footer_bottomBG: #b8151a;
+@mixin footerBtn_2 {
+    background: linear-gradient(to top,#ebebeb 0%,#ffffff 100%);
+    border-radius: 30px;
+    border: solid 1px #b74f4f;
 
-//gameWrap大title字漸層
-$gameWrap_Linear: #ff4719;
-//slot小窗字底
-$gameWrap_WordBG: #1f1f1f;
-$gameWrap_Word: #ffc13c;
-$gameWrap_Border: #ffc13c;
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom,#bc9c64 4%,#f3d197 93%);
+    }
+}
+
+//gameWrap
+$gameWrap_Word: #000000;
+$gameWrap_platformBtn_Word: #b6832d;
+$gameWrap_platformBtn_Active: #ffffff;
+$gameWrap_Game_platformBG: #ffffffc7;
+@mixin playBtn {
+    background: linear-gradient(to top,#037cd9 0%,#2cd5ff 100%);
+    border-radius: 30px;
+    border: solid 1px #2cd5ff;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom, #034ED9 0%, #00BBEA 100%);
+    }
+}
+
 
 //register
 $register_Border: #fff0ac;
@@ -449,16 +482,30 @@ $help_innerBox_Border: #979797;
 
 //最常用按鈕
 @mixin mainBtn {
-    background: linear-gradient(to right,#ff4b33 0%,#d8001f 98%);
+    background: linear-gradient(to top,#bc9c64 4%,#f3d197 93%);
     border: none;
+    border-radius: 30px;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
-    border-radius: 5px;
 
     &:hover,&:active,&.active {
-        background: #b9001b;
+        background: linear-gradient(to bottom,#bc9c64 4%,#f3d197 93%);
+    }
+}
+//第二常用按鈕
+@mixin secondBtn {
+    background: linear-gradient(to top,#970707 0%,#cf0505 98%);
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom,#970707 0%,#cf0505 98%);
     }
 }
 //遊戲快速轉帳彈窗按鈕
@@ -648,32 +695,17 @@ button:disabled {
 
 //最常用input
 @mixin mainInput {
-    background: #101010;
-    border: solid 1px #ffc13c;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 3px;
-    box-sizing: border-box;
-    padding-left: 15px;
-
-    &::placeholder {
-        color: #999999;
-    }
-}
-//header用input
-@mixin headerInput {
-    background: #eaeaea;
-    border: none;
-    color: #333333;
-    font-size: 13px;
-    font-weight: bold;
+    background: #ffffff;
+    border: solid 1px #daaf6d;
     border-radius: 5px;
-    box-sizing: border-box;
-    padding: 0 5px 0 12px;
+    box-shadow: 0 2px 5px 0 #0000001d inset;
+    color: #b08a48;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 16px;
 
     &::placeholder {
-        color: #555555;
+        color: #b08a48;
     }
 }
 
@@ -687,21 +719,85 @@ input:disabled {
 
 
 @mixin mainSelect {
-    background: #101010;
-    border: solid 1px #ffc13c;
-    color: #ffffff;
-    font-size: 16px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: solid 1px #daaf6d;
+    color: #b08a48;
+    font-size: 14px;
     font-weight: bold;
-    padding-left: 15px;
-    border-radius: 3px;
-    background-image: linear-gradient(45deg,transparent 50%,#ffc13c 0),linear-gradient(135deg,#ffc13c 50%,transparent 0);
-    background-position: calc(100% - 20px) calc(1em + 2px),calc(100% - 15px) calc(1em + 2px);
-    background-size: 5px 5px,5px 5px;
-    background-repeat: no-repeat;
+    padding-left: 16px;
+    // background-image: linear-gradient(45deg,transparent 50%,#c9a567 0),linear-gradient(135deg,#c9a567 50%,transparent 0);
+    // background-position: calc(100% - 20px) calc(1em + 2px),calc(100% - 15px) calc(1em + 2px);
+    // background-size: 5px 5px,5px 5px;
+    // background-repeat: no-repeat;
     appearance: none;
+}
 
-    option {
-        background: #101010;
-        color: #ffffff;
+
+
+//套件
+
+
+
+@mixin scollBar {
+    overscroll-behavior: none;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #cccccc;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 10px;
+    }
+}
+
+@mixin textHidden {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin checkBox {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 18px;
+        height: 18px;
+        background: #f9f9f9;
+        border-radius: 50%;
+        border: solid 1px #daaf6d;
+        box-shadow: 0 2px 3px 0 #0000001d inset;
+    }
+
+    &::after {
+        display: none;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 13px;
+        height: 13px;
+        background: linear-gradient(to top,#970707 0%,#cf0505 98%);
+        border-radius: 50%;
+    }
+
+    &:checked {
+
+        &::after {
+            display: block;
+        }
     }
 }

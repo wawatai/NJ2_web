@@ -3,7 +3,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 10;
+    z-index: 1000;
     background: $filter;
     top: 0px;
     left: 0px;
@@ -19,12 +19,13 @@
         height: auto;
         background: $jumpWindow_BG;
         border-radius: 16px;
-        overflow: hidden;
         border: solid 1px $jumpWindow_Border;
+        padding: 0 36px;
 
         //忘記密碼
         &.forgetPassword {
             display: none;
+            width: 600px;
 
             &.display {
                 display: block;
@@ -37,14 +38,14 @@
                 padding: 24px;
     
                 input {
-                    width: 532px;
+                    width: 300px;
                     height: 42px;
                     @include mainInput;
                     margin-bottom: 16px;
                 }
     
                 button {
-                    width: 532px;
+                    width: 216px;
                     height: 42px;
                     @include mainBtn;
                     margin-bottom: 24px;
@@ -54,6 +55,7 @@
                     color: $remind;
                     font-size: 14px;
                     font-weight: bold;
+                    line-height: 18px;
                 }
             }
         }
@@ -62,68 +64,92 @@
         &.news {
             display: none;
             width: 840px;
-            min-height: 250px;
-            height: auto;
+            max-height: 600px;
+            padding-bottom: 60px;
 
             &.display {
                 display: block;
             }
 
-            //頁籤
-            .nav {
-                display: flex;
-                border-bottom: solid 1px $Border;
-                margin: 20px 20px 0;
+            .box {
+                width: 100%;
+                height: auto;
+                max-height: 380px;
+                overflow-y: auto;
+                margin-top: 20px;
+                @include scollBar;
 
-                li {
-                    width: auto;
-                    height: auto;
-                    @include grayBtn;
-                    margin-right: 7px;
-                    padding: 5px 20px;
-                }
-            }
-
-            //內容
-            .content {
-                display: none;
-                margin: 0px 20px 30px;
-
-                &.display {
-                    display: block;
-                }
-
-                li {
-                    width: 100%;
-                    height: 45px;
-                    padding: 0 5px;
-                    display: flex;
-                    align-items: center;
-                    border-bottom: solid 1px $Border;
-                    box-sizing: border-box;
-
-                    div {
+                .infoBox {
+                    width: 90%;
+                    height: 46px;
+                    @include newsBox;
+                    margin: 0 auto 10px;
+                    padding: 0 24px 0 36px;
+    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+    
+                    &.active {
+                        height: auto;
+    
+                        ul {
+    
+                            .smallTitle {
+    
+                                .arrow_ic {
+                                    transform: scaleY(1);
+                                }
+                            }
+                        }
+                    }
+    
+                    ul {
                         width: 100%;
                         height: auto;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-
-                        p {
-                            font-weight: bold;
-
-                            &.text {
-                                white-space: nowrap;
-                                text-overflow: ellipsis;
-                                overflow: hidden;
-                                max-width: 670px;
-                                color: $mainFont_1;
-                                font-size: 16px;
+    
+                        li {
+                            width: 100%;
+                            height: 46px;
+                            border-bottom: solid 1px $jumpWindow_News_Border;
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            padding-left: 12px;
+    
+                            &:last-child {
+                                border: none;
                             }
-
-                            &.date {
-                                color: $time;
-                                font-size: 14px;
+    
+                            &.smallTitle {
+                                border-color: $Border;
+                                justify-content: space-between;
+                                cursor: pointer;
+    
+                                .flower_ic {
+                                    width: 25px;
+                                    height: 25px;
+                                    position: absolute;
+                                    left: -23px;
+                                }
+    
+                                p {
+                                    color: $jumpWindow_smallTitle_1;
+                                }
+    
+                                .arrow_ic {
+                                    width: 18px;
+                                    height: 9px;
+                                    transform: scaleY(-1);
+                                }
+                            }
+    
+                            p {
+                                width: 100%;
+                                color: $mainFont_1;
+                                font-size: 18px;
+                                font-weight: bold;
+                                @include textHidden;
                             }
                         }
                     }
@@ -134,29 +160,32 @@
         //單純轉跳彈窗
         &.plsGo {
             display: none;
+            padding-bottom: 30px;
 
             &.display {
                 display: block;
             }
 
             .content {
-                color: $mainFont_1;
-                font-size: 16px;
+                width: 100%;
+                height: auto;
                 padding: 32px;
-                letter-spacing: 1px;
-                font-weight: bold;
                 text-align: center;
+
+                p {
+                    color: $remind;
+                    font-size: 16px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
             }
 
-            .btnBox {
-                text-align: center;
-                margin: 0 32px 20px;
-
-                button {
-                    width: 278px;
-                    height: 42px;
-                    @include mainBtn;
-                }
+            button {
+                width: 216px;
+                height: 42px;
+                @include mainBtn;
+                display: block;
+                margin: 0 auto;
             }
         }
 
@@ -418,92 +447,88 @@
         //遊戲投注彈窗
         &.betWindow {
             display: none;
-            flex-direction: column;
-            position: relative;
+            width: 412px;
 
             &.display {
-                display: flex;
+                display: block;
             }
 
-            form {
+            .top,
+            .bottom {
                 width: 100%;
                 height: auto;
-                box-sizing: border-box;
-                margin-top: 15px;
-                padding: 0 45px;
+                border-bottom: solid 3px $Border;
+                padding: 20px 0;
 
-                .row {
+                .smallTitle {
+                    color: $jumpWindow_smallTitle_2;
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-bottom: 16px;
+                    text-align: center;
+                }
+
+                .selectBox {
+                    width: 100%;
+                    height: auto;
+                    margin: 0 auto 8px;
+                    position: relative;
                     display: flex;
                     align-items: center;
-                    width: 100%;
-                    height: 42px;
-                    margin-bottom: 10px;
                     justify-content: center;
 
-                    &:nth-of-type(2),
-                    &:nth-of-type(3) {
-                        margin-bottom: 5px;
+                    select {
+                        width: 300px;
+                        height: 42px;
+                        @include mainSelect;
                     }
 
-                    &.forBtn {
-                        justify-content: flex-end;
-                        height: auto;
+                    i {
+                        position: absolute;
+                        right: 38px;
+                        width: 16px;
+                        height: 9px;
+                        pointer-events: none;
                     }
-                    
-                    .smallTitle {
-                        width: 267px;
-                        height: auto;
-                        font-size: 28px;
-                        font-weight: bold;
+
+                    .money {
                         color: $mainFont_1;
-                    }
-
-                    p {
-                        width: 120px;
-                        font-size: 16px;
+                        font-size: 14px;
                         font-weight: bold;
-                        color: $mainFont_3;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
+                        position: absolute;
+                        right: 75px;
                     }
+                }
+
+                .inputBox {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 16px;
 
                     input {
-                        width: 267px;
+                        width: 300px;
                         height: 42px;
                         @include mainInput;
                     }
+                }
 
-                    .trans_arrow {
-                        display: block;
-                        width: 24px;
-                        height: 21px;
-                        transform: rotate(90deg);
-                        margin-left: 120px;
-                    }
+                .amount {
+                    width: 100%;
+                    color: $mainFont_1;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-bottom: 8px;
+                }
 
-                    .btnBox {
-                        width: 267px;
-                        height: auto;
-
-                        button {
-                            width: 85px;
-                            height: 32px;
-                            @include fastBtn;
-                            margin: 0 2px 6px 0;
-
-                            &:nth-of-type(3n) {
-                                margin-right: 0;
-                            }
-                        }
-                    }
-                    
-                    .check {
-                        width: 267px;
-                        height: 42px;
-                        @include mainBtn;
-                        margin-bottom: 20px;
-                    }
+                button {
+                    width: 257px;
+                    height: 42px;
+                    @include mainBtn;
+                    display: block;
+                    margin: 0 auto;
                 }
             }
 
@@ -512,12 +537,33 @@
                 height: auto;
                 text-align: center;
                 padding: 20px 0;
-                border-top: solid 1px $Border;
 
                 button {
-                    width: 351px;
+                    width: 257px;
                     height: 42px;
                     @include mainBtn;
+                    margin-bottom: 16px;
+                }
+
+                div {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    input {
+                        width: 10px;
+                        height: 10px;
+                        @include checkBox;
+                        margin-right: 20px;
+                    }
+
+                    p {
+                        color: $jumpWindow_smallTitle_2;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
                 }
             }
         }
@@ -778,28 +824,29 @@
 
         .title {
             width: 100%;
-            height: 50px;
+            height: 75px;
+            border-bottom: solid 3px $jumpWindow_TitleBorder;
             display: flex;
             align-items: center;
-            background: $jumpWindow_Header;
+            justify-content: center;
             position: relative;
 
             p {
-                color: $jumpWindow_Title;
-                font-size: 18px;
+                background: $jumpWindow_Title;
+                background-clip: text;
+                color: transparent;
+                font-size: 20px;
                 font-weight: bold;
                 text-align: center;
-                width: 100%;
                 letter-spacing: 2px;
             }
 
             i {
                 position: absolute;
-                width: 16px;
-                height: 16px;
-                top: 50%;
-                right: 15px;
-                transform: translateY(-50%);
+                width: 24px;
+                height: 24px;
+                top: -40px;
+                right: -40px;
                 cursor: pointer;
             }
         }

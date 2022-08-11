@@ -1,35 +1,3 @@
-//topGameList 滑入彈出效果
-$(function() {
-    $(".topGameList").mouseleave(function(){
-        $(".topGameList").removeClass("display");
-    })
-
-    $(".gameNav li").hover(function(){
-        var n = $(this).index();
-
-        $(".topGameList,.topGameList ul:eq("+ n +")")
-        .addClass("display")
-        .siblings().removeClass("display");
-    })
-    $(".gameNav li:eq(6),.gameNav li:eq(7)").hover(function(){
-        $(".topGameList")
-        .removeClass("display");
-    })
-
-    $(".gameNav li.liveBtn,.gameNav li.slotBtn").hover(function(){
-        $(".topGameList .prev,.topGameList .next")
-        .addClass("display");
-        $(".topGameList .container")
-        .addClass("scroll");
-    })
-    $(".gameNav li.hotBtn,.gameNav li.sportBtn,.gameNav li.fishBtn,.gameNav li.boardBtn").hover(function(){
-        $(".topGameList .prev,.topGameList .next")
-        .removeClass("display");
-        $(".topGameList .container")
-        .removeClass("scroll");
-    })
-})
-
 //ad
 $(document).on('ready', function() {
 	$(".single-item").slick({
@@ -38,129 +6,292 @@ $(document).on('ready', function() {
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 3500,
-		arrows: true,
+		arrows: false,
 	})
 })
 
-//live下拉選單寬度+點擊滑動
+//mainWrap遊戲列滑動
 $(function(){
-    var live = $('.listWrap .live li');
-    var livel = live.length;
-    var liwp = $('.topGameList .live');
-    $(liwp).css("width",""+195 * livel+"");
+    $(".typeList .typeBox").each(function(){
+        if($(this).find("li").length > 4)
+        {
+            $(this).find(".next")
+            .addClass("active");
+        }
 
-    var n = 0;
-    var nt = $('.listWrap .next');
-    var pv = $('.listWrap .prev');
-    $(nt).click(function(){
-        n ++;
-        $(liwp).css("transform","translateX("+(-195 * n)+"px)");
-
-        if(n == 2){
-            n --;
+        if($(this).hasClass("hotGame"))
+        {
+            if($(this).find("li").length > 5)
+            {
+                $(this).find(".next")
+                .addClass("active");
+            }
+            else
+            {
+                $(this).find(".next")
+                .removeClass("active");
+            }
         }
     })
-    $(pv).click(function(){
-        n --;
-        $(liwp).css("transform","translateX("+(-195 * n)+"px)");
 
-        if(n == -1){
-            $(liwp).css("transform","translateX(0px)");
-            n ++;
-        }
-    })
-})
-//slot下拉選單寬度+點擊滑動
-$(function(){
-    var slot = $('.listWrap .slot li');
-    var slotl = slot.length;
-    var slwp = $('.topGameList .slot');
-    $(slwp).css("width",""+195 * slotl+"");
+    var hotN = 0;
+    var slotN = 0;
+    var liveN = 0;
+    var sportN = 0;
+    var fishN = 0;
+    var boardN = 0;
 
-    var n = 0;
-    var nt = $('.listWrap .next');
-    var pv = $('.listWrap .prev');
-    $(nt).click(function(){
-        n ++;
-        $(slwp).css("transform","translateX("+(-195 * n)+"px)");
-
-        if(n == 16){
-            n --;
-        }
-    })
-    $(pv).click(function(){
-        n --;
-        $(slwp).css("transform","translateX("+(-195 * n)+"px)");
-
-        if(n == -1){
-            $(slwp).css("transform","translateX(0px)");
-            n ++;
-        }
-    })
-})
-
-//.vipWrap .detailCardBox內選單滑動
-$(function(){
-    var vipCard = $('.detailCardBox ul');
-
-    var n = 0;
-    var nt = $('.detailCardBox .next');
-    var pv = $('.detailCardBox .prev');
-    $(nt).click(function(){
-        n ++;
-        $(vipCard).css("transform","translateX("+(-300 * n)+"px)");
-
-        if(n == 2){
-            n --;
-        }
-    })
-    $(pv).click(function(){
-        n --;
-        $(vipCard).css("transform","translateX("+(-300 * n)+"px)");
-
-        if(n == -1){
-            $(vipCard).css("transform","translateX(0px)");
-            n ++;
-        }
-    })
-})
-
-//header loginBtn click
-$(function(){
-    $('.loginBtn').click(function(){
-        $('header .user')
-        .toggleClass('display');
+    $(".typeBox .pageBtn").on("click",function(){
+        var total = $(this).closest(".typeBox").find("li").length;
+        var n = Math.round((total - 4) / 2 + 1);
         
-        $('header .sportBtn')
-        .attr("onclick","window.location.href='./html/sportPage.html'");
-        $('header .liveBtn')
-        .attr("onclick","window.location.href='./html/livePage.html'");
-        $('header .slotBtn,.topGameList .slot li,.typeList .slot')
-        .attr("onclick","window.location.href='./html/slotPage.html'");
-        $('header .fishBtn,.topGameList .fish li,.typeList .fish')
-        .attr("onclick","window.location.href='./html/fishPage.html'");
-        $('header .boardBtn,.topGameList .board li,.typeList .board')
-        .attr("onclick","window.location.href='./html/boardPage.html'");
-        $('header .event')
-        .attr("onclick","window.location.href='./html/event.html'");
-        $('header .vip,footer .vip button')
-        .attr("onclick","window.location.href='./html/vip.html'");
+        if($(this).closest(".typeBox").hasClass("hotGame"))
+        {
+            if($(this).hasClass("next"))
+            {
+                hotN ++;
 
-        $('.topGameList .sport li,.typeList .sport')
-        .attr("onclick","openSportGame()");
-        $('.topGameList .live li,.typeList .live')
-        .attr("onclick","openLiveGame()");
-        $('.topGameList .lottery li,.typeList .lottery')
-        .attr("onclick","openLotteryGame()");
+                $(".typeBox.hotGame ol")
+                .css("transform","translateX("+ (-563 * hotN) +"px)");
 
-        $("footer .news button")
-        .attr("onclick","openNews()");
+                $(this)
+                .siblings(".pageBtn").addClass("active");
 
-        $(".sideBar .inviteBtn")
-        .addClass("display");
+                if(hotN == n)
+                {
+                    hotN == n;
 
-        $(".quickBox .love")
-        .addClass("display");
+                    $(this)
+                    .removeClass("active");
+                }
+            }
+            if($(this).hasClass("prev"))
+            {
+                hotN --;
+
+                $(".typeBox.hotGame ol")
+                .css("transform","translateX("+ (-563 * hotN) +"px)");
+
+                $(this)
+                .siblings(".pageBtn").addClass("active");
+
+                if(hotN == 0)
+                {
+                    hotN == 0;
+                    
+                    $(this)
+                    .removeClass("active");
+                }
+            }
+        }
+
+        if($(this).closest(".typeBox").hasClass("slotGame"))
+        {
+            if($(this).hasClass("next"))
+            {
+                slotN ++;
+
+                $(".typeBox.slotGame ol")
+                .css("transform","translateX("+ (-704 * slotN) +"px)");
+
+                $(this)
+                .siblings(".pageBtn").addClass("active");
+
+                if(slotN == n)
+                {
+                    slotN == n;
+
+                    $(this)
+                    .removeClass("active");
+                }
+            }
+            if($(this).hasClass("prev"))
+            {
+                slotN --;
+
+                $(".typeBox.slotGame ol")
+                .css("transform","translateX("+ (-704 * slotN) +"px)");
+
+                $(this)
+                .siblings(".pageBtn").addClass("active");
+
+                if(slotN == 0)
+                {
+                    slotN == 0;
+                    
+                    $(this)
+                    .removeClass("active");
+                }
+            }
+        }
+
+        if($(this).closest(".typeBox").hasClass("liveGame"))
+        {
+            if($(this).hasClass("next"))
+            {
+                liveN ++;
+
+                $(".typeBox.liveGame ol")
+                .css("transform","translateX("+ (-704 * liveN) +"px)");
+
+                $(this)
+                .siblings(".pageBtn").addClass("active");
+
+                if(liveN == n)
+                {
+                    liveN == n;
+
+                    $(this)
+                    .removeClass("active");
+                }
+            }
+            if($(this).hasClass("prev"))
+            {
+                liveN --;
+
+                $(".typeBox.liveGame ol")
+                .css("transform","translateX("+ (-704 * liveN) +"px)");
+
+                $(this)
+                .siblings(".pageBtn").addClass("active");
+
+                if(liveN == 0)
+                {
+                    liveN == 0;
+                    
+                    $(this)
+                    .removeClass("active");
+                }
+            }
+        }
+
+        if($(this).closest(".typeBox").hasClass("fishGame"))
+        {
+            if($(this).hasClass("next"))
+            {
+                fishN ++;
+
+                $(".typeBox.fishGame ol")
+                .css("transform","translateX("+ (-704 * fishN) +"px)");
+
+                $(this)
+                .siblings(".pageBtn").addClass("active");
+
+                if(fishN == n)
+                {
+                    fishN == n;
+
+                    $(this)
+                    .removeClass("active");
+                }
+            }
+            if($(this).hasClass("prev"))
+            {
+                fishN --;
+
+                $(".typeBox.fishGame ol")
+                .css("transform","translateX("+ (-704 * fishN) +"px)");
+
+                $(this)
+                .siblings(".pageBtn").addClass("active");
+
+                if(fishN == 0)
+                {
+                    fishN == 0;
+                    
+                    $(this)
+                    .removeClass("active");
+                }
+            }
+        }
+
+        if($(this).closest(".typeBox").hasClass("sportGame"))
+        {
+            if($(this).hasClass("next"))
+            {
+                sportN ++;
+
+                $(".typeBox.sportGame ol")
+                .css("transform","translateX("+ (-704 * sportN) +"px)");
+
+                $(this)
+                .siblings(".pageBtn").addClass("active");
+
+                if(sportN == n)
+                {
+                    sportN == n;
+
+                    $(this)
+                    .removeClass("active");
+                }
+            }
+            if($(this).hasClass("prev"))
+            {
+                sportN --;
+
+                $(".typeBox.sportGame ol")
+                .css("transform","translateX("+ (-704 * sportN) +"px)");
+
+                $(this)
+                .siblings(".pageBtn").addClass("active");
+
+                if(sportN == 0)
+                {
+                    sportN == 0;
+                    
+                    $(this)
+                    .removeClass("active");
+                }
+            }
+        }
+
+        if($(this).closest(".typeBox").hasClass("boardGame"))
+        {
+            if($(this).hasClass("next"))
+            {
+                boardN ++;
+
+                $(".typeBox.boardGame ol")
+                .css("transform","translateX("+ (-704 * boardN) +"px)");
+
+                $(this)
+                .siblings(".pageBtn").addClass("active");
+
+                if(boardN == n)
+                {
+                    boardN == n;
+
+                    $(this)
+                    .removeClass("active");
+                }
+            }
+            if($(this).hasClass("prev"))
+            {
+                boardN --;
+
+                $(".typeBox.boardGame ol")
+                .css("transform","translateX("+ (-704 * boardN) +"px)");
+
+                $(this)
+                .siblings(".pageBtn").addClass("active");
+
+                if(boardN == 0)
+                {
+                    boardN == 0;
+                    
+                    $(this)
+                    .removeClass("active");
+                }
+            }
+        }
+    })
+})
+
+//jumpWindow news 點擊展開
+$(function(){
+    $(".jumpWindow.news .smallTitle").on("click",function(){
+        $(this).closest(".infoBox")
+        .toggleClass("active");
     })
 })
 
@@ -171,55 +302,221 @@ $(function(){
     })
 })
 
-//mainWrap
+//gameWrap廠商遊戲切換
 $(function(){
-    $(".quickBox .love").click(function(){
-        $(".typeList")
-        .toggleClass("display")
+    $(".gameWrap .platformBox li").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
     })
-    $(".loveGame .love").click(function(){
+
+    $(".gameWrap .platformBox .all").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .boo").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .boo")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .pp").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .pp")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .gh").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .gh")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .ifun").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .ifun")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .ag").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .ag")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .net").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .net")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .mg").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .mg")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .evo").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .evo")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .evo").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .evo")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .relax").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .relax")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .tpg").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .tpg")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .pgs").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .pgs")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .png").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .png")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .redTiger").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .redTiger")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .ygg").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .ygg")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .bp").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .bp")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .pls").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .pls")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .redrake").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .redrake")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .ftp").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .ftp")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .elk").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .elk")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .qs").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .qs")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .rsg").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .rsg")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .ely").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .ely")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .sp").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .sp")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .ava").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .ava")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .noLimit").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .noLimit")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .ha").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .ha")
+        .addClass("display");
+    })
+
+    $(".gameWrap .platformBox .jili").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .jili")
+        .addClass("display");
+    })
+})
+
+//gameWrap愛心
+$(function(){
+    $(".gameWrap .love").on("click",function(){
         $(this)
         .toggleClass("active");
-    })
-
-    $(".quickBox .sport").click(function(){
-        $(".typeList li")
-        .removeClass("display");
-        
-        $(".typeList .forSport")
-        .addClass("display")
-    })
-
-    $(".quickBox .live").click(function(){
-        $(".typeList li")
-        .removeClass("display");
-        
-        $(".typeList .forLive")
-        .addClass("display")
-    })
-
-    $(".quickBox .slot").click(function(){
-        $(".typeList li")
-        .removeClass("display");
-        
-        $(".typeList .forSlot")
-        .addClass("display")
-    })
-
-    $(".quickBox .fish").click(function(){
-        $(".typeList li")
-        .removeClass("display");
-        
-        $(".typeList .forFish")
-        .addClass("display")
-    })
-
-    $(".quickBox .board").click(function(){
-        $(".typeList li")
-        .removeClass("display");
-        
-        $(".typeList .forBoard")
-        .addClass("display")
     })
 })
 
@@ -234,16 +531,60 @@ $(function(){
         .removeClass('display');
     })
 
-    $(".login .forget").click(function(){
+    $(".unLogin").on("click",function(){
+        $(".jumpWindow")
+        .removeClass("display");
+        $(".filter,.plsGo")
+        .addClass("display");
+    })
+
+    $(".openNews").on("click",function(){
+        $(".jumpWindow")
+        .removeClass("display");
+        $(".filter,.news")
+        .addClass("display");
+    })
+
+    $(".forget").click(function(){
         $('.jumpWindow')
         .removeClass('display');
         $('.filter,.forgetPassword')
         .addClass('display');
     })
 
-    $('.loginBtn').click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.news').addClass('display');
+    $(".callSlot").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.betWindow.slotGame')
+        .addClass('display');
+    })
+
+    $(".callLive").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.betWindow.liveGame')
+        .addClass('display');
+    })
+
+    $(".callBoard").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.betWindow.boardGame')
+        .addClass('display');
+    })
+
+    $(".callFish").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.betWindow.fishGame')
+        .addClass('display');
+    })
+
+    $(".callSport").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.betWindow.sportGame')
+        .addClass('display');
     })
 
     $('.changePassword button').click(function(){
@@ -295,107 +636,6 @@ $(function(){
     $(".registerWrap .checkBox span").click(function(){
         $('.jumpWindow').removeClass('display');
         $('.filter,.ruleWindow').addClass('display');
-    })
-})
-function unlogin(){
-    $('.jumpWindow').removeClass('display');
-    $('.filter,.plsGo').addClass('display');
-}
-function openSportGame(){
-    $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.sportGame').addClass('display');
-}
-function openLiveGame(){
-    $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.liveGame').addClass('display');
-}
-function openSlotGame(){
-    $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.slotGame').addClass('display');
-}
-function openLotteryGame(){
-    $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.lotteryGame').addClass('display');
-}
-function openFishGame(){
-    $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.fishGame').addClass('display');
-}
-function openBoardGame(){
-    $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.boardGame').addClass('display');
-}
-function openNews(){
-    $('.jumpWindow').removeClass('display');
-    $('.filter,.news').addClass('display');
-}
-function loading(){
-    $('.jumpWindow').removeClass('display');
-    $('.filter,.loading').addClass('display');
-
-    setTimeout(function(){
-        $(".filter")
-        .removeClass("display");
-    },2000);
-}
-
-//gameWrap小遊戲格hover切換左大圖
-$(function(){
-    $(".livePage .btnBox li").hover(function(){
-        var n = $(this).index() + 1;
-
-        $(".livePage .mainImg")
-        .attr("src","../images/partner/live/liveBG_"+ n +".png");
-    })
-})
-
-//jumpWindow .new .content
-$(function(){
-    $('.news .nav .hot').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-        $('.forHot').addClass('display');
-        $('.forHot').siblings().removeClass('display');
-    })
-    $('.news .nav .normal').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-        $('.forNormal').addClass('display');
-        $('.forNormal').siblings().removeClass('display');
-    })
-    $('.news .nav .deposit').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-        $('.forDeposit').addClass('display');
-        $('.forDeposit').siblings().removeClass('display');
-    })
-})
-
-//.gameList .love
-$(function(){
-    $('.gameList .love').click(function(){
-        $(this).toggleClass('active');
-    })
-})
-//slotBody li 切換
-$(function(){
-    $('.slotBody .nav li').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-    })
-})
-//slotPage 遊戲展開
-$(function(){
-    $('.pfName .all').click(function(){
-        $('.platforms').removeClass('display');
-        $($(this).closest('.platforms')).addClass('display');
-        $($(this).closest('.pfName').next('.gameList')).addClass('active');
-        $($(this).closest('.pfName')).addClass('active');
-    })
-
-    $('.pfName .back').click(function(){
-        $('.platforms').addClass('display');
-        $('.pfName.active,.gameList.active').removeClass('active');
     })
 })
 
@@ -697,27 +937,6 @@ $(function(){
     })
 })
 
-//goTop
-$(function(){
-	$(window).scroll(function () {
-        var scrollVal = $(this).scrollTop();
-        if(scrollVal > 0){
-                $(".goTop")
-                .addClass("display")
-        } else{
-                $(".goTop")
-                .removeClass("display");
-        };
-	})
-
-    $(".goTop").click(function(){
-        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //各瀏覽器相容性
-        $body.delay('0').animate({
-                scrollTop: 0
-        },500)
-    })
-})
-
 //transfer切換
 $(function(){
     $(".withdrawalWrap .bottom form select").change(function(){
@@ -773,5 +992,26 @@ $(function(){
     $(phone).blur(function(){
         $(btn)
         .attr("disabled",true);
+    })
+})
+
+//goTop
+$(function(){
+	$(window).scroll(function () {
+        var scrollVal = $(this).scrollTop();
+        if(scrollVal > 0){
+            $(".goTop")
+            .addClass("display")
+        } else{
+            $(".goTop")
+            .removeClass("display");
+        };
+	})
+
+    $(".goTop").click(function(){
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //各瀏覽器相容性
+        $body.delay('0').animate({
+            scrollTop: 0
+        },500)
     })
 })

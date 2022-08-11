@@ -6,7 +6,6 @@
     .marqueeArea {
         width: 1400px;
         height: 36px;
-        background: $marquee_BG;
         border-radius: 36px;
         margin-bottom: 16px;
         margin: 0 auto 16px;
@@ -25,7 +24,7 @@
                 justify-content: flex-end;
 
                 .title {
-                    color: $marquee_Title;
+                    color: $mainLinear_Word;
                     font-size: 12px;
                     font-weight: bold;
                     width: auto;
