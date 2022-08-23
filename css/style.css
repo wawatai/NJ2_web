@@ -342,7 +342,7 @@ footer .qs {
 }
 
 .innerPage .medal div {
-  background: url("../images/medal.png") no-repeat;
+  background: url("../images/levelMedal01.png") no-repeat;
   background-size: contain;
 }
 
@@ -4383,7 +4383,7 @@ html body .innerPage .center .banner .bottom .left .medal {
 }
 html body .innerPage .center .banner .bottom .left .medal div {
   width: 82px;
-  height: 103px;
+  height: 90px;
 }
 html body .innerPage .center .banner .bottom .left .textBox {
   width: auto;
@@ -5247,7 +5247,7 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box {
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box .medal {
   width: 82px;
-  height: 103px;
+  height: 90px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box .medal div {
   width: 100%;
