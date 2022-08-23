@@ -61,14 +61,66 @@
         }
 
         //最新消息
-        &.news {
+        &.news,
+        &.rules {
             display: none;
             width: 840px;
-            max-height: 600px;
             padding-bottom: 60px;
 
             &.display {
                 display: block;
+            }
+
+            &.rules {
+
+                .allBtn {
+                    width: 200px;
+                    height: 35px;
+                    @include lightBtn_2;
+                    display: block;
+                    margin: 20px auto 0;
+                }
+
+                .box {
+
+                    .infoBox {
+                        width: 100%;
+                        padding: 0 24px;
+
+                        ul {
+
+                            .smallTitle {
+                                padding: 0;
+                            }
+
+                            li:not(.smallTitle) {
+                                height: auto;
+                                padding: 8px 0;
+                                flex-direction: column;
+                                align-items: flex-start;
+
+                                p {
+                                    font-size: 14px;
+                                    white-space: pre-wrap;
+                                    line-height: 20px;
+                                    margin-bottom: 10px;
+
+                                    &:last-child {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .checkBtn {
+                    width: 216px;
+                    height: 42px;
+                    @include mainBtn;
+                    display: block;
+                    margin: 24px auto 0;
+                }
             }
 
             .box {
@@ -504,7 +556,9 @@
 
         //waterRecord
         &.waterRecord,
-        &.recordWindow {
+        &.recordWindow,
+        &.pointWindow,
+        &.pointPartner {
             width: 950px;
             display: none;
 
@@ -520,6 +574,20 @@
 
                         td {
                             width: 25%;
+                        }
+                    }
+                }
+            }
+
+            &.pointPartner {
+                width: 450px;
+
+                table {
+
+                    tr {
+
+                        td {
+                            width: 50%;
                         }
                     }
                 }
@@ -595,6 +663,197 @@
                         }
                     }
                 }
+            }
+
+            .pageBox {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+
+                .line {
+                    width: 100%;
+                    height: 1px;
+                    background: $page_line;
+                }
+
+                .page {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    flex-shrink: 0;
+                    margin: 0 10px;
+
+                    i {
+                        width: 16px;
+                        height: 9px;
+                        transform: rotate(90deg);
+                        cursor: pointer;
+
+                        &.prev {
+                            transform: rotate(-90deg);
+                            filter: grayscale(1) brightness(4);
+                        }
+                    }
+
+                    ul {
+                        width: auto;
+                        height: auto;
+                        display: flex;
+
+                        li {
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 50%;
+                            color: $page_Color;
+                            font-size: 12px;
+                            font-weight: bold;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 3px;
+                            box-sizing: content-box;
+                            padding: 1px 1px 2px;
+                            cursor: pointer;
+
+                            &:hover,&:active,&.active {
+                                background: $page_ActiveBG;
+                                color: $page_Active;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pageWord {
+                width: 100%;
+                height: auto;
+                text-align: center;
+                margin: 5px 0 24px;
+
+                p {
+                    color: $page_Color;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        //修改手機
+        &.changePhone {
+            width: 412px;
+            display: none;
+
+            &.display {
+                display: block;
+            }
+
+            .content {
+                width: 100%;
+                height: auto;
+                
+                .oriPhone {
+                    color: $mainFont_2;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-align: center;
+                    margin: 20px 0;
+                }
+
+                .inputBox {
+                    width: 300px;
+                    height: auto;
+                    display: block;
+                    margin: 0 auto;
+
+                    input {
+                        width: 100%;
+                        height: 42px;
+                        @include mainInput;
+                    }
+                }
+
+                .getCode {
+                    width: 300px;
+                    height: 35px;
+                    @include lightBtn_2;
+                    display: block;
+                    margin: 20px auto 30px;
+                }
+
+                .btnBox {
+                    width: 300px;
+                    height: auto;
+                    margin: 30px auto;
+
+                    button {
+                        width: 100%;
+                        height: 42px;
+                        @include mainBtn;
+                    }
+                }
+
+                .remind {
+                    color: $remind;
+                    font-size: 12px;
+                    font-weight: bold;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        //修改手機
+        &.changePassword {
+            width: 412px;
+            display: none;
+
+            &.display {
+                display: block;
+            }
+
+            .content {
+                width: 100%;
+                height: auto;
+                padding: 24px 0;
+
+                .inputBox {
+                    width: 300px;
+                    height: auto;
+                    display: block;
+                    margin: 0 auto 10px;
+                    position: relative;
+
+                    input {
+                        width: 100%;
+                        height: 42px;
+                        @include mainInput;
+                    }
+
+                    .remind {
+                        color: $remind;
+                        font-size: 12px;
+                        font-weight: bold;
+                        margin-top: 5px;
+                    }
+
+                    i {
+                        width: 17px;
+                        height: 17px;
+                        position: absolute;
+                        top: 14px;
+                        right: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            button {
+                width: 300px;
+                height: 42px;
+                @include mainBtn;
+                display: block;
+                margin: 40px auto 24px;
             }
         }
 

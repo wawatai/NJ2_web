@@ -338,8 +338,13 @@ $(function(){
 
 //jumpWindow news 點擊展開
 $(function(){
-    $(".jumpWindow.news .smallTitle").on("click",function(){
+    $(".jumpWindow.news .smallTitle,.jumpWindow.rules .smallTitle").on("click",function(){
         $(this).closest(".infoBox")
+        .toggleClass("active");
+    })
+
+    $(".jumpWindow.rules .allBtn").on("click",function(){
+        $(".infoBox")
         .toggleClass("active");
     })
 })
@@ -986,6 +991,55 @@ $(function(){
         $('.jumpWindow')
         .removeClass('display');
         $('.filter,.recordWindow')
+        .addClass('display');
+    })
+
+    $(".rightSide.point .pointCheck").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.pointWindow')
+        .addClass('display');
+    })
+
+    $(".rightSide.point .partnerCheck").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.pointPartner')
+        .addClass('display');
+    })
+
+    $(".register .getCode").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.plsGo')
+        .addClass('display');
+    })
+
+    $(".register .ruleBtn").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.rules')
+        .addClass('display');
+    })
+
+    $(".rightSide.member .changePwdBtn").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.changePassword')
+        .addClass('display');
+    })
+
+    $(".rightSide.member .check_ic").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.plsGo')
+        .addClass('display');
+    })
+
+    $(".rightSide.member .nocheck_ic").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.changePhone')
         .addClass('display');
     })
 })

@@ -860,6 +860,16 @@ footer .qs {
   background-size: 100%;
 }
 
+.jumpWindow.changePassword .eye_ic {
+  background: url("../images/icon/svg/eye.svg") no-repeat center;
+  background-size: contain;
+}
+
+.jumpWindow.changePassword .eye_ic.active {
+  background: url("../images/icon/svg/eye_active.svg") no-repeat center;
+  background-size: contain;
+}
+
 .register .infoBox {
   background: url("../images/register_rightBG.png") no-repeat;
   background-size: contain;
@@ -2505,16 +2515,77 @@ html body .filter .jumpWindow.forgetPassword form p {
   font-weight: bold;
   line-height: 18px;
 }
-html body .filter .jumpWindow.news {
+html body .filter .jumpWindow.news, html body .filter .jumpWindow.rules {
   display: none;
   width: 840px;
-  max-height: 600px;
   padding-bottom: 60px;
 }
-html body .filter .jumpWindow.news.display {
+html body .filter .jumpWindow.news.display, html body .filter .jumpWindow.rules.display {
   display: block;
 }
-html body .filter .jumpWindow.news .box {
+html body .filter .jumpWindow.news.rules .allBtn, html body .filter .jumpWindow.rules.rules .allBtn {
+  width: 200px;
+  height: 35px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e0e0e0), color-stop(70%, #ffffff));
+  background: linear-gradient(to top, #e0e0e0 0%, #ffffff 70%);
+  border: solid 1px #b8151a;
+  border-radius: 30px;
+  color: #b8151a;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin: 20px auto 0;
+}
+html body .filter .jumpWindow.news.rules .allBtn:hover, html body .filter .jumpWindow.news.rules .allBtn:active, html body .filter .jumpWindow.news.rules .allBtn.active, html body .filter .jumpWindow.rules.rules .allBtn:hover, html body .filter .jumpWindow.rules.rules .allBtn:active, html body .filter .jumpWindow.rules.rules .allBtn.active {
+  background: #b8151a;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.news.rules .box .infoBox, html body .filter .jumpWindow.rules.rules .box .infoBox {
+  width: 100%;
+  padding: 0 24px;
+}
+html body .filter .jumpWindow.news.rules .box .infoBox ul .smallTitle, html body .filter .jumpWindow.rules.rules .box .infoBox ul .smallTitle {
+  padding: 0;
+}
+html body .filter .jumpWindow.news.rules .box .infoBox ul li:not(.smallTitle), html body .filter .jumpWindow.rules.rules .box .infoBox ul li:not(.smallTitle) {
+  height: auto;
+  padding: 8px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+html body .filter .jumpWindow.news.rules .box .infoBox ul li:not(.smallTitle) p, html body .filter .jumpWindow.rules.rules .box .infoBox ul li:not(.smallTitle) p {
+  font-size: 14px;
+  white-space: pre-wrap;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+html body .filter .jumpWindow.news.rules .box .infoBox ul li:not(.smallTitle) p:last-child, html body .filter .jumpWindow.rules.rules .box .infoBox ul li:not(.smallTitle) p:last-child {
+  margin: 0;
+}
+html body .filter .jumpWindow.news.rules .checkBtn, html body .filter .jumpWindow.rules.rules .checkBtn {
+  width: 216px;
+  height: 42px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: block;
+  margin: 24px auto 0;
+}
+html body .filter .jumpWindow.news.rules .checkBtn:hover, html body .filter .jumpWindow.news.rules .checkBtn:active, html body .filter .jumpWindow.news.rules .checkBtn.active, html body .filter .jumpWindow.rules.rules .checkBtn:hover, html body .filter .jumpWindow.rules.rules .checkBtn:active, html body .filter .jumpWindow.rules.rules .checkBtn.active {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
+}
+html body .filter .jumpWindow.news .box, html body .filter .jumpWindow.rules .box {
   width: 100%;
   height: auto;
   max-height: 380px;
@@ -2523,19 +2594,19 @@ html body .filter .jumpWindow.news .box {
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
 }
-html body .filter .jumpWindow.news .box::-webkit-scrollbar {
+html body .filter .jumpWindow.news .box::-webkit-scrollbar, html body .filter .jumpWindow.rules .box::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
-html body .filter .jumpWindow.news .box::-webkit-scrollbar-thumb {
+html body .filter .jumpWindow.news .box::-webkit-scrollbar-thumb, html body .filter .jumpWindow.rules .box::-webkit-scrollbar-thumb {
   background: #a98443;
   border-radius: 10px;
 }
-html body .filter .jumpWindow.news .box::-webkit-scrollbar-track {
+html body .filter .jumpWindow.news .box::-webkit-scrollbar-track, html body .filter .jumpWindow.rules .box::-webkit-scrollbar-track {
   background: #cfcfcf;
   border-radius: 10px;
 }
-html body .filter .jumpWindow.news .box .infoBox {
+html body .filter .jumpWindow.news .box .infoBox, html body .filter .jumpWindow.rules .box .infoBox {
   width: 90%;
   height: 46px;
   background: -webkit-gradient(linear, left bottom, left top, from(#eeeeee), to(#ffffff));
@@ -2546,29 +2617,29 @@ html body .filter .jumpWindow.news .box .infoBox {
   margin: 0 auto 10px;
   padding: 0 24px 0 36px;
 }
-html body .filter .jumpWindow.news .box .infoBox.active {
+html body .filter .jumpWindow.news .box .infoBox.active, html body .filter .jumpWindow.rules .box .infoBox.active {
   background: #ffffff;
   -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
           box-shadow: 0 2px 5px 0 #0000001d inset;
 }
-html body .filter .jumpWindow.news .box .infoBox:last-child {
+html body .filter .jumpWindow.news .box .infoBox:last-child, html body .filter .jumpWindow.rules .box .infoBox:last-child {
   margin-bottom: 0;
 }
-html body .filter .jumpWindow.news .box .infoBox.active {
+html body .filter .jumpWindow.news .box .infoBox.active, html body .filter .jumpWindow.rules .box .infoBox.active {
   height: auto;
 }
-html body .filter .jumpWindow.news .box .infoBox.active ul .smallTitle p {
+html body .filter .jumpWindow.news .box .infoBox.active ul .smallTitle p, html body .filter .jumpWindow.rules .box .infoBox.active ul .smallTitle p {
   color: #b8151a;
 }
-html body .filter .jumpWindow.news .box .infoBox.active ul .smallTitle .arrow_ic {
+html body .filter .jumpWindow.news .box .infoBox.active ul .smallTitle .arrow_ic, html body .filter .jumpWindow.rules .box .infoBox.active ul .smallTitle .arrow_ic {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
 }
-html body .filter .jumpWindow.news .box .infoBox ul {
+html body .filter .jumpWindow.news .box .infoBox ul, html body .filter .jumpWindow.rules .box .infoBox ul {
   width: 100%;
   height: auto;
 }
-html body .filter .jumpWindow.news .box .infoBox ul li {
+html body .filter .jumpWindow.news .box .infoBox ul li, html body .filter .jumpWindow.rules .box .infoBox ul li {
   width: 100%;
   height: 46px;
   border-bottom: solid 1px #b8151a;
@@ -2581,32 +2652,32 @@ html body .filter .jumpWindow.news .box .infoBox ul li {
   position: relative;
   padding-left: 12px;
 }
-html body .filter .jumpWindow.news .box .infoBox ul li:last-child {
+html body .filter .jumpWindow.news .box .infoBox ul li:last-child, html body .filter .jumpWindow.rules .box .infoBox ul li:last-child {
   border: none;
 }
-html body .filter .jumpWindow.news .box .infoBox ul li.smallTitle {
+html body .filter .jumpWindow.news .box .infoBox ul li.smallTitle, html body .filter .jumpWindow.rules .box .infoBox ul li.smallTitle {
   border-color: #b8151a;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   cursor: pointer;
 }
-html body .filter .jumpWindow.news .box .infoBox ul li.smallTitle .flower_ic {
+html body .filter .jumpWindow.news .box .infoBox ul li.smallTitle .flower_ic, html body .filter .jumpWindow.rules .box .infoBox ul li.smallTitle .flower_ic {
   width: 25px;
   height: 25px;
   position: absolute;
   left: -23px;
 }
-html body .filter .jumpWindow.news .box .infoBox ul li.smallTitle p {
+html body .filter .jumpWindow.news .box .infoBox ul li.smallTitle p, html body .filter .jumpWindow.rules .box .infoBox ul li.smallTitle p {
   color: #ba9141;
 }
-html body .filter .jumpWindow.news .box .infoBox ul li.smallTitle .arrow_ic {
+html body .filter .jumpWindow.news .box .infoBox ul li.smallTitle .arrow_ic, html body .filter .jumpWindow.rules .box .infoBox ul li.smallTitle .arrow_ic {
   width: 18px;
   height: 9px;
   -webkit-transform: scaleY(-1);
           transform: scaleY(-1);
 }
-html body .filter .jumpWindow.news .box .infoBox ul li p {
+html body .filter .jumpWindow.news .box .infoBox ul li p, html body .filter .jumpWindow.rules .box .infoBox ul li p {
   width: 100%;
   color: #3a3a3a;
   font-size: 18px;
@@ -3076,17 +3147,23 @@ html body .filter .jumpWindow.eventWindow .content button:hover, html body .filt
   background: -webkit-gradient(linear, left top, left bottom, from(#970707), color-stop(98%, #cf0505));
   background: linear-gradient(to bottom, #970707 0%, #cf0505 98%);
 }
-html body .filter .jumpWindow.waterRecord, html body .filter .jumpWindow.recordWindow {
+html body .filter .jumpWindow.waterRecord, html body .filter .jumpWindow.recordWindow, html body .filter .jumpWindow.pointWindow, html body .filter .jumpWindow.pointPartner {
   width: 950px;
   display: none;
 }
-html body .filter .jumpWindow.waterRecord.display, html body .filter .jumpWindow.recordWindow.display {
+html body .filter .jumpWindow.waterRecord.display, html body .filter .jumpWindow.recordWindow.display, html body .filter .jumpWindow.pointWindow.display, html body .filter .jumpWindow.pointPartner.display {
   display: block;
 }
-html body .filter .jumpWindow.waterRecord.recordWindow table tr td, html body .filter .jumpWindow.recordWindow.recordWindow table tr td {
+html body .filter .jumpWindow.waterRecord.recordWindow table tr td, html body .filter .jumpWindow.recordWindow.recordWindow table tr td, html body .filter .jumpWindow.pointWindow.recordWindow table tr td, html body .filter .jumpWindow.pointPartner.recordWindow table tr td {
   width: 25%;
 }
-html body .filter .jumpWindow.waterRecord table, html body .filter .jumpWindow.recordWindow table {
+html body .filter .jumpWindow.waterRecord.pointPartner, html body .filter .jumpWindow.recordWindow.pointPartner, html body .filter .jumpWindow.pointWindow.pointPartner, html body .filter .jumpWindow.pointPartner.pointPartner {
+  width: 450px;
+}
+html body .filter .jumpWindow.waterRecord.pointPartner table tr td, html body .filter .jumpWindow.recordWindow.pointPartner table tr td, html body .filter .jumpWindow.pointWindow.pointPartner table tr td, html body .filter .jumpWindow.pointPartner.pointPartner table tr td {
+  width: 50%;
+}
+html body .filter .jumpWindow.waterRecord table, html body .filter .jumpWindow.recordWindow table, html body .filter .jumpWindow.pointWindow table, html body .filter .jumpWindow.pointPartner table {
   width: 100%;
   height: auto;
   background: #f1f1f1;
@@ -3096,23 +3173,23 @@ html body .filter .jumpWindow.waterRecord table, html body .filter .jumpWindow.r
   overflow: hidden;
   margin: 24px 0;
 }
-html body .filter .jumpWindow.waterRecord table tr:last-child td p, html body .filter .jumpWindow.recordWindow table tr:last-child td p {
+html body .filter .jumpWindow.waterRecord table tr:last-child td p, html body .filter .jumpWindow.recordWindow table tr:last-child td p, html body .filter .jumpWindow.pointWindow table tr:last-child td p, html body .filter .jumpWindow.pointPartner table tr:last-child td p {
   border: none;
 }
-html body .filter .jumpWindow.waterRecord table tr th, html body .filter .jumpWindow.recordWindow table tr th {
+html body .filter .jumpWindow.waterRecord table tr th, html body .filter .jumpWindow.recordWindow table tr th, html body .filter .jumpWindow.pointWindow table tr th, html body .filter .jumpWindow.pointPartner table tr th {
   height: 35px;
   vertical-align: middle;
   background: -webkit-gradient(linear, left bottom, left top, from(#eeeeee), to(#ffffff));
   background: linear-gradient(to top, #eeeeee 0%, #ffffff 100%);
   border-bottom: solid 1px #b8151a;
 }
-html body .filter .jumpWindow.waterRecord table tr th:first-child, html body .filter .jumpWindow.recordWindow table tr th:first-child {
+html body .filter .jumpWindow.waterRecord table tr th:first-child, html body .filter .jumpWindow.recordWindow table tr th:first-child, html body .filter .jumpWindow.pointWindow table tr th:first-child, html body .filter .jumpWindow.pointPartner table tr th:first-child {
   padding-left: 16px;
 }
-html body .filter .jumpWindow.waterRecord table tr th:last-child, html body .filter .jumpWindow.recordWindow table tr th:last-child {
+html body .filter .jumpWindow.waterRecord table tr th:last-child, html body .filter .jumpWindow.recordWindow table tr th:last-child, html body .filter .jumpWindow.pointWindow table tr th:last-child, html body .filter .jumpWindow.pointPartner table tr th:last-child {
   padding-right: 16px;
 }
-html body .filter .jumpWindow.waterRecord table tr th p, html body .filter .jumpWindow.recordWindow table tr th p {
+html body .filter .jumpWindow.waterRecord table tr th p, html body .filter .jumpWindow.recordWindow table tr th p, html body .filter .jumpWindow.pointWindow table tr th p, html body .filter .jumpWindow.pointPartner table tr th p {
   width: 100%;
   color: #b8151a;
   font-size: 16px;
@@ -3122,18 +3199,18 @@ html body .filter .jumpWindow.waterRecord table tr th p, html body .filter .jump
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-html body .filter .jumpWindow.waterRecord table tr td, html body .filter .jumpWindow.recordWindow table tr td {
+html body .filter .jumpWindow.waterRecord table tr td, html body .filter .jumpWindow.recordWindow table tr td, html body .filter .jumpWindow.pointWindow table tr td, html body .filter .jumpWindow.pointPartner table tr td {
   width: 34%;
   height: 40px;
   vertical-align: middle;
 }
-html body .filter .jumpWindow.waterRecord table tr td:first-child, html body .filter .jumpWindow.recordWindow table tr td:first-child {
+html body .filter .jumpWindow.waterRecord table tr td:first-child, html body .filter .jumpWindow.recordWindow table tr td:first-child, html body .filter .jumpWindow.pointWindow table tr td:first-child, html body .filter .jumpWindow.pointPartner table tr td:first-child {
   padding-left: 16px;
 }
-html body .filter .jumpWindow.waterRecord table tr td:last-child, html body .filter .jumpWindow.recordWindow table tr td:last-child {
+html body .filter .jumpWindow.waterRecord table tr td:last-child, html body .filter .jumpWindow.recordWindow table tr td:last-child, html body .filter .jumpWindow.pointWindow table tr td:last-child, html body .filter .jumpWindow.pointPartner table tr td:last-child {
   padding-right: 16px;
 }
-html body .filter .jumpWindow.waterRecord table tr td p, html body .filter .jumpWindow.recordWindow table tr td p {
+html body .filter .jumpWindow.waterRecord table tr td p, html body .filter .jumpWindow.recordWindow table tr td p, html body .filter .jumpWindow.pointWindow table tr td p, html body .filter .jumpWindow.pointPartner table tr td p {
   width: 100%;
   height: 100%;
   color: #ba9141;
@@ -3152,6 +3229,266 @@ html body .filter .jumpWindow.waterRecord table tr td p, html body .filter .jump
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+html body .filter .jumpWindow.waterRecord .pageBox, html body .filter .jumpWindow.recordWindow .pageBox, html body .filter .jumpWindow.pointWindow .pageBox, html body .filter .jumpWindow.pointPartner .pageBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .jumpWindow.waterRecord .pageBox .line, html body .filter .jumpWindow.recordWindow .pageBox .line, html body .filter .jumpWindow.pointWindow .pageBox .line, html body .filter .jumpWindow.pointPartner .pageBox .line {
+  width: 100%;
+  height: 1px;
+  background: #d0d0d0;
+}
+html body .filter .jumpWindow.waterRecord .pageBox .page, html body .filter .jumpWindow.recordWindow .pageBox .page, html body .filter .jumpWindow.pointWindow .pageBox .page, html body .filter .jumpWindow.pointPartner .pageBox .page {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 10px;
+}
+html body .filter .jumpWindow.waterRecord .pageBox .page i, html body .filter .jumpWindow.recordWindow .pageBox .page i, html body .filter .jumpWindow.pointWindow .pageBox .page i, html body .filter .jumpWindow.pointPartner .pageBox .page i {
+  width: 16px;
+  height: 9px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  cursor: pointer;
+}
+html body .filter .jumpWindow.waterRecord .pageBox .page i.prev, html body .filter .jumpWindow.recordWindow .pageBox .page i.prev, html body .filter .jumpWindow.pointWindow .pageBox .page i.prev, html body .filter .jumpWindow.pointPartner .pageBox .page i.prev {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-filter: grayscale(1) brightness(4);
+          filter: grayscale(1) brightness(4);
+}
+html body .filter .jumpWindow.waterRecord .pageBox .page ul, html body .filter .jumpWindow.recordWindow .pageBox .page ul, html body .filter .jumpWindow.pointWindow .pageBox .page ul, html body .filter .jumpWindow.pointPartner .pageBox .page ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow.waterRecord .pageBox .page ul li, html body .filter .jumpWindow.recordWindow .pageBox .page ul li, html body .filter .jumpWindow.pointWindow .pageBox .page ul li, html body .filter .jumpWindow.pointPartner .pageBox .page ul li {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  color: #999999;
+  font-size: 12px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 3px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 1px 1px 2px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow.waterRecord .pageBox .page ul li:hover, html body .filter .jumpWindow.waterRecord .pageBox .page ul li:active, html body .filter .jumpWindow.waterRecord .pageBox .page ul li.active, html body .filter .jumpWindow.recordWindow .pageBox .page ul li:hover, html body .filter .jumpWindow.recordWindow .pageBox .page ul li:active, html body .filter .jumpWindow.recordWindow .pageBox .page ul li.active, html body .filter .jumpWindow.pointWindow .pageBox .page ul li:hover, html body .filter .jumpWindow.pointWindow .pageBox .page ul li:active, html body .filter .jumpWindow.pointWindow .pageBox .page ul li.active, html body .filter .jumpWindow.pointPartner .pageBox .page ul li:hover, html body .filter .jumpWindow.pointPartner .pageBox .page ul li:active, html body .filter .jumpWindow.pointPartner .pageBox .page ul li.active {
+  background: #b8151a;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.waterRecord .pageWord, html body .filter .jumpWindow.recordWindow .pageWord, html body .filter .jumpWindow.pointWindow .pageWord, html body .filter .jumpWindow.pointPartner .pageWord {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 5px 0 24px;
+}
+html body .filter .jumpWindow.waterRecord .pageWord p, html body .filter .jumpWindow.recordWindow .pageWord p, html body .filter .jumpWindow.pointWindow .pageWord p, html body .filter .jumpWindow.pointPartner .pageWord p {
+  color: #999999;
+  font-size: 12px;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.changePhone {
+  width: 412px;
+  display: none;
+}
+html body .filter .jumpWindow.changePhone.display {
+  display: block;
+}
+html body .filter .jumpWindow.changePhone .content {
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.changePhone .content .oriPhone {
+  color: #ba9141;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+html body .filter .jumpWindow.changePhone .content .inputBox {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+html body .filter .jumpWindow.changePhone .content .inputBox input {
+  width: 100%;
+  height: 42px;
+  background: #ffffff;
+  border: solid 1px #daaf6d;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
+  color: #3a3a3a;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 16px;
+}
+html body .filter .jumpWindow.changePhone .content .inputBox input::-webkit-input-placeholder {
+  color: #b08a48;
+}
+html body .filter .jumpWindow.changePhone .content .inputBox input::-moz-placeholder {
+  color: #b08a48;
+}
+html body .filter .jumpWindow.changePhone .content .inputBox input:-ms-input-placeholder {
+  color: #b08a48;
+}
+html body .filter .jumpWindow.changePhone .content .inputBox input::-ms-input-placeholder {
+  color: #b08a48;
+}
+html body .filter .jumpWindow.changePhone .content .inputBox input::placeholder {
+  color: #b08a48;
+}
+html body .filter .jumpWindow.changePhone .content .getCode {
+  width: 300px;
+  height: 35px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e0e0e0), color-stop(70%, #ffffff));
+  background: linear-gradient(to top, #e0e0e0 0%, #ffffff 70%);
+  border: solid 1px #b8151a;
+  border-radius: 30px;
+  color: #b8151a;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin: 20px auto 30px;
+}
+html body .filter .jumpWindow.changePhone .content .getCode:hover, html body .filter .jumpWindow.changePhone .content .getCode:active, html body .filter .jumpWindow.changePhone .content .getCode.active {
+  background: #b8151a;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.changePhone .content .btnBox {
+  width: 300px;
+  height: auto;
+  margin: 30px auto;
+}
+html body .filter .jumpWindow.changePhone .content .btnBox button {
+  width: 100%;
+  height: 42px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+html body .filter .jumpWindow.changePhone .content .btnBox button:hover, html body .filter .jumpWindow.changePhone .content .btnBox button:active, html body .filter .jumpWindow.changePhone .content .btnBox button.active {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
+}
+html body .filter .jumpWindow.changePhone .content .remind {
+  color: #292CFF;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+html body .filter .jumpWindow.changePassword {
+  width: 412px;
+  display: none;
+}
+html body .filter .jumpWindow.changePassword.display {
+  display: block;
+}
+html body .filter .jumpWindow.changePassword .content {
+  width: 100%;
+  height: auto;
+  padding: 24px 0;
+}
+html body .filter .jumpWindow.changePassword .content .inputBox {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+  position: relative;
+}
+html body .filter .jumpWindow.changePassword .content .inputBox input {
+  width: 100%;
+  height: 42px;
+  background: #ffffff;
+  border: solid 1px #daaf6d;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
+  color: #3a3a3a;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 16px;
+}
+html body .filter .jumpWindow.changePassword .content .inputBox input::-webkit-input-placeholder {
+  color: #b08a48;
+}
+html body .filter .jumpWindow.changePassword .content .inputBox input::-moz-placeholder {
+  color: #b08a48;
+}
+html body .filter .jumpWindow.changePassword .content .inputBox input:-ms-input-placeholder {
+  color: #b08a48;
+}
+html body .filter .jumpWindow.changePassword .content .inputBox input::-ms-input-placeholder {
+  color: #b08a48;
+}
+html body .filter .jumpWindow.changePassword .content .inputBox input::placeholder {
+  color: #b08a48;
+}
+html body .filter .jumpWindow.changePassword .content .inputBox .remind {
+  color: #292CFF;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+html body .filter .jumpWindow.changePassword .content .inputBox i {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow.changePassword button {
+  width: 300px;
+  height: 42px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: block;
+  margin: 40px auto 24px;
+}
+html body .filter .jumpWindow.changePassword button:hover, html body .filter .jumpWindow.changePassword button:active, html body .filter .jumpWindow.changePassword button.active {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
 }
 html body .filter .jumpWindow .title {
   width: 100%;

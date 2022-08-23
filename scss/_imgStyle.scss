@@ -687,6 +687,14 @@ footer .qs {
     background: url('../images/icon/svg/loading_b.svg') no-repeat;
     background-size: 100%;
 }
+.jumpWindow.changePassword .eye_ic {
+    background: url('../images/icon/svg/eye.svg') no-repeat center;
+    background-size: contain;
+}
+.jumpWindow.changePassword .eye_ic.active {
+    background: url('../images/icon/svg/eye_active.svg') no-repeat center;
+    background-size: contain;
+}
 
 //regitster
 .register .infoBox {

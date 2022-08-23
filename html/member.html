@@ -535,7 +535,7 @@
                                 <p class="smallTitle">パスワード</p>
                                 <label class="inputBox">
                                     <input type="text" value="*****" disabled>
-                                    <i class="edit_ic"></i>
+                                    <i class="edit_ic changePwdBtn"></i>
                                 </label>
                             </div>
                         </div>
@@ -778,7 +778,7 @@
         </div>
         <div class="base"></div>
     </footer>
-    <div class="filter">
+    <div class="filter display">
         <!--最新公告-->
         <div class="jumpWindow news">
             <div class="title">
@@ -841,6 +841,64 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <!--修改手機-->
+        <div class="jumpWindow changePhone">
+            <div class="title">
+                <p>携帯電話番号を連携してください</p>
+                <i class="close_ic"></i>
+            </div>
+            <div class="content">
+                <p class="oriPhone">元の番号 : 08001211211</p>
+                <label class="inputBox">
+                    <input type="text" placeholder="新しい電話番号を入力してください">
+                    <p class="remind">電話番号は10桁である必要があります</p>
+                </label>
+                <button class="getCode">認証コードを取得する</button>
+                <label class="inputBox">
+                    <input type="text" placeholder="認証コード">
+                </label>
+                <div class="btnBox">
+                    <button class="close">確認</button>
+                    <p class="remind">認証コードを送信した後、すぐにライブチャットに 連絡してください</p>
+                </div>
+            </div>
+        </div>
+        <!--修改密碼-->
+        <div class="jumpWindow changePassword display">
+            <div class="title">
+                <p>バスワード変更</p>
+                <i class="close_ic"></i>
+            </div>
+            <div class="content">
+                <label class="inputBox">
+                    <input type="text" placeholder="旧パスワード">
+                    <p class="remind">パスワードが必要です</p>
+                    <i class="eye_ic"></i>
+                </label>
+                <label class="inputBox">
+                    <input type="text" placeholder="新しいパスワード">
+                    <p class="remind">英語の数字と限定された特殊記号（@._$#%^&*+-）を使用できます</p>
+                    <i class="eye_ic"></i>
+                </label>
+                <label class="inputBox">
+                    <input type="text" placeholder="新しいパスワード" value="12aacWWW2@11"></input>
+                    <p class="remind">2回入力するパスワードは同じである必要があります</p>
+                    <i class="eye_ic active"></i>
+                </label>
+                <button class="close">確認</button>
+            </div>
+        </div>
+        <!--單純轉跳彈窗-->
+        <div class="jumpWindow plsGo">
+            <div class="title">
+                <p>ヒント</p>
+                <i class="close_ic"></i>
+            </div>
+            <div class="content">
+                <p>電話番号は10桁である必要があります</p>
+            </div>
+            <button class="close">確認</button>
         </div>
     </div>
     <div class="bg inner"></div>
