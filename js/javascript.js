@@ -1042,4 +1042,11 @@ $(function(){
         $('.filter,.changePhone')
         .addClass('display');
     })
+
+    $(".help .rightSide .sendBtn").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.plsGo')
+        .addClass('display');
+    })
 })

@@ -297,11 +297,11 @@
                             </div>
                         </div>
                         <ul class="btnBox">
-                            <li class="new">
+                            <li class="new active">
                                 初心者ガイド
                                 <i class="new_ic"></i>
                             </li>
-                            <div class="innerBox new">
+                            <div class="innerBox new display">
                                 <button class="active">KYC（本人確認及び身分証明書の提示)</button>
                             </div>
                             <li class="often">
@@ -316,14 +316,14 @@
                                 <button>∞4世代ポーナス</button>
                                 <button>お問い合わせ</button>
                             </div>
-                            <li class="about active">
+                            <li class="about">
                                 当社について
                                 <i class="about_ic"></i>
                             </li>
-                            <div class="innerBox about display">
-                                <button>当社について</button>
+                            <div class="innerBox about">
+                                <button class="active">当社について</button>
                                 <button>プライバシーポリシー</button>
-                                <button class="active">利用規約</button>
+                                <button>利用規約</button>
                                 <button>責任あるゲーミング</button>
                                 <button>プロモーション</button>
                                 <button>証明書の表示</button>
@@ -331,35 +331,87 @@
                         </ul>
                     </div>
                     <!--rightSide-->
-                    <div class="rightSide new">
+                    <div class="rightSide new display">
                         <div class="helpInfo q1 display">
                             <div class="textBox">
-                                <h2>【出金時必要書類(KYC)】</h2>
-                                <p>1.身分証明書(カラー写真付き)</p>
-                                <p>2.現住所確認用書類(公共料金などの請求書)</p>
-                                <h2>本人確認書類</h2>
-                                <div class="imgBox"></div>
-                                <h2>本人確認書類として認められているのは、以下の5つの書類です。</h2>
-                                <p>1.運転免許証（両面）</p>
-                                <p>2.住民基本台帳カード（両面）</p>
-                                <p>3.パスポート（表面に写真ページ、裏面に住所記入ページ）</p>
-                                <p>4.外国人登録証 (ARC)</p>
-                                <p>5.マイナンバーカード（両面）※裏面のマイナンバーは付箋などで隠し可能</p>
-                                <h2>必要な情報は、</h2>
-                                <p>1.写真</p>
-                                <p>2.お名前</p>
-                                <p>3.住所</p>
-                                <p>4.発行日</p>
-                                <p>5.有効期限</p>
-                                <p>6.生年月日</p>
-                                <p>7.バーコード（パスポートの場合）</p>
-                                <h2>本人確認書類は、</h2>
-                                <p>1.身分証明書と現住所確認用書類の住所は一致している必要があります</p>
-                                <p>2.四隅が入るようにすること</p>
-                                <p>3.手ブレや光の反射を防いで、文字がハッキリ見えるようにすること</p>
-                                <p>4.有効期限内のもの</p>
-                                <p>上記4点に注意しながら、書類の表面／裏面ともに手書きで「au8認証用」と書いた紙と一緒に撮影してください。</p>
-                                <p>画像加工ソフトなどで編集はしないでください。</p>
+                                <h2>本人確認書類のアップロード</h2>
+                                <p>本人確認書類</p>
+                                <p>
+                                    <span class="remind">● 必要な書類 ● 本人確認書類と運転免許証はいずれかをご提出くださいませ。</span>
+                                </p>
+                                <p>運転免許証、パスポート・住民基本台帳カード・外国人登録証(ARC)・マイナンバーカードがご利用いただけます。</p>
+                                <h2>アップロードの際は以下の点にご注意下さい:</h2>
+                                <p>1. 書類が鮮明に写っていること</p>
+                                <p>2. 四隅まで写っていること</p>
+                                <p>3. 提出時点で有効期限内であること</p>
+                                <p>4. 手書きで「AU8認証用」と書いた紙を一緒に確認書類と撮影することIDは運転免許証以外の写真付きの身分証明書のこと</p>
+                                <p>
+                                    <span class="remind">KYCは順番に審査させていただいておりますので、審査が完了されましたら、インボックスにてメッセージを送らせていただきます。</span>
+                                </p>
+                                <p>
+                                    <span class="remind">また、KYCが認証されてなくても、ゲームをご利用いただけますので、ご安心ください。</span>
+                                </p>
+                                <div class="img KYCImg_1"></div>
+                                <div class="uploadBox">
+                                    <div class="box">
+                                        <p class="smallTitle">表面</p>
+                                        <div class="innerBox">
+                                            <i class="upload_ic"></i>
+                                            <p>ここにファイルをドロップ</p>
+                                            <p>または</p>
+                                            <button>ファイルを選択</button>
+                                            <p class="remind">2MB以下のpng.jpeg形式のファイルが利用できます</p>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <p class="smallTitle">裏面</p>
+                                        <div class="innerBox">
+                                            <i class="upload_ic"></i>
+                                            <p>ここにファイルをドロップ</p>
+                                            <p>または</p>
+                                            <button>ファイルを選択</button>
+                                            <p class="remind">2MB以下のpng.jpeg形式のファイルが利用できます</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btnBox">
+                                    <button class="sendBtn">送信</button>
+                                    <button>キャンセル</button>
+                                </div>
+                                <hr>
+                                <h2>住所確認書類</h2>
+                                <p>
+                                    <span class="remind">● 必要な書類 ●</span>
+                                </p>
+                                <p>住所確認書類は、ご本人名義かつ現住所の公的書類・公共料金・携帯料金の支払書類・クレジットカードの利用明細書・政府発行の市・区役所からの郵便物がご利用いただけます</p>
+                                <h2>アップロードの際は以下の点にご注意下さい</h2>
+                                <p>1. 書類が鮮明に写っていること（紙の文書に限ります）</p>
+                                <p>2. 四隅まで写っていること</p>
+                                <p>3. 利用できる書類は発行日より3ヶ月以内のものに限ります</p>
+                                <p>4. 写真がぶれて文字が読み取れない場合は、お撮り直し頂く可能性がございます</p>
+                                <p>5. 手書きで「AU8認証用」と書いた紙を一緒に確認書類と撮影すること</p>
+                                <p>
+                                    <span class="remind">KYCは順番に審査させていただいておりますので、審査が完了されましたら、インボックスにてメッセージを送らせていただきます。</span>
+                                </p>
+                                <p>
+                                    <span class="remind">また、KYCが認証されてなくても、ゲームをご利用いただけますので、ご安心ください。</span>
+                                </p>
+                                <div class="img KYCImg_2"></div>
+                                <div class="uploadBox">
+                                    <div class="box full">
+                                        <div class="innerBox">
+                                            <i class="upload_ic"></i>
+                                            <p>ここにファイルをドロップ</p>
+                                            <p>または</p>
+                                            <button>ファイルを選択</button>
+                                            <p class="remind">2MB以下のpng.jpeg形式のファイルが利用できます</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btnBox">
+                                    <button class="sendBtn">送信</button>
+                                    <button>キャンセル</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -491,7 +543,7 @@
                                 <p>会員アフィリエイトは、2世代目の会員によって生成されたボーナスを引き出すことができます（会員の有効なベット数Xボーナス％）+最大で2世代目~4世代目の会員生成された最大0.2%のボーナスを引き出すことができます。ボーナスポイント無制限。</p>
                                 <p>例： 写真をご覧ください</p>
                                 <p>AU8は、本ボーナスを予告なしに終了する権利及び本ボーナスに対するすべての最終決定権を有します。</p>
-                                <div class="imgBox"></div>
+                                <div class="img inviteImg"></div>
                             </div>
                         </div>
                         <div class="helpInfo q6">
@@ -506,9 +558,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="rightSide about display">
+                    <div class="rightSide about">
                         <!--helpInfo-->
-                        <div class="helpInfo q1">
+                        <div class="helpInfo q1 display">
                             <div class="title">
                                 <i class="firstIcon about_ic"></i>
                                 <p>当社について - 当社について</p>
@@ -563,7 +615,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="helpInfo q3 display">
+                        <div class="helpInfo q3">
                             <div class="title">
                                 <i class="firstIcon about_ic"></i>
                                 <p>当社について - 利用規約</p>
@@ -1293,6 +1345,17 @@
         <div class="base"></div>
     </footer>
     <div class="filter">
+        <!--單純轉跳彈窗-->
+        <div class="jumpWindow plsGo">
+            <div class="title">
+                <p>ヒント</p>
+                <i class="close_ic"></i>
+            </div>
+            <div class="content">
+                <p>申し込み完了。KYC審査中です。</p>
+            </div>
+            <button class="close">確認</button>
+        </div>
         <!--最新公告-->
         <div class="jumpWindow news">
             <div class="title">

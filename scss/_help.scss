@@ -367,6 +367,96 @@
                             &:last-child {
                                 margin: 0;
                             }
+
+                            .remind {
+                                color: $remind;
+                            }
+                        }
+
+                        .uploadBox {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 60px 0;
+        
+                            .box {
+                                display: block;
+                                width: 48%;
+                                height: auto;
+        
+                                &.full {
+                                    width: 100%;
+        
+                                    .innerBox {
+                                        padding: 60px 0;
+                                    }
+                                }
+        
+                                .smallTitle {
+                                    color: $mainFont_3;
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                    margin-bottom: 10px;
+                                }
+        
+                                .innerBox {
+                                    width: 100%;
+                                    height: auto;
+                                    border-radius: 5px;
+                                    border: dashed 3px $helpMoreList_Border;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding: 30px 0;
+        
+                                    i {
+                                        width: 52px;
+                                        height: 49px;
+                                        margin-bottom: 10px;
+                                    }
+        
+                                    button {
+                                        width: 257px;
+                                        height: 42px;
+                                        @include secondBtn;
+                                        margin-bottom: 10px;
+                                    }
+        
+                                    .remind {
+                                        color: $remind;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+        
+                        .btnBox {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin-bottom: 60px;
+        
+                            &.noMar {
+                                margin: 0;
+                            }
+        
+                            button {
+                                width: 257px;
+                                height: 42px;
+
+                                &.sendBtn {
+                                    @include mainBtn;
+                                }
+        
+                                &:last-child {
+                                    @include lightBtn_2;
+                                    margin-top: 20px;
+                                }
+                            }
                         }
                     }
 
@@ -380,6 +470,21 @@
                             width: 982px;
                             height: 1383px;
                             margin: 0 auto;
+                        }
+                    }
+
+                    .img {
+                        width: 100%;
+                        height: 400px;
+
+                        &.inviteImg {
+                            height: 466px;
+                        }
+                        &.KYCImg_1 {
+                            height: 512px;
+                        }
+                        &.KYCImg_2 {
+                            height: 743px;
                         }
                     }
                 }
