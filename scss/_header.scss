@@ -19,7 +19,7 @@ header {
 
         //logo
         .logo {
-            color: $mainFont_1;
+            color: $header_mainColor;
             font-size: 50px;
             font-weight: bold;
             cursor: pointer;
@@ -118,7 +118,7 @@ header {
                         height: 5px;
                         border-style: solid;
                         border-width: 0 3px 3px 0;
-                        border-color: $header_langBtn;
+                        border-color: $header_langBorder;
                         transform: translateY(-50%) rotate(45deg);
                         right: 18px;
                     }
@@ -152,13 +152,13 @@ header {
                         width: auto;
                         height: auto;
                         background: none;
-                        color: $mainFont_1;
+                        color: $header_mainColor;
                         font-size: 16px;
                         font-weight: bold;
                         transition: all 0.3s;
 
                         &:hover,&:active,&.active {
-                            color: $header_Hover;
+                            color: $header_mainColor_Active;
                         }
 
                         .remind {
@@ -193,7 +193,12 @@ header {
                             width: 290px;
                             height: auto;
                             max-height: 516px;
+                            position: absolute;
+                            left: 0;
+                            top: 60px;
+                            z-index: 20;
                             @include headerMoneyList;
+                            display: none;
 
                             &.display {
                                 display: block;
@@ -253,37 +258,6 @@ header {
 
                     &.lang {
                         margin: 0;
-                    }
-                }
-            }
-        }
-
-        //退傭代理註冊頁面NAV
-        .agentNav {
-            display: flex;
-            margin-left: -389px;
-
-            li {
-                width: 185px;
-                height: 40px;
-                color: $mainFont_1;
-                font-size: 20px;
-                font-weight: bold;
-                line-height: 40px;
-                text-align: center;
-                position: relative;
-
-                &:hover,&:active,&.active {
-                    color: $choose_Border;
-
-                    &::after {
-                        content: "";
-                        width: 100%;
-                        height: 4px;
-                        background:  $choose_Border;
-                        position: absolute;
-                        bottom: -6px;
-                        left: 0;
                     }
                 }
             }
@@ -372,11 +346,11 @@ header {
 
                         &::before,
                         &::after {
-                            filter: grayscale(1) brightness(4.5);
+                            filter: grayscale(1) brightness(4.2);
                         }
 
                         div {
-                            filter: grayscale(1) brightness(4.5);
+                            filter: grayscale(1) brightness(4.2);
                         }
                         
                         p {

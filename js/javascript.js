@@ -8,6 +8,55 @@ $(document).on('ready', function() {
 		autoplaySpeed: 3500,
 		arrows: false,
 	})
+
+    $('.multiple-items').slick({
+        dots: true,
+        arrows: true,
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    })
+})
+
+//goTop
+$(function(){
+	$(window).scroll(function () {
+        var scrollVal = $(this).scrollTop();
+        if(scrollVal > 0){
+            $(".goTop")
+            .addClass("display")
+        } else{
+            $(".goTop")
+            .removeClass("display");
+        };
+	})
+
+    $(".goTop").click(function(){
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //各瀏覽器相容性
+        $body.delay('0').animate({
+            scrollTop: 0
+        },500)
+    })
 })
 
 //mainWrap遊戲列滑動
@@ -520,6 +569,277 @@ $(function(){
     })
 })
 
+//moneyList切換
+$(function(){
+    $(".openBtn").on("click",function(){
+        $(".moneyList,.openBtn")
+        .toggleClass("active");
+
+        var n = $(".moneyList li").length;
+        var total = Math.ceil(n / 3);
+
+        $(".moneyList")
+        .css("height","245px");
+
+        $(".moneyList.active")
+        .css("height",""+ (total * 85) +"");
+    })
+})
+
+//交易紀錄切換
+$(function(){
+    $(".dealRecord .topList li").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active")
+
+        var n = $(this).index();
+
+        $(".dealRecord .applyBox:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+})
+
+//紅利會員切換
+$(function(){
+    $(".rightSide.point .topList li").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active")
+
+        var n = $(this).index();
+
+        $(".point .applyBox:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+})
+
+//投注記錄開啟
+$(function(){
+    $(".betRecord .fakeTable .openBtn").on("click",function(){
+        $(this).closest(".row")
+        .toggleClass("active");
+    })
+})
+
+//優惠申請切換
+$(function(){
+    $(".eventApply .topList li").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active")
+
+        var n = $(this).index();
+
+        $(".eventApply .bigBox:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+})
+
+//個人資料切換
+$(function(){
+    $(".member .topList li").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active")
+
+        var n = $(this).index();
+
+        $(".member .applyBox:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+})
+
+//站內信切換
+$(function(){
+    $(".mailBox .editBtn").on("click",function(){
+        $(".mailBox .btnBox,.mailBox .mail li")
+        .addClass("editing");
+
+        $(".mailBox .btnBox .editBox")
+        .addClass("display")
+        .siblings("div").removeClass("display");
+
+        $(".mailBox .btnBox .inputBox")
+        .addClass("display");
+    })
+
+    $(".mailBox .editBox .check").on("click",function(){
+        $(".mailBox .btnBox,.mailBox .mail li")
+        .removeClass("editing");
+
+        $(".mailBox .btnBox .normal")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+
+    $(".mailBox .mail div").on("click",function(){
+        $(".mailBox .mailCnt")
+        .addClass("display");
+
+        $(".mailBox .mail,.mailBox .pageCnt")
+        .removeClass("display");
+
+        $(".mailBox .btnBox .backBox")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+
+    $(".mailBox .btnBox .backBox .backBtn").on("click",function(){
+        $(".mailBox .mailCnt")
+        .removeClass("display");
+
+        $(".mailBox .mail.choose,.mailBox .pageCnt")
+        .addClass("display");
+
+        $(".mailBox .btnBox .normal")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+
+    $(".mailBox .post div").on("click",function(){
+        $(".mailBox .postCnt,.mailBox .btnBox")
+        .addClass("display");
+
+        $(".mailBox .post,.mailBox .pageCnt")
+        .removeClass("display");
+
+        $(".mailBox .btnBox .postBackBox")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+
+    $(".mailBox .btnBox .postBackBox .backBtn").on("click",function(){
+        $(".mailBox .postCnt,.mailBox .btnBox")
+        .removeClass("display");
+
+        $(".mailBox .post.choose,.mailBox .pageCnt")
+        .addClass("display");
+
+        $(".mailBox .btnBox .normal")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+
+    $(".rightSide.mail .bigBtnBox button").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active")
+
+        $(".mailBox .mailCnt,.mailBox .postCnt")
+        .removeClass("display");
+
+        $(".mailBox .pageCnt")
+        .addClass("display");
+
+        if($(this).index() == 0)
+        {
+            $(".mailBox .mail.choose,.mailBox .topList:eq(0)")
+            .addClass("display")
+            .siblings("ul").removeClass("display");
+
+            $(".mailBox .btnBox")
+            .addClass("display");
+
+            $(".mailBox .btnBox .normal")
+            .addClass("display")
+            .siblings().removeClass("display");
+
+            $(".mailBox .btnBox,.mailBox .mail li")
+            .removeClass("editing");
+        }
+        else
+        {
+            $(".mailBox .post.choose,.mailBox .topList:eq(1)")
+            .addClass("display")
+            .siblings("ul").removeClass("display");
+
+            $(".mailBox .btnBox")
+            .removeClass("display");
+        }
+    })
+
+    $(".mailBox .topList li").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active")
+
+        var n = $(this).index();
+
+        if($(".mailBox .mail").hasClass("display"))
+        {
+            $(".mailBox .mail:eq("+ n +")")
+            .addClass("choose display")
+            .siblings(".mail").removeClass("choose display");
+        }
+        else if($(".mailBox .post").hasClass("display"))
+        {
+            $(".mailBox .post:eq("+ n +")")
+            .addClass("choose display")
+            .siblings(".post").removeClass("choose display");
+        }
+        else if($(".mailBox .mailCnt").hasClass("display"))
+        {
+            $(".mailBox .mail:eq("+ n +")")
+            .addClass("choose display")
+            .siblings(".mail").removeClass("choose display");
+
+            $(".mailBox .mailCnt")
+            .removeClass("display");
+
+            $(".mailBox .btnBox .normal")
+            .addClass("display")
+            .siblings().removeClass("display");
+        }
+        else if($(".mailBox .postCnt").hasClass("display"))
+        {
+            $(".mailBox .post:eq("+ n +")")
+            .addClass("choose display")
+            .siblings(".mail").removeClass("choose display");
+
+            $(".mailBox .postCnt")
+            .removeClass("display");
+        }
+    })
+})
+
+//優惠頁切換
+$(function(){
+    $(".eventWrap .listBox li").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+    })
+})
+
+//help
+$(function(){
+    $(".help .moreList li .smallTitle").on("click",function(){
+        $(this).closest("li")
+        .toggleClass("active");
+    })
+    $(".help .moreList .allBtn").on("click",function(){
+        $(this)
+        .siblings("li").toggleClass("active");
+    })
+
+    $(".help .innerBox.about button").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+
+        var n = $(this).index();
+
+        $(".help .rightSide.about .helpInfo:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+})
+
 //filter open + close
 $(function(){
     $('.jumpWindow .close_ic,.jumpWindow .close').click(function(){
@@ -585,433 +905,5 @@ $(function(){
         .removeClass('display');
         $('.filter,.betWindow.sportGame')
         .addClass('display');
-    })
-
-    $('.changePassword button').click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.passwordWindow').addClass('display');
-    })
-
-    $('.changePhone').click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.phoneWindow').addClass('display');
-    })
-
-    $(".waterBox .check").click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.listWindow').addClass('display');
-    })
-
-    $('.eventBox .check,.eventBoxAl .check').click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.checkEvent').addClass('display');
-    })
-    $('.eventBox .apply').click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.plsGo').addClass('display');
-    })
-
-    $('.sportPage .btnBox li').click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.betWindow.sportGame').addClass('display');
-    })
-    $('.livePage .btnBox li').click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.betWindow.liveGame').addClass('display');
-    })
-    $('.lotteryPage .btnBox li').click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.betWindow.lotteryGame').addClass('display');
-    })
-
-    $(".pointWrap .open").click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.pointWindow').addClass('display');
-    })
-
-    $(".registerWrap .send").click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.plsGo').addClass('display');
-    })
-    $(".registerWrap .checkBox span").click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.ruleWindow').addClass('display');
-    })
-})
-
-//eventList+eventDetail 切換
-$(function(){
-    $('.eventBox .btnBox button.forEvent_1').click(function(){
-        $('.eventList').removeClass('display');
-        $('.eventDetail.event_1').addClass('display');
-    })
-    $('.eventBox .btnBox button.forEvent_2').click(function(){
-        $('.eventList').removeClass('display');
-        $('.eventDetail.event_2').addClass('display');
-    })
-    $('.eventBox .btnBox button.forEvent_3').click(function(){
-        $('.eventList').removeClass('display');
-        $('.eventDetail.event_3').addClass('display');
-    })
-
-    $('.eventDetail .back').click(function(){
-        $('.eventList').addClass('display');
-        $('.eventDetail').removeClass('display');
-    })
-})
-
-//vipWrap切換
-$(function(){
-    $('.levelEnjoy .more').click(function(){
-        $('.outMode').removeClass('display');
-        $('.innerMode').addClass('display');
-    })
-
-    $('.detailTitle .back').click(function(){
-        $('.outMode').addClass('display');
-        $('.innerMode').removeClass('display');
-    })
-})
-
-//.memberWrap 切換
-$(function(){
-    $('.memberWrap .tabs li:nth-of-type(1)').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-        $('.dataWrap').addClass('display');
-        $('.dataWrap').siblings().removeClass('display');
-    })
-
-    $('.memberWrap .tabs li:nth-of-type(2)').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-        $('.platformWrap').addClass('display');
-        $('.platformWrap').siblings().removeClass('display');
-    })
-})
-
-//dealWrap
-$(function(){
-    $(".dealWrap .tabs li").click(function(){
-        $(this).addClass("active");
-        $(this).siblings().removeClass("active");
-    })
-
-    $(".dealWrap .tabs li:eq(0)").click(function(){
-        $(".dealBox").addClass("display");
-        $(".dealBox").siblings().removeClass("display");
-    })
-    $(".dealWrap .tabs li:eq(1)").click(function(){
-        $(".waterBox").addClass("display");
-        $(".waterBox").siblings().removeClass("display");
-    })
-
-    $(".dealWrap .search .btnBox button").click(function(){
-        $(this)
-        .addClass("active")
-        .siblings().removeClass("active");
-    })
-
-    $(".dealWrap .inputBox select").change(function(){
-        var n = $(".dealWrap .inputBox select").val();
-
-        if(n == 1) {
-            $(".dealWrap .fakeTable.deposit")
-            .addClass("display")
-            .siblings().removeClass("display");
-        }
-        else if(n == 2) {
-            $(".dealWrap .fakeTable.withdrawal")
-            .addClass("display")
-            .siblings().removeClass("display");
-        }
-        else if(n == 3) {
-            $(".dealWrap .fakeTable.transfer")
-            .addClass("display")
-            .siblings().removeClass("display");
-        }
-        else if(n == 4) {
-            $(".dealWrap .fakeTable.water")
-            .addClass("display")
-            .siblings().removeClass("display");
-        }
-        else if(n == 5) {
-            $(".dealWrap .fakeTable.active")
-            .addClass("display")
-            .siblings().removeClass("display");
-        }
-        else if(n == 6) {
-            $(".dealWrap .fakeTable.event")
-            .addClass("display")
-            .siblings().removeClass("display");
-        }
-        else if(n == 7) {
-            $(".dealWrap .fakeTable.else")
-            .addClass("display")
-            .siblings().removeClass("display");
-        }
-    })
-})
-
-//mailWrap 切換
-$(function(){
-    $('.mailWrap .top a:nth-of-type(1)').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-        $('.mailWrap .bottom.active').addClass('display');
-        $('.mailWrap .bottom.ann').removeClass('display');
-    })
-    $('.mailWrap .top a:nth-of-type(2)').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-        $('.mailWrap .bottom.active').removeClass('display');
-        $('.mailWrap .bottom.ann').addClass('display');
-    })
-
-    $('.mailWrap .tabs li').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-    })
-
-    $('.mailWrap .btnBox .edit').click(function(){
-        $('.mailWrap .btnBox.nor').removeClass('display');
-        $('.mailWrap .btnBox.edit').addClass('display');
-
-        $(".mailWrap .list li").addClass("editing");
-    })
-    $('.mailWrap .btnBox .finish').click(function(){
-        $('.mailWrap .btnBox.nor').addClass('display');
-        $('.mailWrap .btnBox.edit').removeClass('display');
-
-        $(".mailWrap .list li").removeClass("editing");
-    })
-
-    $('.mailWrap.outMode .list li').click(function(){
-        $('.mailWrap.outMode').removeClass('display');
-        $('.mailWrap.innerMode').addClass('display');
-    })
-    $('.mailWrap.innerMode .title button').click(function(){
-        $('.mailWrap.outMode').addClass('display');
-        $('.mailWrap.innerMode').removeClass('display');
-    })
-
-    $(".mailWrap .active .tabs li:eq(0)").click(function(){
-        $(".mailWrap .active .system").addClass("display");
-        $(".mailWrap .active .system").siblings("ul").removeClass("display");
-    })
-    $(".mailWrap .active .tabs li:eq(1)").click(function(){
-        $(".mailWrap .active .personal").addClass("display");
-        $(".mailWrap .active .personal").siblings("ul").removeClass("display");
-    })
-
-    $(".mailWrap .ann .tabs li:eq(0)").click(function(){
-        $(".mailWrap .ann .hot").addClass("display");
-        $(".mailWrap .ann .hot").siblings("ul").removeClass("display");
-    })
-    $(".mailWrap .ann .tabs li:eq(1)").click(function(){
-        $(".mailWrap .ann .nor").addClass("display");
-        $(".mailWrap .ann .nor").siblings("ul").removeClass("display");
-    })
-    $(".mailWrap .ann .tabs li:eq(2)").click(function(){
-        $(".mailWrap .ann .dep").addClass("display");
-        $(".mailWrap .ann .dep").siblings("ul").removeClass("display");
-    })
-})
-
-//eventWrap 切換
-$(function(){
-    $(".eventWrap .tabs li").click(function(){
-        $(this).addClass("active");
-        $(this).siblings().removeClass("active");
-    })
-
-    $('.eventWrap .tabs li:nth-of-type(1)').click(function(){
-        $('.eventMiddle .eventBox').addClass('display');
-        $('.eventMiddle .eventBox').siblings().removeClass('display');
-    })
-    $('.eventWrap .tabs li:nth-of-type(2)').click(function(){
-        $('.eventMiddle .eventBoxAl').addClass('display');
-        $('.eventMiddle .eventBoxAl').siblings().removeClass('display');
-    })
-    $('.eventWrap .tabs li:nth-of-type(3)').click(function(){
-        $('.eventMiddle .eventRecord').addClass('display');
-        $('.eventMiddle .eventRecord').siblings().removeClass('display');
-    })
-})
-
-//betWrap 搜尋開關
-$(function(){
-    $('.betWrap .fakeTable .arrow_ic').click(function(){
-        $($(this).closest('li')).toggleClass('active');
-    })
-
-    $(".betWrap .timeGroup .btnBox button").click(function(){
-        $(this)
-        .addClass("active")
-        .siblings().removeClass("active");
-    })
-})
-
-//deposit切換
-$(function(){
-    $(".depositWrap .list li").click(function(){
-        $(this).addClass("active");
-        $(this).siblings().removeClass("active");
-        $(".depositWrap .bottom .title,.depositWrap .bottom .fakeTable").removeClass("display");
-    })
-
-    $(".depositWrap .list li:eq(0)").click(function(){
-        $(".depositWrap .bottom .card").addClass("display");
-    })
-    $(".depositWrap .list li:eq(1)").click(function(){
-        $(".depositWrap .bottom .tiger").addClass("display");
-    })
-    $(".depositWrap .list li:eq(2)").click(function(){
-        $(".depositWrap .bottom .wallet").addClass("display");
-    })
-    $(".depositWrap .list li:eq(3)").click(function(){
-        $(".depositWrap .bottom .usdt").addClass("display");
-    })
-    $(".depositWrap .list li:eq(4)").click(function(){
-        $(".depositWrap .bottom .venus").addClass("display");
-    })
-
-    $(".depositWrap .bottom .check").click(function(){
-        $(".depositWrap .bottom .title,.depositWrap .bottom .fakeTable").removeClass("display");
-        $(".depositWrap .bottom .cardCheck,.depositWrap .bottom .title.card").addClass("display");
-    })
-})
-
-//withdrawal+transfer 展開
-$(function(){
-    $('.withdrawalWrap .platformBox .open button').click(function(){
-        $($(this).closest('div').prev('ul')).toggleClass('active');
-        $(this).closest(".open")
-        .toggleClass("active");
-    })
-    $('.transferWrap .platform .open button').click(function(){
-        $($(this).closest('div').prev('ul')).toggleClass('active');
-        $(this).closest(".open")
-        .toggleClass("active");
-    })
-})
-
-//helpPage .nav列切換
-$(function(){
-    $('.nav .title').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-        $('.nav .box').removeClass('display');
-        $($(this).next('.box')).addClass('display');
-    })
-
-    $('.nav .box li').click(function(){
-        $('.nav .box li').removeClass('active');
-        $(this).addClass('active');
-    })
-})
-//helpPage .nav 連動切換
-$(function(){
-    $(".forNew").click(function(){
-        var n = $(this).index();
-
-        $(".helpWrap .new:eq("+ n +")")
-        .addClass("display")
-        .siblings().removeClass("display");
-    })
-
-    $(".forQues").click(function(){
-        var n = $(this).index();
-
-        $(".helpWrap .ques:eq("+ n +")")
-        .addClass("display")
-        .siblings().removeClass("display");
-    })
-
-    $(".forUs").click(function(){
-        var n = $(this).index();
-
-        $(".helpWrap .us:eq("+ n +")")
-        .addClass("display")
-        .siblings().removeClass("display");
-    })
-})
-
-//transfer切換
-$(function(){
-    $(".withdrawalWrap .bottom form select").change(function(){
-        var n = $(".withdrawalWrap .bottom form select").val();
-
-        if(n == 1) {
-            $(".withdrawalWrap .bottom form.bankcard")
-            .addClass("display")
-            .siblings().removeClass("display");
-        }
-    })
-})
-
-//point
-$(function(){
-    $(".pointWrap .tabs li").click(function(){
-        $(this)
-        .addClass("active")
-        .siblings().removeClass("active");
-    })
-    $(".pointWrap .tabs li:eq(0)").click(function(){
-        $(".pointWrap .fakeTable")
-        .addClass("display")
-        .siblings().removeClass("display");
-    })
-    $(".pointWrap .tabs li:eq(1)").click(function(){
-        $(".pointWrap .recordTable")
-        .addClass("display")
-        .siblings().removeClass("display");
-    })
-
-    $(".pointWrap .search .btnBox button").click(function(){
-        $(this)
-        .addClass("active")
-        .siblings().removeClass("active");
-    })
-
-    $(".pointWrap .fakeTable .arrow_ic").click(function(){
-        $(this).closest("li")
-        .toggleClass("active");
-    })
-})
-
-//register
-$(function(){
-    var phone = $(".registerWrap .phone")
-    var btn = $(".registerWrap .codeBtn");
-
-    $(phone).focus(function(){
-        $(btn)
-        .attr("disabled",false);
-    })
-    $(phone).blur(function(){
-        $(btn)
-        .attr("disabled",true);
-    })
-})
-
-//goTop
-$(function(){
-	$(window).scroll(function () {
-        var scrollVal = $(this).scrollTop();
-        if(scrollVal > 0){
-            $(".goTop")
-            .addClass("display")
-        } else{
-            $(".goTop")
-            .removeClass("display");
-        };
-	})
-
-    $(".goTop").click(function(){
-        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //各瀏覽器相容性
-        $body.delay('0').animate({
-            scrollTop: 0
-        },500)
     })
 })

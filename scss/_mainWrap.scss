@@ -25,7 +25,7 @@
                 .title {
                     width: 165px;
                     height: 100%;
-                    background: $mainLinear_1;
+                    background: $marquee_Linear;
                     border-radius: 30px;
                     display: flex;
                     align-items: center;
@@ -33,7 +33,7 @@
                     flex-shrink: 0;
 
                     p {
-                        color: $mainLinear_Word;
+                        color: $marquee_Linear_Word;
                         font-size: 20px;
                         font-weight: bold;
                     }
@@ -92,30 +92,7 @@
                 .pageBtn {
                     width: 52px;
                     height: 52px;
-                    background: $gameType_pageBtn_BG;
-                    border-radius: 50%;
-                    position: absolute;
-                    cursor: pointer;
-                    z-index: 10;
-                    pointer-events: none;
-
-                    &.active {
-                        background: $gameType_pageBtn_Active;
-                        pointer-events: visible;
-                    }
-
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        left: 50%;
-                        top: 50%;
-                        transform: translate(-67%,-50%) rotate(45deg);
-                        width: 14px;
-                        height: 14px;
-                        border-style: solid;
-                        border-width: 2px 2px 0 0;
-                        border-color: $gameType_pageBtn_Arrow;
-                    }
+                    @include pageBtn;
 
                     &.prev {
                         left: -26px;

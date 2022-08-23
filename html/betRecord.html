@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.25">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
     <script src="../js/javascript.js"></script>
     <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon">
 </head>
@@ -18,28 +14,18 @@
         <!--上部-->
         <div class="top">
             <!--logo-->
-            <img class="logo" src="../images/icon/logo.png" onclick="window.location.href='../index.html'">
-            <!--跑馬燈-->
-            <div class="marqueeArea">
-                <div class="center">
-                    <div class="marqueeWrap">
-                        <p class="title">最新ニュース</p>
-                        <div class="marquee">
-                            <p>人気ゲーム-日本麻雀</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- <img class="logo" src="./images/icon/logo.png" onclick="window.location.href='./index.html'"> -->
+            <div class="logo">LOGO</div>
             <!--右_已登入-->
-            <ul class="user alLogin display">
+            <ul class="user alLogin">
                 <!--等級-->
                 <li class="lv">
-                    ゴールド会員
+                    初心者
                     <span>userName</span>
                 </li>
                 <!--各平台金額-->
                 <li class="moneyTotal">
-                    <span class="total">¥0.00</span>
+                    <p class="total">¥0.00</p>
                     <ul class="transferInfo">
                         <li class="platform">
                             <div>
@@ -373,896 +359,1166 @@
         </div>
         <!--選單-->
         <div class="gameNav">
-            <div class="center">
-                <ul>
-                    <li class="hotBtn">人気ゲーム</li>
-                    <li class="sportBtn" onclick="window.location.href='./sportPage.html'">スポーツ</li>
-                    <li class="liveBtn" onclick="window.location.href='./livePage.html'">ライブ</li>
-                    <li class="slotBtn" onclick="window.location.href='./slotPage.html'">スロット</li>
-                    <li class="fishBtn" onclick="window.location.href='./fishPage.html'">釣りゲーム</li>
-                    <li class="boardBtn" onclick="window.location.href='./boardPage.html'">カードゲーム</li>
-                    <li class="event" onclick="window.location.href='./event.html'">プロモーション</li>
-                    <li class="vip" onclick="window.location.href='./vip.html'">VIPクラブ</li>
-                </ul>
-            </div>
-        </div>
-        <!--下拉式選單-->
-        <div class="topGameList">
-            <div class="listWrap">
-                <div class="center">
-                    <i class="prev"></i>
-                    <div class="container">
-                    <ul class="hot">
-                        <li>
-                            <div>
-                                <img src="../images/partner/hot/hotGame_1.png">
-                            </div>
-                            <p>Japanese Mahjong</p>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="../images/partner/hot/hotGame_2.png">
-                            </div>
-                            <p>Koi-Koi</p>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="../images/partner/hot/hotGame_3.png">
-                            </div>
-                            <p>Big Win Cat</p>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="../images/partner/hot/hotGame_4.png">
-                            </div>
-                            <p>Oiran Dream</p>
-                        </li>
-                    </ul>
-                    <ul class="sport">
-                        <li onclick="openSportGame()">
-                            <div>
-                                <img src="../images/partner/sport/36588.png">
-                            </div>
-                            <p>36588 SPORTS</p>
-                        </li>
-                    </ul>
-                    <ul class="live">
-                        <li onclick="openLiveGame()">
-                            <div>
-                                <img src="../images/partner/live/live_1.png">
-                            </div>
-                            <p>AG CASINO</p>
-                        </li>
-                        <li onclick="openLiveGame()">
-                            <div>
-                                <img src="../images/partner/live/live_2.png">
-                            </div>
-                            <p>MG CASINO</p>
-                        </li>
-                        <li onclick="openLiveGame()">
-                            <div>
-                                <img src="../images/partner/live/live_3.png">
-                            </div>
-                            <p>PP CASINO</p>
-                        </li>
-                        <li onclick="openLiveGame()">
-                            <div>
-                                <img src="../images/partner/live/live_4.png">
-                            </div>
-                            <p>EVO CASINO</p>
-                        </li>
-                        <li onclick="openLiveGame()">
-                            <div>
-                                <img src="../images/partner/live/live_5.png">
-                            </div>
-                            <p>ALLBET CASINO</p>
-                        </li>
-                        <li onclick="openLiveGame()">
-                            <div>
-                                <img src="../images/partner/live/live_6.png">
-                            </div>
-                            <p>SA CASINO</p>
-                        </li>
-                        <li onclick="openLiveGame()">
-                            <div>
-                                <img src="../images/partner/live/live_7.png">
-                            </div>
-                            <p>OG CASINO</p>
-                        </li>
-                        <li onclick="openLiveGame()">
-                            <div>
-                                <img src="../images/partner/live/live_8.png">
-                            </div>
-                            <p>WM CASINO</p>
-                        </li>
-                        <li onclick="openLiveGame()">
-                            <div>
-                                <img src="../images/partner/live/live_9.png">
-                            </div>
-                            <p>DG CASINO</p>
-                        </li>
-                    </ul>
-                    <ul class="slot">
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_1.png">
-                            </div>
-                            <p>HABANERO</p>
-                            <div class="fixBox display">
-                                <p class="title">修理中</p>
-                                <p>2022/03/02 PM 2:00 ~</p>
-                                <p>2020/03/02 PM 4:00</p>
-                            </div>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_2.png">
-                            </div>
-                            <p>RSG</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_3.png">
-                            </div>
-                            <p>PP SLOTS</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_4.png">
-                            </div>
-                            <p>GoldHero</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_5.png">
-                            </div>
-                            <p>PNG</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_6.png">
-                            </div>
-                            <p>JILI SLOTS</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_7.png">
-                            </div>
-                            <p>YGG</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_8.png">
-                            </div>
-                            <p>Microgaming</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_9.png">
-                            </div>
-                            <p>BOOONGO GAMES</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_10.png">
-                            </div>
-                            <p>IFUN GAMES</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_11.png">
-                            </div>
-                            <p>EVO PLAY</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_12.png">
-                            </div>
-                            <p>RELAX</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_13.png">
-                            </div>
-                            <p>NO LIMIT CITY</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_14.png">
-                            </div>
-                            <p>AUX</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_15.png">
-                            </div>
-                            <p>TPG GAMES</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_16.png">
-                            </div>
-                            <p>SIMPLEPLAY GAMES</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_17.png">
-                            </div>
-                            <p>PLAYSON GAMES</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_18.png">
-                            </div>
-                            <p>BLUEPRINT GAMES</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_19.png">
-                            </div>
-                            <p>RED RAKE GAMES</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_20.png">
-                            </div>
-                            <p>4ThePlayer GAMES</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_21.png">
-                            </div>
-                            <p>ELK GAMES</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_22.png">
-                            </div>
-                            <p>ELYSIUM GAMES</p>
-                        </li>
-                        <li onclick="window.location.href='./slotPage.html'">
-                            <div>
-                                <img src="../images/partner/slot/slot_23.png">
-                            </div>
-                            <p>QUICKSPIN GAMES</p>
-                        </li>
-                    </ul>
-                    <ul class="fish">
-                        <li onclick="window.location.href='./fishPage.html'">
-                            <div>
-                                <img src="../images/partner/fish/fish_1.png">
-                            </div>
-                            <p>RSG GAMES</p>
-                        </li>
-                        <li onclick="window.location.href='./fishPage.html'">
-                            <div>
-                                <img src="../images/partner/fish/fish_2.png">
-                            </div>
-                            <p>JILI SLOTS</p>
-                        </li>
-                        <li onclick="window.location.href='./fishPage.html'">
-                            <div>
-                                <img src="../images/partner/fish/fish_3.png">
-                            </div>
-                            <p>TPG GAMES</p>
-                        </li>
-                        <li onclick="window.location.href='./fishPage.html'">
-                            <div>
-                                <img src="../images/partner/fish/fish_4.png">
-                            </div>
-                            <p>SIMPLEPLAY GAMES</p>
-                        </li>
-                    </ul>
-                    <ul class="board">
-                        <li onclick="window.location.href='./boardPage.html'">
-                            <div>
-                                <img src="../images/partner/board/board_1.png">
-                            </div>
-                            <p>HABANERO</p>
-                        </li>
-                        <li onclick="window.location.href='./boardPage.html'">
-                            <div>
-                                <img src="../images/partner/board/board_2.png">
-                            </div>
-                            <p>JILI SLOTS</p>
-                        </li>
-                        <li onclick="window.location.href='./boardPage.html'">
-                            <div>
-                                <img src="../images/partner/board/board_3.png">
-                            </div>
-                            <p>Microgaming</p>
-                        </li>
-                        <li onclick="window.location.href='./boardPage.html'">
-                            <div>
-                                <img src="../images/partner/board/board_4.png">
-                            </div>
-                            <p>IFUN GAMES</p>
-                        </li>
-                        <li onclick="window.location.href='./boardPage.html'">
-                            <div>
-                                <img src="../images/partner/board/board_5.png">
-                            </div>
-                            <p>RED RAKE GAMES</p>
-                        </li>
-                        <li onclick="window.location.href='./boardPage.html'">
-                            <div>
-                                <img src="../images/partner/board/board_6.png">
-                            </div>
-                            <p>4ThePlayer GAMES</p>
-                        </li>
-                    </ul>
-                    </div>
-                    <i class="next"></i>
-                </div>
-            </div>
+            <ul>
+                <li class="empty"></li>
+                <ol>
+                    <li class="homeBtn" onclick="window.location.href='./innerIndex.html'">
+                        <div></div>
+                        <p>ホームページ</p>
+                    </li>
+                    <li class="sportBtn" onclick="window.location.href='./sportPage.html'">
+                        <div></div>
+                        <p>スポーツ</p>
+                    </li>
+                    <li class="liveBtn" onclick="window.location.href='./livePage.html'">
+                        <div></div>
+                        <p>ライブ</p>
+                    </li>
+                    <li class="slotBtn" onclick="window.location.href='./slotPage.html'">
+                        <div></div>
+                        <p>スロット</p>
+                    </li>
+                    <li class="fishBtn" onclick="window.location.href='./fishPage.html'">
+                        <div></div>
+                        <p>釣りゲーム</p>
+                    </li>
+                    <li class="boardBtn" onclick="window.location.href='./boardPage.html'">
+                        <div></div>
+                        <p>カードゲーム</p>
+                    </li>
+                    <li class="event" onclick="window.location.href='./event.html'">
+                        <div></div>
+                        <p>プロモーション</p>
+                    </li>
+                    <li class="vip" onclick="window.location.href='./vip.html'">
+                        <div></div>
+                        <p>VIPクラブ</p>
+                    </li>
+                </ol>
+                <li class="empty"></li>
+            </ul>
         </div>
     </header>
     <main>
         <div class="innerPage">
-            <!--跑馬燈-->
-            <div class="marqueeArea">
-                <div class="center">
+            <!--內容-->
+            <div class="center">
+                <!--banner-->
+                <div class="banner">
+                    <!--跑馬燈-->
                     <div class="marqueeWrap">
-                        <p class="title">最新のお知らせ</p>
                         <div class="marquee">
-                            <p>人気ゲーム-日本麻雀</p>
+                            <div class="title">
+                                <p>最新ニュース</p>
+                            </div>
+                            <div class="textBox">
+                                <p>プロモーション~ライブカジノリベートボーナス</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--bottom-->
+                    <div class="bottom">
+                        <!--狀態列-->
+                        <div class="left">
+                            <div class="medal">
+                                <div></div>
+                            </div>
+                            <div class="textBox">
+                                <p class="name">
+                                    opp121
+                                    <span>ゴールド会員</span>
+                                </p>
+                                <p class="time">参加182日</p>
+                            </div>
+                        </div>
+                        <!--按鈕列-->
+                        <div class="right">
+                            <button onclick="window.location.href='./deposit.html'">
+                                <i class="quickBtn_ic deposit"></i>
+                                入金
+                            </button>
+                            <button onclick="window.location.href='./transfer.html'">
+                                <i class="quickBtn_ic transfer"></i>
+                                振替
+                            </button>
+                            <button onclick="window.location.href='./withdrawal.html'">
+                                <i class="quickBtn_ic withdrawal"></i>
+                                出金
+                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--內容-->
-            <div class="center">
-                <!--左列-->
-                <aside class="innerSide">
-                    <div class="userInfo">
-                        <div>
-                            <p class="account">
-                                bbb123
-                                <span class="lv">ゴールド会員</span>
-                            </p>
-                            <p class="days">參加 799 日</p>
-                            <ul class="quickSelect">
-                                <li onclick="window.location.href='./deposit.html'">
-                                    <p class="btn">入</p>
-                                    <p>入金</p>
-                                </li>
-                                <li onclick="window.location.href='./transfer.html'">
-                                    <p class="btn">振</p>
-                                    <p>振替</p>
-                                </li>
-                                <li onclick="window.location.href='./withdrawal.html'">
-                                    <p class="btn">出</p>
-                                    <p>出金</p>
-                                </li>
-                            </ul>
+                <!--mainWrap-->
+                <div class="innerMainWrap">
+                    <!--leftSide-->
+                    <div class="leftSide">
+                        <div class="line_long">
+                            <div>
+                                <i class="star_ic"></i>
+                                <i class="line_short"></i>
+                            </div>
+                            <div>
+                                <i class="line_short"></i>
+                                <i class="line_short"></i>
+                                <i class="line_short"></i>
+                                <i class="star_ic"></i>
+                            </div>
                         </div>
+                        <ul class="btnBox">
+                            <li onclick="window.location.href='./member.html'">
+                                個人情報
+                                <i class="member_ic"></i>
+                            </li>
+                            <li onclick="window.location.href='./vip.html'">
+                                VIPクラブ
+                                <i class="vip_ic"></i>
+                            </li>
+                            <li onclick="window.location.href='./invite.html'">
+                                メンバーを招待する
+                                <i class="invite_ic"></i>
+                            </li>
+                            <li onclick="window.location.href='./wallet.html'">
+                                マイウォレット
+                                <i class="wallet_ic"></i>
+                            </li>
+                            <li onclick="window.location.href='./bankcard.html'">
+                                口座設定
+                                <i class="card_ic"></i>
+                            </li>
+                            <li onclick="window.location.href='./dealRecord.html'">
+                                取引履歷
+                                <i class="dealRecord_ic"></i>
+                            </li>
+                            <li onclick="window.location.href='./point.html'">
+                                ∞4世代ボーナス報酬
+                                <i class="point_ic"></i>
+                            </li>
+                            <li class="active" onclick="window.location.href='./betRecord.html'">
+                                ベット履歷
+                                <i class="bettingRecord_ic"></i>
+                            </li>
+                            <li onclick="window.location.href='./eventApply.html'">
+                                プロモーション申請
+                                <i class="eventApply_ic"></i>
+                            </li>
+                            <li onclick="window.location.href='./mail.html'">
+                                インボックス
+                                <i class="mail_ic"></i>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="innerNav">
-                        <li onclick="window.location.href='./member.html'">
-                            <i class="user_ic"></i>
-                            個人情報
-                        </li>
-                        <li onclick="window.location.href='./vip.html'">
-                            <i class="vip_ic"></i>
-                            VIPクラブ
-                        </li>
-                        <li onclick="window.location.href='./invite.html'">
-                            <i class="invite_ic"></i>
-                            メンバーを招待する
-                        </li>
-                        <li onclick="window.location.href='./wallet.html'">
-                            <i class="wallet_ic"></i>
-                            マイウォレット
-                        </li>
-                        <li onclick="window.location.href='./bankCard.html'">
-                            <i class="card_ic"></i>
-                            口座設定
-                        </li>
-                        <li onclick="window.location.href='./dealRecord.html'">
-                            <i class="dealRecord_ic"></i>
-                            取引履歷
-                        </li>
-                        <li onclick="window.location.href='./point.html'">
-                            <i class="dividend_ic"></i>
-                            ∞4世代ボーナス報酬
-                        </li>
-                        <li class="active" onclick="window.location.href='./betRecord.html'">
-                            <i class="betRecord_ic"></i>
-                            ベット履歷
-                        </li>
-                        <li onclick="window.location.href='./eventApply.html'">
-                            <i class="event_ic"></i>
-                            プロモーション申請
-                        </li>
-                        <li onclick="window.location.href='./mail.html'">
-                            <i class="mail_ic"></i>
-                            インボックス
-                            <span class="remind">2</span>
-                        </li>
-                    </ul>
-                </aside>
-                <section>
-                    <div class="betWrap">
-                        <div class="top">ベット履歷</div>
-                        <div class="bottom">
-                            <form>
-                                <div class="inputGroup">
-                                    <p>アカウント</p>
-                                    <select>
-                                        <option>全てのアカウント</option>
-                                    </select>
-                                    <p>プラットホーム</p>
-                                    <select>
-                                        <option>全て</option>
-                                        <option>BNG</option>
-                                        <option>PLS</option>
-                                    </select>
-                                </div>
-                                <div class="timeGroup">
-                                    <div class="timeBox">
-                                        <p>日付</p>
-                                        <input type="date">
+                    <!--dealRecord-->
+                    <div class="rightSide betRecord">
+                        <div class="title">
+                            <i class="firstIcon bettingRecord_ic"></i>
+                            <p>ベット履歷</p>
+                            <div class="line"></div>
+                            <div class="star_ic"></div>
+                        </div>
+                        <!--applyBox-->
+                        <div class="applyBox">
+                            <div class="topBox">
+                                <div class="box">
+                                    <div class="row">
+                                        <p class="smallTitle">アカウント</p>
+                                        <label class="selectBox">
+                                            <select>
+                                                <option value="">全てのアカウント</option>
+                                                <option value="">全てのアカウント</option>
+                                                <option value="">全てのアカウント</option>
+                                            </select>
+                                            <i class="arrow_ic"></i>
+                                        </label>
+                                        <p class="smallTitle">プラットホーム</p>
+                                        <label class="selectBox">
+                                            <select>
+                                                <option value="">全て</option>
+                                                <option value="">全て</option>
+                                                <option value="">全て</option>
+                                            </select>
+                                            <i class="arrow_ic"></i>
+                                        </label>
+                                    </div>
+                                    <div class="row">
+                                        <p class="smallTitle">日付</p>
+                                        <label class="inputBox">
+                                            <input type="date">
+                                            <i class="date_ic"></i>
+                                            <p class="remind">60日以内のデータのみを検索する</p>
+                                        </label>
                                         <div class="btnBox">
-                                            <button type="button">昨日</button>
-                                            <button type="button" class="active">今日</button>
-                                            <button type="button">今週</button>
-                                            <button type="button">今月</button>
+                                            <button>昨日</button>
+                                            <button>今日</button>
+                                            <button>今週</button>
+                                            <button>今月</button>
                                         </div>
                                     </div>
-                                    <button type="button" class="checkBtn">查詢</button>
                                 </div>
-                                <p class="remind">60日以内のデータのみを検索する</p>
-                            </form>
-                            <div class="fakeTable">
-                                <ul>
-                                    <li class="title">
-                                        <div class="wordWrap">
-                                            <p>ゲーム会社</p>
-                                            <p>ベット金額</p>
-                                            <p>有効ベット額</p>
-                                            <p>チップ</p>
-                                            <p>結果</p>
-                                            <p>&ensp;</p>
-                                        </div>
-                                    </li>
-                                    <li class="active">
-                                        <div class="wordWrap">
-                                            <p>BNG GAMES</p>
-                                            <p>108</p>
-                                            <p>108</p>
-                                            <p>0</p>
-                                            <p class="result">-108.0000</p>
-                                            <p>
-                                                <i class="arrow_ic"></i>
-                                            </p>
-                                        </div>
-                                        <table>
-                                            <tr>
-                                                <th>
-                                                    <p>時間</p>
-                                                </th>
-                                                <th>
-                                                    <p>ゲーム名</p>
-                                                </th>
-                                                <th>
-                                                    <p>ノート番号</p>
-                                                </th>
-                                                <th>
-                                                    <p>ベット金額</p>
-                                                </th>
-                                                <th>
-                                                    <p>有効ベット額</p>
-                                                </th>
-                                                <th>
-                                                    <p>チップ</p>
-                                                </th>
-                                                <th>
-                                                    <p>結果</p>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>2021-04-30 11:30:57</p>
-                                                </td>
-                                                <td>
-                                                    <p>Oiran Dream</p>
-                                                </td>
-                                                <td>
-                                                    <p>2fab013c06a146939fceb310af</p>
-                                                </td>
-                                                <td>
-                                                    <p>54</p>
-                                                </td>
-                                                <td>
-                                                    <p>54</p>
-                                                </td>
-                                                <td>
-                                                    <p>0</p>
-                                                </td>
-                                                <td>
-                                                    <p>-54</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>2021-04-30 11:30:57</p>
-                                                </td>
-                                                <td>
-                                                    <p>Oiran Dream</p>
-                                                </td>
-                                                <td>
-                                                    <p>2fab013c06a146939fceb310af</p>
-                                                </td>
-                                                <td>
-                                                    <p>54</p>
-                                                </td>
-                                                <td>
-                                                    <p>54</p>
-                                                </td>
-                                                <td>
-                                                    <p>0</p>
-                                                </td>
-                                                <td>
-                                                    <p>-54</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <div class="pageBox">
-                                            <p>総計 3 件</p>
-                                            <div class="page">
-                                                <i class="arrow_left"></i>
-                                                <button class="active">1</button>
-                                                <button>2</button>
-                                                <i class="arrow_right"></i>
+                                <button class="check">検索</button>
+                            </div>
+                            <div class="downBox">
+                                <ul class="fakeTable">
+                                    <li class="row">
+                                        <div class="outerTitle">
+                                            <div>
+                                                <p>ゲーム会社</p>
+                                            </div>
+                                            <div>
+                                                <p>ベット金額</p>
+                                            </div>
+                                            <div>
+                                                <p>有効ベット額</p>
+                                            </div>
+                                            <div>
+                                                <p>チップ</p>
+                                            </div>
+                                            <div>
+                                                <p>結果</p>
+                                            </div>
+                                            <div>
+                                                <p>&ensp;</p>
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div class="wordWrap">
-                                            <p>BNG GAMES</p>
-                                            <p>108</p>
-                                            <p>108</p>
-                                            <p>0</p>
-                                            <p class="result win">54</p>
-                                            <p>
-                                                <i class="arrow_ic"></i>
-                                            </p>
-                                        </div>
-                                        <table>
-                                            <tr>
-                                                <th>
-                                                    <p>時間</p>
-                                                </th>
-                                                <th>
-                                                    <p>ゲーム名</p>
-                                                </th>
-                                                <th>
-                                                    <p>ノート番号</p>
-                                                </th>
-                                                <th>
-                                                    <p>ベット金額</p>
-                                                </th>
-                                                <th>
-                                                    <p>有効ベット額</p>
-                                                </th>
-                                                <th>
-                                                    <p>チップ</p>
-                                                </th>
-                                                <th>
-                                                    <p>結果</p>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>2021-04-30 11:30:57</p>
-                                                </td>
-                                                <td>
-                                                    <p>Oiran Dream</p>
-                                                </td>
-                                                <td>
-                                                    <p>2fab013c06a146939fceb310af</p>
-                                                </td>
-                                                <td>
-                                                    <p>54</p>
-                                                </td>
-                                                <td>
-                                                    <p>54</p>
-                                                </td>
-                                                <td>
-                                                    <p>0</p>
-                                                </td>
-                                                <td>
-                                                    <p>27</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>2021-04-30 11:30:57</p>
-                                                </td>
-                                                <td>
-                                                    <p>Oiran Dream</p>
-                                                </td>
-                                                <td>
-                                                    <p>2fab013c06a146939fceb310af</p>
-                                                </td>
-                                                <td>
-                                                    <p>54</p>
-                                                </td>
-                                                <td>
-                                                    <p>54</p>
-                                                </td>
-                                                <td>
-                                                    <p>0</p>
-                                                </td>
-                                                <td>
-                                                    <p>27</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <div class="pageBox">
-                                            <p>総計 3 件</p>
-                                            <div class="page">
-                                                <i class="arrow_left"></i>
-                                                <button class="active">1</button>
-                                                <button>2</button>
-                                                <i class="arrow_right"></i>
+                                    <li class="row">
+                                        <div class="outerTitle">
+                                            <div>
+                                                <p>BNG GAMES</p>
                                             </div>
+                                            <div>
+                                                <p>216</p>
+                                            </div>
+                                            <div>
+                                                <p>216</p>
+                                            </div>
+                                            <div>
+                                                <p>0</p>
+                                            </div>
+                                            <div>
+                                                <p class="money">-188</p>
+                                            </div>
+                                            <div class="openBtn">
+                                                <i class="arrow_ic"></i>
+                                            </div>
+                                        </div>
+                                        <div class="innerBox">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <p>時間</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>ゲーム名</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>ノート番号</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>ベット金額</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>有効ベット額</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>チップ</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>結果</p>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="pageBox">
+                                            <p>総計 10 件</p>
+                                            <button class="more">
+                                                <i class="arrow_ic"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="row active">
+                                        <div class="outerTitle">
+                                            <div>
+                                                <p>BNG GAMES</p>
+                                            </div>
+                                            <div>
+                                                <p>216</p>
+                                            </div>
+                                            <div>
+                                                <p>216</p>
+                                            </div>
+                                            <div>
+                                                <p>0</p>
+                                            </div>
+                                            <div>
+                                                <p class="money">-188</p>
+                                            </div>
+                                            <div class="openBtn">
+                                                <i class="arrow_ic"></i>
+                                            </div>
+                                        </div>
+                                        <div class="innerBox">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <p>時間</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>ゲーム名</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>ノート番号</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>ベット金額</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>有効ベット額</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>チップ</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>結果</p>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="pageBox">
+                                            <p>総計 10 件</p>
+                                            <button class="more">
+                                                <i class="arrow_ic"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="outerTitle">
+                                            <div>
+                                                <p>BNG GAMES</p>
+                                            </div>
+                                            <div>
+                                                <p>216</p>
+                                            </div>
+                                            <div>
+                                                <p>216</p>
+                                            </div>
+                                            <div>
+                                                <p>0</p>
+                                            </div>
+                                            <div>
+                                                <p class="money">-188</p>
+                                            </div>
+                                            <div class="openBtn">
+                                                <i class="arrow_ic"></i>
+                                            </div>
+                                        </div>
+                                        <div class="innerBox">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <p>時間</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>ゲーム名</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>ノート番号</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>ベット金額</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>有効ベット額</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>チップ</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>結果</p>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="pageBox">
+                                            <p>総計 10 件</p>
+                                            <button class="more">
+                                                <i class="arrow_ic"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="outerTitle">
+                                            <div>
+                                                <p>BNG GAMES</p>
+                                            </div>
+                                            <div>
+                                                <p>216</p>
+                                            </div>
+                                            <div>
+                                                <p>216</p>
+                                            </div>
+                                            <div>
+                                                <p>0</p>
+                                            </div>
+                                            <div>
+                                                <p class="money">-188</p>
+                                            </div>
+                                            <div class="openBtn">
+                                                <i class="arrow_ic"></i>
+                                            </div>
+                                        </div>
+                                        <div class="innerBox">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <p>時間</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>ゲーム名</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>ノート番号</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>ベット金額</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>有効ベット額</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>チップ</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>結果</p>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>2021-04-30 11:30:57</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Oiran Dream</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>2fab013c06a14693</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>54</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>0</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>-54</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="pageBox">
+                                            <p>総計 10 件</p>
+                                            <button class="more">
+                                                <i class="arrow_ic"></i>
+                                            </button>
                                         </div>
                                     </li>
                                 </ul>
+                                <div class="total">
+                                    <div>
+                                        <p>総和</p>
+                                    </div>
+                                    <div>
+                                        <p>864</p>
+                                    </div>
+                                    <div>
+                                        <p>864</p>
+                                    </div>
+                                    <div>
+                                        <p>0</p>
+                                    </div>
+                                    <div>
+                                        <p>-752</p>
+                                    </div>
+                                    <div>
+                                        <p>&ensp;</p>
+                                    </div>
+                                </div>
+                                <div class="pageBox">
+                                    <div class="line"></div>
+                                    <div class="page">
+                                        <i class="arrow_ic prev"></i>
+                                        <ul>
+                                            <li class="active">1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                        </ul>
+                                        <i class="arrow_ic next"></i>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="pageWord">
+                                    <p>総計 23 件</p>
+                                </div>
                             </div>
-                            <p class="noData">目前無資料</p>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </main>
     <nav class="sideBar">
-        <!--邀請會員-->
-        <button class="inviteBtn">
-            <a href="./invite.html"></a>
-        </button>
         <!--goTop-->
         <button class="goTop">
             <i></i>
+            <p>TOP</p>
         </button>
     </nav>
     <footer>
-        <!--上部-->
-        <div class="top">
-            <div class="payments">
-                <div class="title">
-                    <p>決済方法</p>
-                    <p>/</p>
-                    <p>SAFE PAYMENTS</p>
-                </div>
-                <div class="box">
-                    <div class="bank"></div>
-                    <div class="usdt"></div>
-                    <div class="vega"></div>
-                    <div class="imove"></div>
-                    <div class="sticpay"></div>
-                    <div class="iwallet"></div>
-                    <div class="tigerpay"></div>
-                </div>
-            </div>
-            <div class="partner">
-                <div class="title">
-                    <p>ゲームプロバイダー</p>
-                    <p>/</p>
-                    <p>GAME PROVIDERS</p>
-                </div>
-                <div class="box">
-                    <div class="ag"></div>
-                    <div class="sa"></div>
-                    <div class="dg"></div>
-                    <div class="tpg"></div>
-                    <div class="og"></div>
-                    <div class="sp"></div>
-                    <div class="mg"></div>
-                    <div class="pp"></div>
-                    <div class="gh"></div>
-                    <div class="elk"></div>
-                    <div class="ftp"></div>
-                    <div class="pg"></div>
-                    <div class="bng"></div>
-                    <div class="ab"></div>
-                    <div class="pls"></div>
-                    <div class="rsg"></div>
-                    <div class="bp"></div>
-                    <div class="redtiger"></div>
-                    <div class="ifun"></div>
-                    <div class="redrake"></div>
-                    <div class="ely"></div>
-                    <div class="atux"></div>
-                    <div class="evoplay"></div>
-                    <div class="sport"></div>
-                    <div class="png"></div>
-                    <div class="relax"></div>
-                    <div class="wm"></div>
-                    <div class="ygg"></div>
-                    <div class="net"></div>
-                    <div class="jili"></div>
-                    <div class="nolimit"></div>
-                    <div class="evo"></div>
-                </div>
-            </div>
-        </div>
-        <!--下部-->
-        <div class="footerList">
-            <div class="center">
-                <ul>
-                    <li class="news">
+        <div class="center">
+            <!--top-->
+            <div class="top">
+                <ul class="listBox">
+                    <li class="list">
                         <p class="title">最新のお知らせ</p>
-                        <button onclick="openNews()">人気</button>
-                        <button onclick="openNews()">ノーマル</button>
+                        <ul>
+                            <li class="openNews">
+                                <i></i>
+                                <p>人気</p>
+                            </li>
+                            <li class="openNews">
+                                <i></i>
+                                <p>ノーマル</p>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="vip">
-                        <p class="title">VIPクラブ</p>
-                        <button onclick="window.location.href='./vip.html'">VIPレベル</button>
-                    </li>
-                    <li>
+                    <li class="list">
                         <p class="title">よくある質問</p>
-                        <button onclick="window.location.href='./help.html'">プロモーション</button>
-                        <button onclick="window.location.href='./help.html'">入出金と振替</button>
-                        <button onclick="window.location.href='./help.html'">入出金方法</button>
-                        <button onclick="window.location.href='./help.html'">登録とアカウント</button>
-                        <button onclick="window.location.href='./help.html'">アフィリエイト</button>
-                        <button onclick="window.location.href='./help.html'">お問い合わせ</button>
+                        <ul>
+                            <li onclick="window.location.href='./help.html'">
+                                <i></i>
+                                <p>プロモーション</p>
+                            </li>
+                            <li onclick="window.location.href='./help.html'">
+                                <i></i>
+                                <p>入出金と振替</p>
+                            </li>
+                            <li onclick="window.location.href='./help.html'">
+                                <i></i>
+                                <p>入出金方法</p>
+                            </li>
+                            <li onclick="window.location.href='./help.html'">
+                                <i></i>
+                                <p class="small">登録とアカウント</p>
+                            </li>
+                            <li onclick="window.location.href='./help.html'">
+                                <i></i>
+                                <p>アフィリエイト</p>
+                            </li>
+                            <li onclick="window.location.href='./help.html'">
+                                <i></i>
+                                <p>お問い合わせ</p>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
+                    <li class="list">
                         <p class="title">当社について</p>
-                        <button onclick="window.location.href='./help.html'">当社について</button>
-                        <button onclick="window.location.href='./help.html'">ノーマル</button>
-                        <button onclick="window.location.href='./help.html'">利用規約</button>
-                        <button onclick="window.location.href='./help.html'">責任あるゲーミング</button>
-                        <button onclick="window.location.href='./help.html'">プロモーション</button>
+                        <ul>
+                            <li onclick="window.location.href='./help.html'">
+                                <i></i>
+                                <p>当社について</p>
+                            </li>
+                            <li onclick="window.location.href='./help.html'">
+                                <i></i>
+                                <p class="small">プライバシーポリシー</p>
+                            </li>
+                            <li onclick="window.location.href='./help.html'">
+                                <i></i>
+                                <p>利用規約</p>
+                            </li>
+                            <li onclick="window.location.href='./help.html'">
+                                <i></i>
+                                <p class="small">責任あるゲーミング</p>
+                            </li>
+                            <li onclick="window.location.href='./help.html'">
+                                <i></i>
+                                <p>プロモーション</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <p class="title">VIPメンバー</p>
+                        <ul>
+                            <li onclick="window.location.href='./vip.html'">
+                                <i></i>
+                                <p>VIPレベル</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="linkBox">
+                    <button>チャット</button>
+                    <iframe class="iframe-box" src="https://licensing.gaming-curacao.com/validator/?lh=4409a740c9e834ebacf02796815cd15f&amp;template=seal"></iframe>
+                    <a class="twitter" href="https://twitter.com"></a>
+                </div>
+            </div>
+            <!--separate-->
+            <div class="separateBox">
+                <p>GAME PROVIDERS</p>
+                <div class="line"></div>
+                <div class="star"></div>
+            </div>
+            <!--bottom-->
+            <div class="bottom">
+                <ul>
+                    <li>
+                        <div class="net"></div>
+                        <div class="sa"></div>
+                        <div class="dg"></div>
+                        <div class="gh"></div>
+                        <div class="og"></div>
+                        <div class="sp"></div>
+                        <div class="jili"></div>
+                        <div class="elk"></div>
+                        <div class="bp"></div>
+                        <div class="evo"></div>
+                        <div class="ftp"></div>
                     </li>
                     <li>
-                        <button class="serviceBtn" onclick="window.location.href='./help.html'">チャット</button>
-                        <iframe class="iframe-box" src="https://licensing.gaming-curacao.com/validator/?lh=4409a740c9e834ebacf02796815cd15f&amp;template=seal"></iframe>
-                        <button class="twitter" onclick="window.location.href='//twitter.com/AU8_Japan'"></button>
+                        <div class="bng"></div>
+                        <div class="ab"></div>
+                        <div class="pls"></div>
+                        <div class="rsg"></div>
+                        <div class="ag"></div>
+                        <div class="tpg"></div>
+                    </li>
+                    <li>
+                        <div class="ely"></div>
+                        <div class="qs"></div>
+                        <div class="atux"></div>
+                        <div class="evoplay"></div>
+                        <div class="sport"></div>
+                        <div class="pg"></div>
+                        <div class="png"></div>
+                        <div class="mg"></div>
+                        <div class="pp"></div>
+                        <div class="redrake"></div>
+                    </li>
+                    <li>
+                        <div class="nolimit"></div>
+                        <div class="ifun"></div>
+                        <div class="wm"></div>
+                        <div class="ygg"></div>
+                        <div class="relax"></div>
+                        <div class="redtiger"></div>
                     </li>
                 </ul>
             </div>
         </div>
+        <div class="base"></div>
     </footer>
     <div class="filter">
-        <!--遊戲投注彈窗-->
-        <div class="jumpWindow betWindow sportGame">
-            <div class="title">
-                <p>クイック振替</p>
-                <i class="close_ic"></i>
-            </div>
-            <form>
-                <div class="row">
-                    <p>プラットホーム</p>
-                    <div class="smallTitle">36588 SPORTS</div>
-                </div>
-                <div class="row">
-                    <p>メインウォレット</p>
-                    <input type="text" value="$9999" readonly>
-                </div>
-                <div class="row">
-                    <i class="trans_arrow"></i>
-                </div>
-                <div class="row">
-                    <p>36588 SPORTS</p>
-                    <input type="text" value="$0" readonly>
-                </div>
-                <div class="row">
-                    <p>振替金額</p>
-                    <input type="text" value="$100">
-                </div>
-                <div class="row forBtn">
-                    <div class="btnBox">
-                        <button type="button">¥100</button>
-                        <button type="button">¥500</button>
-                        <button type="button">¥1000</button>
-                        <button type="button">¥3000</button>
-                        <button type="button">¥5000</button>
-                        <button type="button">¥10000</button>
-                        <button type="button">全て</button>
-                    </div>
-                </div>
-                <div class="row forBtn">
-                    <button type="button" class="check">確認</button>
-                </div>
-            </form>
-            <div class="enterGame">
-                <button type="button">ゲームに入る</button>
-            </div>
-        </div>
-        <div class="jumpWindow betWindow liveGame">
-            <div class="title">
-                <p>クイック振替</p>
-                <i class="close_ic"></i>
-            </div>
-            <form>
-                <div class="row">
-                    <p>プラットホーム</p>
-                    <div class="smallTitle">AG CASINO</div>
-                </div>
-                <div class="row">
-                    <p>メインウォレット</p>
-                    <input type="text" value="$9999" readonly>
-                </div>
-                <div class="row">
-                    <i class="trans_arrow"></i>
-                </div>
-                <div class="row">
-                    <p>AG CASINO</p>
-                    <input type="text" value="$0" readonly>
-                </div>
-                <div class="row">
-                    <p>振替金額</p>
-                    <input type="text" value="$100">
-                </div>
-                <div class="row forBtn">
-                    <div class="btnBox">
-                        <button type="button">¥100</button>
-                        <button type="button">¥500</button>
-                        <button type="button">¥1000</button>
-                        <button type="button">¥3000</button>
-                        <button type="button">¥5000</button>
-                        <button type="button">¥10000</button>
-                        <button type="button">全て</button>
-                    </div>
-                </div>
-                <div class="row forBtn">
-                    <button type="button" class="check">確認</button>
-                </div>
-            </form>
-            <div class="enterGame">
-                <button type="button">ゲームに入る</button>
-            </div>
-        </div>
         <!--最新公告-->
         <div class="jumpWindow news">
             <div class="title">
                 <p>最新のお知らせ</p>
                 <i class="close_ic"></i>
             </div>
-            <!--頁籤-->
-            <ul class="nav">
-                <li class="hot active">人気</li>
-                <li class="normal">ノーマル</li>
-                <li class="deposit">入金</li>
-            </ul>
-            <!--內容-->
-            <ul class="content forHot display">
-                <li>
-                    <div>
-                        <p class="text">人気ゲーム-日本麻雀</p>
-                        <p class="date">2021/09/26</p>
-                    </div>
-                </li>
-            </ul>
-            <ul class="content forNormal">
-                <li>
-                    <div>
-                        <p class="text">AU8へようこそ!</p>
-                        <p class="date">2021/09/26</p>
-                    </div>
-                </li>
-            </ul>
-            <ul class="content forDeposit">
-                <li>
-                    <div>
-                        <p class="text">プロモーション~ライブカジノリベートボーナス</p>
-                        <p class="date">2021/09/26</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <p class="text">プロモーション~スロットリベートボーナス</p>
-                        <p class="date">2021/09/26</p>
-                    </div>
-                </li>
-            </ul>
+            <div class="box">
+                <div class="infoBox active">
+                    <ul>
+                        <li class="smallTitle">
+                            <i class="flower_ic"></i>
+                            <p>人気</p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <li>
+                            <p>人気ゲーム-日本麻雀</p>
+                        </li>
+                        <li>
+                            <p>人気ゲーム-日本麻雀人気ゲーム-日本麻雀人気ゲーム-日本麻雀</p>
+                        </li>
+                        <li>
+                            <p>人気ゲーム-日本麻雀人気ゲーム-日本麻雀人気ゲーム-日本麻雀人気ゲーム-日本麻雀人気ゲーム-日本麻雀人気ゲーム-日本麻雀</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="infoBox">
+                    <ul>
+                        <li class="smallTitle">
+                            <i class="flower_ic"></i>
+                            <p>入金</p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <li>
+                            <p>人気ゲーム-日本麻雀</p>
+                        </li>
+                        <li>
+                            <p>人気ゲーム-日本麻雀人気ゲーム-日本麻雀人気ゲーム-日本麻雀</p>
+                        </li>
+                        <li>
+                            <p>人気ゲーム-日本麻雀人気ゲーム-日本麻雀人気ゲーム-日本麻雀人気ゲーム-日本麻雀人気ゲーム-日本麻雀人気ゲーム-日本麻雀</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="infoBox">
+                    <ul>
+                        <li class="smallTitle">
+                            <i class="flower_ic"></i>
+                            <p>ノーマル</p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <li>
+                            <p>人気ゲーム-日本麻雀</p>
+                        </li>
+                        <li>
+                            <p>人気ゲーム-日本麻雀人気ゲーム-日本麻雀人気ゲーム-日本麻雀</p>
+                        </li>
+                        <li>
+                            <p>人気ゲーム-日本麻雀人気ゲーム-日本麻雀人気ゲーム-日本麻雀人気ゲーム-日本麻雀人気ゲーム-日本麻雀人気ゲーム-日本麻雀</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-   </div>
-   <div class="bg"></div>
+    </div>
+    <div class="bg inner"></div>
 </body>
 </html>

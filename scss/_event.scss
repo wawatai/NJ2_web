@@ -1,247 +1,317 @@
 .eventWrap {
-    width: auto;
+    width: 100%;
     height: auto;
-    background: $innerBG;
 
-    //上標題
-    .eventTitle {
-        width: 100%;
-        height: 220px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        p {
-            font-size: 61px;
-            color: $mainFont_1;
-            font-weight: bold;
-        }
-    }
-    
-    //內容
-    .eventBody {
+    //主內容
+    .content {
         width: 1400px;
         height: auto;
-        min-height: 600px;
-        padding: 28px 0 24px;
-        margin: 0 auto;
-        display: flex;
+        margin: 0 auto 60px;
 
-        //左
-        .side {
-            width: 357px;
-            margin-right: 13px;
-            height: auto;
-            background: $secondBG;
-            border-radius: 5px;
+        .banner {
+            width: 100%;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            margin: 10px 0 16px;
 
-            ul {
-                width: 100%;
+            div {
+                width: auto;
                 height: auto;
+                margin-left: 245px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
 
-                li {
-                    width: 100%;
-                    height: 60px;
+                .name {
+                    background: $eventWrap_Banner_Title;
+                    background-clip: text;
+                    color: transparent;
+                    font-size: 56px;
+                    font-weight: bold;
+                }
+    
+                .text {
+                    color: $mainFont_2;
+                    font-size: 35px;
+                    font-weight: bold;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        //marqueeWrap
+        .marqueeWrap {
+            width: 100%;
+            height: auto;
+            margin-bottom: 32px;
+
+            .marquee {
+                width: 100%;
+                height: 52px;
+                border: solid 1px $marquee_Border;
+                border-radius: 30px;
+                box-shadow: 0 2px 5px 0 $marquee_Shadow inset;
+                display: flex;
+
+                .title {
+                    width: 165px;
+                    height: 100%;
+                    background: $marquee_Linear;
+                    border-radius: 30px;
                     display: flex;
                     align-items: center;
-                    border-bottom: solid 1px $Border;
-                    position: relative;
-                    cursor: pointer;
+                    justify-content: center;
+                    flex-shrink: 0;
 
-                    &:hover {
-                        background: $choose_BG;
-
-                        i {
-                            background: none;
-
-                            &::before {
-                                display: block;
-                            }
-                        }
-
-                        span {
-                            color: $choose_Active;
-                        }
-                    }
-                    &:active,&.active {
-
-                        i {
-                            background: none;
-
-                            &::before {
-                                display: block;
-                            }
-                        }
-
-                        span {
-                            color: $choose_Active;
-                        }
-                    }
-
-                    i {
-                        display: block;
-                        width: 23px;
-                        height: 23px;
-                        margin: 0 28px;
-                        overflow: hidden;
-                        position: relative;
-
-                        &::before {
-                            display: none;
-                            content: "";
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            left: -23px;
-                            top: 0;
-                            filter: drop-shadow(23px 0px 0px #ff4719);
-                        }
-                    }
-
-                    span {
+                    p {
+                        color: $marquee_Linear_Word;
+                        font-size: 20px;
                         font-weight: bold;
-                        font-size: 22px;
-                        color: $choose_Word;
+                    }
+                }
+
+                .textBox {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    
+                    p {
+                        color: $marquee_Word;
+                        font-size: 20px;
+                        font-weight: bold;
+                        white-space: nowrap;
+                        padding-left: 100%;
+                        animation: marquee 5s linear 0s infinite;
+                    }
+                }
+
+                @keyframes marquee {
+                    0% {
+                        transform: translateX(0%);
+                    }
+
+                    100% {
+                        transform: translateX(-100%);
                     }
                 }
             }
         }
 
-        //右
-        .eventList {
-            display: none;
-            width: 1028px;
+        //listBox
+        .listBox {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 20px;
+            margin-bottom: 12px;
 
-            &.display {
-                display: block;
-            }
-
-            .eventBox {
-                background: $secondBG;
+            li {
+                width: auto;
+                height: 51px;
+                color: $gameWrap_platformBtn_Word;
+                font-size: 20px;
+                font-weight: bold;
+                position: relative;
                 display: flex;
-                margin-bottom: 20px;
-                border-radius: 5px;
+                align-items: center;
+                justify-content: center;
+                padding: 0 8px;
+                margin: 0 20px 10px;
+                cursor: pointer;
+
+                &.active {
+                    color: $gameWrap_platformBtn_Active;
+
+                    i {
+                        background-position-y: 100%;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -31px;
+                    top: 0;
+                    width: 31px;
+                    height: 100%;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -31px;
+                    top: 0;
+                    width: 31px;
+                    height: 100%;
+                }
+
+                i {
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 10px;
+
+                    &.all_ic {
+                        background-position-x: 0;
+                    }
+                    &.sale_ic {
+                        background-position-x: 25%;
+                    }
+                    &.month_ic {
+                        background-position-x: 50%;
+                    }
+                    &.vip_ic {
+                        background-position-x: 75%;
+                    }
+                }
+            }
+        }
+
+        //eventBox
+        .eventBox {
+            width: 100%;
+            height: auto;
+
+            li {
+                width: 100%;
+                height: auto;
+                background: $eventWrap_eventBox_BG;
+                border: solid 1px $eventWrap_eventBox_Border;
+                margin-bottom: 15px;
 
                 &:last-child {
                     margin: 0;
                 }
 
-                ul {
-                    width: 252px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    margin: 30px 27px;
+                .imgBox {
+                    width: 100%;
+                    height: 250px;
+                    position: relative;
+                    overflow: hidden;
 
-                    .title {
-                        font-size: 29px;
-                        font-weight: bold;
-                        letter-spacing: 3px;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        color: $mainFont_1;
+                    img {
+                        position: absolute;
+                        left: 50%;
+                        top: 0;
+                        transform: translateX(-50%);
+                    }
+                }
+
+                .textBox {
+                    width: 100%;
+                    height: 55px;
+                    border-top: solid 1px $eventWrap_eventBox_Border;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    padding: 0 16px;
+
+                    .star_ic {
+                        width: 19px;
+                        height: 19px;
+                        margin-right: 10px;
                     }
 
-                    .btnBox {
-                        width: 100%;
-                        height: auto;
+                    p {
+                        color: $mainFont_3;
+                        font-size: 25px;
+                        font-weight: bold;
+                    }
 
-                        button {
-                            width: 100%;
-                            height: 37px;
-                            @include footerBtn;
+                    button {
+                        width: auto;
+                        height: 55px;
+                        @include eventBtn;
+                        position: absolute;
+                        right: 16px;
+                        top: -25px;
+
+                        i {
+                            width: 19px;
+                            height: 21px;
+                            margin-left: 20px;
+                            filter: grayscale(1) brightness(15);
                         }
                     }
                 }
             }
         }
 
-        //內頁
-        .eventDetail {
-            display: none;
-            width: 1028px;
-            background: $secondBG;
-            border-radius: 5px;
+        .pageBox {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
 
-            &.display {
-                display: block;
+            .line {
+                width: 100%;
+                height: 1px;
+                background: $page_line;
             }
 
-            .title {
-                padding: 22px 40px 5px;
+            .page {
+                width: auto;
+                height: auto;
                 display: flex;
                 align-items: center;
+                flex-shrink: 0;
+                margin: 0 10px;
 
-                p {
-                    font-size: 34px;
-                    font-weight: bold;
-                    color: $mainFont_1;
-                }
+                i {
+                    width: 16px;
+                    height: 9px;
+                    transform: rotate(90deg);
+                    cursor: pointer;
 
-                button {
-                    width: 30px;
-                    height: 30px;
-                    margin-right: 20px;
-                }
-            }
-
-            .btnBox {
-                width: 100%;
-                height: auto;
-                padding: 0 40px 18px;
-                box-sizing: border-box;
-                display: flex;
-                justify-content: flex-end;
-
-                a {
-                    display: inline-block;
-                    width: 32px;
-                    height: 32px;
-                    margin-right: 8px;
-
-                    &:last-child {
-                        margin: 0;
+                    &.prev {
+                        transform: rotate(-90deg);
+                        filter: grayscale(1) brightness(4);
                     }
                 }
-            }
 
-            .info {
-                padding: 25px 40px;
-                
-                p {
-                    color: $mainFont_2;
-                    font-weight: bold;
-                    font-size: 16px;
-                    line-height: 20px;
+                ul {
+                    width: auto;
+                    height: auto;
+                    display: flex;
 
-                    &.infoTitle {
-                        font-size: 26px;
-                        margin-bottom: 30px;
-                        color: $mainFont_3;
-                    }
+                    li {
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        color: $page_Color;
+                        font-size: 12px;
+                        font-weight: bold;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 3px;
+                        box-sizing: content-box;
+                        padding: 1px 1px 2px;
+                        cursor: pointer;
 
-                    &.smallTitle {
-                        font-size: 16px;
-                        margin: 30px 0 20px;
-                        color: $time;
-                    }
-
-                    &.remind {
-                        color: $remind;
-                        margin-bottom: 20px;
-                    }
-
-                    &.mar {
-                        margin-bottom: 30px;
+                        &:hover,&:active,&.active {
+                            background: $page_ActiveBG;
+                            color: $page_Active;
+                        }
                     }
                 }
             }
+        }
 
-            .detailFooter {
-                width: 100%;
-                height: 130px;
-                padding-bottom: 60px;
+        .pageWord {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin-top: 5px;
+
+            p {
+                color: $page_Color;
+                font-size: 12px;
+                font-weight: bold;
             }
         }
     }

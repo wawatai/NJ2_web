@@ -1,281 +1,359 @@
-.helpPage {
+.help {
     width: 100%;
     height: auto;
-    min-height: 565px;
-    padding-bottom: 42px;
 
     .center {
         width: 1400px;
+        height: auto;
         margin: 0 auto;
-        padding-top: 25px;
-        display: flex;
-        justify-content: space-between;
-        
-        .nav {
-            background: $secondBG;
-            width: 390px;
-            height: auto;
-            border-radius: 5px;
 
-            li {
+        //marqueeWrap
+        .marqueeWrap {
+            width: 1155px;
+            height: 45px;
+            margin: 20px auto;
+
+            .marquee {
                 width: 100%;
-                height: auto;
+                height: 100%;
+                background: $marquee_BG;
+                border: solid 1px $marquee_Border;
+                border-radius: 30px;
+                box-shadow: 0 2px 5px 0 $marquee_Shadow inset;
+                display: flex;
+                align-items: center;
 
-                &.title {
+                .title {
+                    width: 160px;
+                    height: 35px;
+                    background: $marquee_Linear;
+                    border-radius: 30px;
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
-                    padding-left: 26px;
-                    height: 60px;
-                    box-sizing: border-box;
-                    cursor: pointer;
-    
-                    &:hover,&:active,&.active {
-    
-                        .arrow_ic {
-                            transform: rotate(270deg);
-                        }
-                    }
-    
-                    p {
-                        display: flex;
-                        align-items: center;
-                        color: $choose_Word;
-                        font-size: 22px;
-                        font-weight: bold;
-    
-                        i {
-                            display: block;
-                            width: 20px;
-                            height: 20px;
-                            margin-right: 23px;
-    
-                            &.bulb {
-                                height: 24px;
-                            }
+                    justify-content: center;
+                    flex-shrink: 0;
+                    margin-left: 5px;
 
-                            &.aboutUs {
-                                height: 28px;
-                            }
-                        }
-                    }
-    
-                    .arrow_ic {
-                        width: 8px;
-                        height: 16px;
-                        transition: 0.3s all;
-                        transform: rotate(180deg);
-                        margin-right: 23px;
+                    p {
+                        color: $marquee_Linear_Word;
+                        font-size: 20px;
+                        font-weight: bold;
                     }
                 }
 
-                &.box {
-                    display: none;
+                .textBox {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    
+                    p {
+                        color: $marquee_Word;
+                        font-size: 20px;
+                        font-weight: bold;
+                        white-space: nowrap;
+                        padding-left: 100%;
+                        animation: marquee 5s linear 0s infinite;
+                    }
+                }
 
-                    &.display {
-                        display: block;
+                @keyframes marquee {
+                    0% {
+                        transform: translateX(0%);
                     }
 
-                    ul {
-                        width: 100%;
-                        height: auto;
-                        
-                        li {
-                            width: 100%;
-                            height: 45px;
-                            box-sizing: border-box;
-                            padding-left: 72px;
-                            cursor: pointer;
-                            display: flex;
-                            align-items: center;
-                            font-size: 18px;
-                            color: $choose_Word;
-    
-                            &:hover,&:active,&.active {
-                                background: $choose_BG;
-                                color: $choose_Active;
-                                font-weight: bold;
-
-                                &::before {
-                                    display: none;
-                                }
-                            }
-                        }
+                    100% {
+                        transform: translateX(-100%);
                     }
                 }
             }
         }
-        
-        .helpWrap {
-            width: 980px;
+
+        //innerMainWrap
+        .helpMainWrap {
+            width: 100%;
             height: auto;
-            background: $secondBG;
-            border-radius: 5px;
-            margin-bottom: 40px;
-            box-sizing: border-box;
-            padding: 44px 58px;
+            @include innerPageWrapBG;
+            padding: 70px 24px 24px;
+            margin-bottom: 42px;
+            display: flex;
 
-            div {
-                display: none;
+            //leftSide
+            .leftSide {
+                width: 280px;
+                height: auto;
+                padding-bottom: 85px;
+                display: flex;
+                flex-shrink: 0;
 
-                &.display {
-                    display: block;
-                }
-
-                h2 {
-                    margin: 20px 0;
-                    color: $mainFont_1;
-                    font-size: 16px;
-                    font-weight: bold;
-
-                    &:first-child {
-                        margin-top: 0;
-                        font-size: 22px;
-                    }
-                }
-                
-                h3 {
-                    color: $mainFont_1;
-                    font-size: 16px;
-                    font-weight: bold;
-                    margin: 10px 0;
-                }
-
-                p {
-                    margin-bottom: 10px;
-                    color: $mainFont_2;
-                    font-size: 16px;
-                    font-weight: bold;
-                    line-height: 24px;
-
-                    &.remind {
-                        color: $help_remind;
-                    }
-                }
-
-                button {
-                    width: 257px;
-                    height: 42px;
-                    @include mainBtn;
-                }
-
-                a {
-                    color: $link;
-                    text-decoration: none;
-                }
-
-                .img {
-                    display: block;
-
-                    &.online01 {
-                        width: 860px;
-                        height: 736px;
-                    }
-
-                    &.online02 {
-                        width: 862px;
-                        height: 749px;
-                        margin-bottom: 20px;
-                    }
-
-                    &.online03 {
-                        width: 862px;
-                        height: 957px;
-                    }
-
-                    &.online04 {
-                        width: 187px;
-                        height: 144px;
-                    }
-
-                    &.online05 {
-                        width: 275px;
-                        height: 379px;
-                        margin: 10px 0 20px 55px;
-                    }
-                }
-
-                .uploadBox {
-                    width: 100%;
+                .line_long {
+                    width: 5px;
                     height: auto;
-                    display: flex;
-                    justify-content: space-between;
-                    margin: 60px 0;
+                    min-height: 600px;
+                    background: $line;
+                    border-radius: 10px;
+                    position: relative;
 
-                    .box {
-                        display: block;
-                        width: 48%;
-                        height: auto;
+                    div {
+                        width: auto;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-53%);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
 
-                        &.full {
-                            width: 100%;
-
-                            .innerBox {
-                                padding: 60px 0;
-                            }
+                        &:first-child {
+                            height: 35px;
+                            top: -45px;
                         }
 
-                        .smallTitle {
-                            color: $mainFont_2;
-                            font-size: 14px;
-                            font-weight: bold;
-                            margin-bottom: 10px;
+                        &:last-child {
+                            height: 75px;
+                            bottom: -85px;
                         }
 
-                        .innerBox {
-                            width: 100%;
-                            height: auto;
-                            background: $help_innerBox_BG;
-                            border-radius: 5px;
-                            border: dashed 3px $help_innerBox_Border;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            padding: 30px 0;
+                        .line_short {
+                            width: 5px;
+                            height: 9px;
+                            background: $line;
+                            border-radius: 10px;
+                        }
 
-                            i {
-                                width: 52px;
-                                height: 49px;
-                                margin-bottom: 10px;
-                            }
-
-                            button {
-                                margin-bottom: 10px;
-                            }
-
-                            .remind {
-                                font-size: 12px;
-                            }
+                        .star_ic {
+                            width: 19px;
+                            height: 19px;
                         }
                     }
                 }
 
                 .btnBox {
-                    width: 100%;
+                    width: auto;
                     height: auto;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin-bottom: 60px;
 
-                    &.noMar {
-                        margin: 0;
+                    li {
+                        width: 205px;
+                        height: 45px;
+                        @include helpLeftList;
+                        margin-bottom: 12px;
+
+                        &:hover,&:active,&.active {
+                            width: 235px;
+                        }
+
+                        i {
+                            width: 17px;
+                            height: 17px;
+                            margin-right: 10px;
+                        }
                     }
 
-                    button {
+                    .innerBox {
+                        width: 208px;
+                        height: auto;
+                        margin-left: 10px;
+                        display: none;
 
-                        &:last-child {
-                            @include fastBtn;
-                            background: $help_fastBtn_BG;
-                            margin-top: 20px;
+                        &.display {
+                            display: block;
+                        }
+
+                        button {
+                            width: 100%;
+                            height: 40px;
+                            @include helpLeftList_innerBtn;
+                            margin-bottom: 5px;
+
+                            &:last-child {
+                                margin: 0;
+                            }
                         }
                     }
                 }
+            }
 
-                hr {
-                    border-color: $Border;
-                    margin-bottom: 60px;
+            //rightSide
+            .rightSide {
+                width: 100%;
+                height: auto;
+                margin-top: -10px;
+
+                .title {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+                    &:first-child {
+                        
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .firstIcon {
+                        width: 35px;
+                        height: 35px;
+                        flex-shrink: 0;
+                    }
+
+                    .smallStar_ic {
+                        width: 19px;
+                        height: 19px;
+                        flex-shrink: 0;
+                    }
+
+                    p {
+                        color: $mainFont_1;
+                        font-size: 16px;
+                        font-weight: bold;
+                        flex-shrink: 0;
+                        margin: 0 15px;
+                    }
+
+                    .line {
+                        width: 100%;
+                        height: 2px;
+                        background: $line;
+                    }
+
+                    .star_ic {
+                        width: 112px;
+                        height: 12px;
+                        flex-shrink: 0;
+                        margin-left: 15px;
+                    }
+                }
+
+                //helpInfo
+                .helpInfo {
+                    display: none;
+                    width: 100%;
+                    height: auto;
+
+                    &.display {
+                        display: block;
+                    }
+
+                    .moreList {
+                        width: 100%;
+                        height: auto;
+
+                        .allBtn {
+                            width: 262px;
+                            height: 45px;
+                            @include mainBtn;
+                            display: block;
+                            margin: 0 auto 20px;
+                        }
+
+                        li {
+                            width: 100%;
+                            height: 64px;
+                            @include helpMoreList;
+                            margin-bottom: 20px;
+
+                            &:last-child {
+                                margin: 0;
+                            }
+
+                            &:active,&.active {
+                                height: auto;
+
+                                .smallTitle {
+                                    border-bottom: solid 1px $helpMoreList_Border;
+
+                                    p {
+                                        color: $mainFont_1;
+                                    }
+
+                                    i {
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                            }
+
+                            .smallTitle {
+                                width: 100%;
+                                height: 64px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                padding: 0 24px;
+                                user-select: none;
+                                cursor: pointer;
+
+                                p {
+                                    color: $mainFont_2;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                }
+
+                                i {
+                                    width: 0;
+                                    height: 0;
+                                    border-style: solid;
+                                    border-width: 8px 6px 0 6px;
+                                    border-color: $helpMoreList_Border transparent;
+                                    transition: 0.3s all;
+                                }
+                            }
+
+                            .content {
+                                width: 100%;
+                                height: auto;
+                                padding: 16px 24px;
+
+                                p {
+                                    color: $mainFont_3;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    line-height: 24px;
+                                    margin-bottom: 10px;
+
+                                    &:last-child {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .textBox {
+                        width: 100%;
+                        height: auto;
+                        min-height: 600px;
+                        @include helpMoreList;
+                        padding: 16px 24px; 
+
+                        p {
+                            color: $mainFont_3;
+                            font-size: 16px;
+                            font-weight: bold;
+                            line-height: 24px;
+                            margin-bottom: 10px;
+
+                            &:last-child {
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    .imgBox {
+                        width: 100%;
+                        height: auto;
+                        @include helpMoreList;
+                        padding: 32px 0;
+
+                        .license {
+                            width: 982px;
+                            height: 1383px;
+                            margin: 0 auto;
+                        }
+                    }
                 }
             }
         }
