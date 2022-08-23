@@ -76,11 +76,6 @@ header .gameNav ol li::before {
   background: url("../images/headerNav_01.png") no-repeat;
 }
 
-header .transferInfo .money i {
-  background: url("../images/icon/svg/loading_g.svg") no-repeat;
-  background-size: 100%;
-}
-
 .mainWrap .title i {
   background: url("../images/icon/mainWrap_quickIcon.png") no-repeat;
   background-size: 600%;
@@ -870,6 +865,12 @@ footer .qs {
   background-size: contain;
 }
 
+header .logo {
+  height: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .single-item img {
   width: 100%;
 }
@@ -888,6 +889,13 @@ footer .qs {
 
 .eventWrap .eventBox img {
   height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.jumpWindow.applyWindow img,
+.jumpWindow.eventWindow img {
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1005,11 +1013,11 @@ html body::-webkit-scrollbar {
   height: 8px;
 }
 html body::-webkit-scrollbar-thumb {
-  background: #cccccc;
+  background: #a98443;
   border-radius: 10px;
 }
 html body::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #cfcfcf;
   border-radius: 10px;
 }
 html body header {
@@ -1037,9 +1045,6 @@ html body header .top {
   padding: 0 60px;
 }
 html body header .top .logo {
-  color: #b8151a;
-  font-size: 50px;
-  font-weight: bold;
   cursor: pointer;
 }
 html body header .top .user {
@@ -1200,6 +1205,9 @@ html body header .top .user li:not(.platform).lang select {
           appearance: none;
   cursor: pointer;
 }
+html body header .top .user.alLogin {
+  position: relative;
+}
 html body header .top .user.alLogin li:not(.platform) {
   margin-right: 15px;
 }
@@ -1288,51 +1296,43 @@ html body header .top .user.alLogin li:not(.platform).moneyTotal .total::before 
   border-width: 6px 4px 0 4px;
   border-color: #b8151a transparent;
 }
-html body header .top .user.alLogin li:not(.platform).moneyTotal .transferInfo {
-  width: 290px;
+html body header .top .user.alLogin li:not(.platform).lang {
+  margin: 0;
+}
+html body header .top .transferInfo {
+  width: 1400px;
   height: auto;
-  max-height: 516px;
+  background: #f7f7f7;
+  border: solid 1px #c9a76c;
   position: absolute;
-  left: 0;
-  top: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 70px;
   z-index: 20;
-  background: #181818;
-  border: solid 1px #ca9d3d;
-  overflow-y: auto;
   display: none;
 }
-html body header .top .user.alLogin li:not(.platform).moneyTotal .transferInfo::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-html body header .top .user.alLogin li:not(.platform).moneyTotal .transferInfo::-webkit-scrollbar-thumb {
-  background: #cccccc;
-  border-radius: 10px;
-}
-html body header .top .user.alLogin li:not(.platform).moneyTotal .transferInfo::-webkit-scrollbar-track {
-  background: #ffffff;
-  border-radius: 10px;
-}
-html body header .top .user.alLogin li:not(.platform).moneyTotal .transferInfo li {
-  border-bottom: solid 1px #ca9d3d;
-}
-html body header .top .user.alLogin li:not(.platform).moneyTotal .transferInfo li div p {
-  color: #ffc13c;
-}
-html body header .top .user.alLogin li:not(.platform).moneyTotal .transferInfo.display {
+html body header .top .transferInfo.display {
   display: block;
 }
-html body header .top .user.alLogin li:not(.platform).moneyTotal .transferInfo li {
+html body header .top .transferInfo li {
   width: 100%;
-  height: 47px;
-  padding: 11px 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  height: 45px;
+  border-bottom: solid 1px #c9a76c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-html body header .top .user.alLogin li:not(.platform).moneyTotal .transferInfo li div {
-  width: 100%;
-  height: 100%;
-  font-weight: bold;
+html body header .top .transferInfo li:last-child {
+  border: none;
+}
+html body header .top .transferInfo li div {
+  width: 20%;
+  height: 30px;
+  border-right: solid 1px #a8a8a8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1342,49 +1342,23 @@ html body header .top .user.alLogin li:not(.platform).moneyTotal .transferInfo l
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
+  padding: 0 16px;
 }
-html body header .top .user.alLogin li:not(.platform).moneyTotal .transferInfo li div .money p {
+html body header .top .transferInfo li div:last-child {
+  border: none;
+}
+html body header .top .transferInfo li div p {
+  color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
 }
-html body header .top .user.alLogin li:not(.platform).moneyTotal .transferInfo li div .money i {
-  display: none;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: -6px;
-  -webkit-animation: circle 1s linear infinite;
-          animation: circle 1s linear infinite;
+html body header .top .transferInfo li div span {
+  color: #b8151a;
+  font-size: 14px;
+  font-weight: bold;
 }
-html body header .top .user.alLogin li:not(.platform).moneyTotal .transferInfo li div .money i.display {
-  display: block;
-}
-@-webkit-keyframes circle {
-  0% {
-    -webkit-transform: translateY(-50%) rotate(0deg);
-            transform: translateY(-50%) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translateY(-50%) rotate(360deg);
-            transform: translateY(-50%) rotate(360deg);
-  }
-}
-@keyframes circle {
-  0% {
-    -webkit-transform: translateY(-50%) rotate(0deg);
-            transform: translateY(-50%) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translateY(-50%) rotate(360deg);
-            transform: translateY(-50%) rotate(360deg);
-  }
-}
-html body header .top .user.alLogin li:not(.platform).lang {
-  margin: 0;
+html body header .top .transferInfo li div span.wait {
+  color: #3a3a3a;
 }
 html body header .gameNav {
   width: 100%;
@@ -2457,7 +2431,7 @@ html body .filter .jumpWindow {
   background: #f9f9f9;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  padding: 0 36px;
+  padding: 0 18px;
 }
 html body .filter .jumpWindow.forgetPassword {
   display: none;
@@ -2554,11 +2528,11 @@ html body .filter .jumpWindow.news .box::-webkit-scrollbar {
   height: 8px;
 }
 html body .filter .jumpWindow.news .box::-webkit-scrollbar-thumb {
-  background: #cccccc;
+  background: #a98443;
   border-radius: 10px;
 }
 html body .filter .jumpWindow.news .box::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #cfcfcf;
   border-radius: 10px;
 }
 html body .filter .jumpWindow.news .box .infoBox {
@@ -2641,6 +2615,7 @@ html body .filter .jumpWindow.news .box .infoBox ul li p {
 }
 html body .filter .jumpWindow.plsGo {
   display: none;
+  min-width: 320px;
   padding-bottom: 30px;
 }
 html body .filter .jumpWindow.plsGo.display {
@@ -2653,7 +2628,7 @@ html body .filter .jumpWindow.plsGo .content {
   text-align: center;
 }
 html body .filter .jumpWindow.plsGo .content p {
-  color: #292CFF;
+  color: #3a3a3a;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -2942,6 +2917,162 @@ html body .filter .jumpWindow.loading .content p {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+html body .filter .jumpWindow.applyWindow {
+  width: 750px;
+  display: none;
+}
+html body .filter .jumpWindow.applyWindow.display {
+  display: block;
+}
+html body .filter .jumpWindow.applyWindow .content {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  overflow-y: auto;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+}
+html body .filter .jumpWindow.applyWindow .content::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html body .filter .jumpWindow.applyWindow .content::-webkit-scrollbar-thumb {
+  background: #a98443;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.applyWindow .content::-webkit-scrollbar-track {
+  background: #cfcfcf;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.applyWindow .content img {
+  margin: 15px 0;
+}
+html body .filter .jumpWindow.applyWindow .content .smallTitle {
+  color: #b8151a;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+html body .filter .jumpWindow.applyWindow .content .secondTitle {
+  color: #ba9141;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0 10px;
+}
+html body .filter .jumpWindow.applyWindow .content .secondTitle:nth-of-type(1) {
+  margin-top: 0;
+}
+html body .filter .jumpWindow.applyWindow .content .text {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+html body .filter .jumpWindow.applyWindow .content .textBox {
+  width: 100%;
+  height: auto;
+  padding: 0 32px 24px;
+  text-align: center;
+}
+html body .filter .jumpWindow.applyWindow .content .textBox p {
+  color: #3a3a3a;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+html body .filter .jumpWindow.applyWindow .content .textBox p:last-child {
+  margin: 0;
+}
+html body .filter .jumpWindow.eventWindow {
+  width: 750px;
+  display: none;
+}
+html body .filter .jumpWindow.eventWindow.display {
+  display: block;
+}
+html body .filter .jumpWindow.eventWindow .content {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  overflow-y: auto;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+}
+html body .filter .jumpWindow.eventWindow .content::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html body .filter .jumpWindow.eventWindow .content::-webkit-scrollbar-thumb {
+  background: #a98443;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.eventWindow .content::-webkit-scrollbar-track {
+  background: #cfcfcf;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.eventWindow .content img {
+  margin: 15px 0;
+}
+html body .filter .jumpWindow.eventWindow .content .smallTitle {
+  color: #b8151a;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+html body .filter .jumpWindow.eventWindow .content .secondTitle {
+  color: #ba9141;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0 10px;
+}
+html body .filter .jumpWindow.eventWindow .content .secondTitle:nth-of-type(1) {
+  margin-top: 0;
+}
+html body .filter .jumpWindow.eventWindow .content .text {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+html body .filter .jumpWindow.eventWindow .content .textBox {
+  width: 100%;
+  height: auto;
+  padding: 0 32px;
+  text-align: center;
+}
+html body .filter .jumpWindow.eventWindow .content .textBox p {
+  color: #3a3a3a;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+html body .filter .jumpWindow.eventWindow .content .textBox p:last-child {
+  margin: 0;
+}
+html body .filter .jumpWindow.eventWindow .content button {
+  width: 135px;
+  height: 45px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: block;
+  margin: 24px auto;
+}
+html body .filter .jumpWindow.eventWindow .content button:hover, html body .filter .jumpWindow.eventWindow .content button:active, html body .filter .jumpWindow.eventWindow .content button.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to bottom, #970707 0%, #cf0505 98%);
 }
 html body .filter .jumpWindow .title {
   width: 100%;

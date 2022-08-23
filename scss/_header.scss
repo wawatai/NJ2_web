@@ -19,10 +19,7 @@ header {
 
         //logo
         .logo {
-            color: $header_mainColor;
-            font-size: 50px;
-            font-weight: bold;
-            cursor: pointer;
+            cursor: pointer;   
         }
 
         //右
@@ -133,6 +130,7 @@ header {
 
             //已登入
             &.alLogin {
+                position: relative;
 
                 li:not(.platform) {
                     margin-right: 15px;
@@ -188,76 +186,69 @@ header {
                             height: auto;
                             @include headerMoney;
                         }
-
-                        .transferInfo {
-                            width: 290px;
-                            height: auto;
-                            max-height: 516px;
-                            position: absolute;
-                            left: 0;
-                            top: 60px;
-                            z-index: 20;
-                            @include headerMoneyList;
-                            display: none;
-
-                            &.display {
-                                display: block;
-                            }
-
-                            li {
-                                width: 100%;
-                                height: 47px;
-                                padding: 11px 16px;
-                                box-sizing: border-box;
-
-                                div {
-                                    width: 100%;
-                                    height: 100%;
-                                    font-weight: bold;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-                                    position: relative;
-
-                                    .money {
-
-                                        p {
-                                            font-size: 14px;
-                                            font-weight: bold;
-                                        }
-                                        
-                                        i {
-                                            display: none;
-                                            position: absolute;
-                                            width: 20px;
-                                            height: 20px;
-                                            top: 50%;
-                                            transform: translateY(-50%);
-                                            right: -6px;
-                                            animation: circle 1s linear infinite;
-
-                                            &.display {
-                                                display: block;
-                                            }
-                                        }
-
-                                        @keyframes circle {
-                                            0% {
-                                                transform: translateY(-50%) rotate(0deg);
-                                            }
-
-                                            100% {
-                                                transform: translateY(-50%) rotate(360deg);
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
                     }
 
                     &.lang {
                         margin: 0;
+                    }
+                }
+            }
+        }
+
+        .transferInfo {
+            width: 1400px;
+            height: auto;
+            background: $headerMoneyList_BG;
+            border: solid 1px $headerMoneyList_Border;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 70px;
+            z-index: 20;
+            display: none;
+
+            &.display {
+                display: block;
+            }
+
+            li {
+                width: 100%;
+                height: 45px;
+                border-bottom: solid 1px $headerMoneyList_Border;
+                display: flex;
+                align-items: center;
+
+                &:last-child {
+                    border: none;
+                }
+
+                div {
+                    width: 20%;
+                    height: 30px;
+                    border-right: solid 1px $headerMoneyList_secondBorder;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 16px;
+
+                    &:last-child {
+                        border: none;
+                    }
+
+                    p {
+                        color: $mainFont_3;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+
+                    span {
+                        color: $mainFont_1;
+                        font-size: 14px;
+                        font-weight: bold;
+
+                        &.wait {
+                            color: $mainFont_3;
+                        }
                     }
                 }
             }

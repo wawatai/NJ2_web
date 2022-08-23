@@ -51,10 +51,6 @@ header .gameNav .empty:last-child::before,
 header .gameNav ol li::before {
     background: url('../images/headerNav_01.png') no-repeat;
 }
-header .transferInfo .money i {
-    background: url('../images/icon/svg/loading_g.svg') no-repeat;
-    background-size: 100%;
-}
 
 //mainWrap
 .mainWrap .title i {
@@ -703,11 +699,10 @@ footer .qs {
 
 
 //logo
-// header .logo {
-//     width: 190px;
-//     height: 80px;
-//     object-fit: cover;
-// }
+header .logo {
+    height: 70px;
+    object-fit: contain;
+}
 
 //banner
 .single-item img {
@@ -729,5 +724,12 @@ footer .qs {
 //eventWrap img
 .eventWrap .eventBox img {
     height: 250px;
+    object-fit: contain;
+}
+
+//eventApply img
+.jumpWindow.applyWindow img,
+.jumpWindow.eventWindow img {
+    width: 100%;
     object-fit: contain;
 }

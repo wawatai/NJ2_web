@@ -906,4 +906,32 @@ $(function(){
         $('.filter,.betWindow.sportGame')
         .addClass('display');
     })
+
+    $(".rightSide.eventApply .checkEvent").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.applyWindow')
+        .addClass('display');
+    })
+
+    $(".rightSide.eventApply .applyEvent").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.plsGo')
+        .addClass('display');
+    })
+
+    $(".eventWrap .eventBtn").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.eventWindow')
+        .addClass('display');
+    })
+
+    $(".eventWindow .eventCheck").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.plsGo')
+        .addClass('display');
+    })
 })
