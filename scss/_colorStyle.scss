@@ -97,10 +97,6 @@ $header_langBtn: #e5bb85;
         border-color: #b8151a transparent;
     }
 }
-@mixin headerMoneyList {
-    background: #f7f7f7;
-    border: solid 1px #c9a76c;
-}
 $headerMoneyList_BG: #f7f7f7;
 $headerMoneyList_Border: #c9a76c;
 $headerMoneyList_secondBorder: #a8a8a8;
@@ -478,23 +474,21 @@ $filter: #0000009e;
 //彈窗色
 $jumpWindow_Title: linear-gradient(to top,#970707 0%,#cf0505 98%);
 $jumpWindow_BG: #f9f9f9;
-$jumpWindow_Border: #daaf6d;
-$jumpWindow_TitleBorder: #c30000;
-$jumpWindow_smallTitle_1: #ba9141;
-$jumpWindow_smallTitle_2: #c9a567;
+$jumpWindow_Border: #b8151a;
 @mixin newsBox {
     background: linear-gradient(to top,#eeeeee 0%,#ffffff 100%);
     border-radius: 5px;
-    border: solid 1px #9b0707;
+    border: solid 1px #b8151a;
     overflow: hidden;
 
     &.active {
         background: #ffffff;
-        border-color: #daaf6d;
         box-shadow: 0 2px 5px 0 #0000001d inset;
     }
 }
-$jumpWindow_News_Border: #b74f4e;
+$jumpWindow_table_TitleBG: linear-gradient(to top,#eeeeee 0%,#ffffff 100%);
+$jumpWindow_table_BG: #f1f1f1;
+$jumpWindow_table_Border: #b74f4e;
 
 $register_BG: #ffffff;
 $register_em: #ae0606;

@@ -160,6 +160,14 @@
                             display: block;
                         }
 
+                        &.new {
+                            width: 262px;
+
+                            button {
+                                font-size: 14px;
+                            }
+                        }
+
                         button {
                             width: 100%;
                             height: 40px;
@@ -167,7 +175,7 @@
                             margin-bottom: 5px;
 
                             &:last-child {
-                                margin: 0;
+                                margin-bottom: 12px;
                             }
                         }
                     }
@@ -179,6 +187,11 @@
                 width: 100%;
                 height: auto;
                 margin-top: -10px;
+                display: none;
+
+                &.display {
+                    display: block;
+                }
 
                 .title {
                     width: 100%;
@@ -317,6 +330,10 @@
                                     &:last-child {
                                         margin: 0;
                                     }
+
+                                    .remind {
+                                        color: $remind;
+                                    }
                                 }
                             }
                         }
@@ -327,7 +344,18 @@
                         height: auto;
                         min-height: 600px;
                         @include helpMoreList;
-                        padding: 16px 24px; 
+                        padding: 16px 24px;
+
+                        h2 {
+                            color: $mainFont_2;
+                            font-size: 20px;
+                            font-weight: bold;
+                            margin: 20px 0;
+
+                            &:first-child {
+                                margin-top: 0;
+                            }
+                        }
 
                         p {
                             color: $mainFont_3;

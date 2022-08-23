@@ -827,6 +827,46 @@ $(function(){
         .siblings("li").toggleClass("active");
     })
 
+    $(".help .leftSide li").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass('active')
+        
+        $(this).next(".innerBox")
+        .addClass("display")
+        .siblings(".innerBox").removeClass("display");
+
+        if($(this).hasClass("new"))
+        {
+            $(".help .rightSide.new")
+            .addClass("display")
+            .siblings().removeClass("display");
+        }
+        else if($(this).hasClass("often"))
+        {
+            $(".help .rightSide.often")
+            .addClass("display")
+            .siblings().removeClass("display");
+        }
+        else if($(this).hasClass("about"))
+        {
+            $(".help .rightSide.about")
+            .addClass("display")
+            .siblings().removeClass("display");
+        }
+    })
+
+    $(".help .innerBox.often button").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+
+        var n = $(this).index();
+
+        $(".help .rightSide.often .helpInfo:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
     $(".help .innerBox.about button").on("click",function(){
         $(this)
         .addClass("active")
@@ -932,6 +972,20 @@ $(function(){
         $('.jumpWindow')
         .removeClass('display');
         $('.filter,.plsGo')
+        .addClass('display');
+    })
+
+    $(".rightSide.dealRecord .waterBtn").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.waterRecord')
+        .addClass('display');
+    })
+    
+    $(".rightSide.dealRecord .recordBtn").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.recordWindow')
         .addClass('display');
     })
 })

@@ -2430,7 +2430,7 @@ html body .filter .jumpWindow {
   height: auto;
   background: #f9f9f9;
   border-radius: 16px;
-  border: solid 1px #daaf6d;
+  border: solid 1px #b8151a;
   padding: 0 18px;
 }
 html body .filter .jumpWindow.forgetPassword {
@@ -2541,14 +2541,13 @@ html body .filter .jumpWindow.news .box .infoBox {
   background: -webkit-gradient(linear, left bottom, left top, from(#eeeeee), to(#ffffff));
   background: linear-gradient(to top, #eeeeee 0%, #ffffff 100%);
   border-radius: 5px;
-  border: solid 1px #9b0707;
+  border: solid 1px #b8151a;
   overflow: hidden;
   margin: 0 auto 10px;
   padding: 0 24px 0 36px;
 }
 html body .filter .jumpWindow.news .box .infoBox.active {
   background: #ffffff;
-  border-color: #daaf6d;
   -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
           box-shadow: 0 2px 5px 0 #0000001d inset;
 }
@@ -2557,6 +2556,9 @@ html body .filter .jumpWindow.news .box .infoBox:last-child {
 }
 html body .filter .jumpWindow.news .box .infoBox.active {
   height: auto;
+}
+html body .filter .jumpWindow.news .box .infoBox.active ul .smallTitle p {
+  color: #b8151a;
 }
 html body .filter .jumpWindow.news .box .infoBox.active ul .smallTitle .arrow_ic {
   -webkit-transform: scaleY(1);
@@ -2569,7 +2571,7 @@ html body .filter .jumpWindow.news .box .infoBox ul {
 html body .filter .jumpWindow.news .box .infoBox ul li {
   width: 100%;
   height: 46px;
-  border-bottom: solid 1px #b74f4e;
+  border-bottom: solid 1px #b8151a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2583,7 +2585,7 @@ html body .filter .jumpWindow.news .box .infoBox ul li:last-child {
   border: none;
 }
 html body .filter .jumpWindow.news .box .infoBox ul li.smallTitle {
-  border-color: #daaf6d;
+  border-color: #b8151a;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2606,7 +2608,7 @@ html body .filter .jumpWindow.news .box .infoBox ul li.smallTitle .arrow_ic {
 }
 html body .filter .jumpWindow.news .box .infoBox ul li p {
   width: 100%;
-  color: #b8151a;
+  color: #3a3a3a;
   font-size: 18px;
   font-weight: bold;
   overflow: hidden;
@@ -2662,12 +2664,12 @@ html body .filter .jumpWindow.betWindow .top,
 html body .filter .jumpWindow.betWindow .bottom {
   width: 100%;
   height: auto;
-  border-bottom: solid 3px #daaf6d;
+  border-bottom: solid 3px #b8151a;
   padding: 20px 0;
 }
 html body .filter .jumpWindow.betWindow .top .smallTitle,
 html body .filter .jumpWindow.betWindow .bottom .smallTitle {
-  color: #c9a567;
+  color: #ba9141;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 16px;
@@ -2707,7 +2709,7 @@ html body .filter .jumpWindow.betWindow .bottom .selectBox select {
 html body .filter .jumpWindow.betWindow .top .selectBox i,
 html body .filter .jumpWindow.betWindow .bottom .selectBox i {
   position: absolute;
-  right: 38px;
+  right: 52px;
   width: 9px;
   height: 16px;
   pointer-events: none;
@@ -2870,7 +2872,7 @@ html body .filter .jumpWindow.betWindow .enterGame div input:checked::after {
   display: block;
 }
 html body .filter .jumpWindow.betWindow .enterGame div p {
-  color: #c9a567;
+  color: #3a3a3a;
   font-size: 16px;
   font-weight: bold;
 }
@@ -3074,10 +3076,87 @@ html body .filter .jumpWindow.eventWindow .content button:hover, html body .filt
   background: -webkit-gradient(linear, left top, left bottom, from(#970707), color-stop(98%, #cf0505));
   background: linear-gradient(to bottom, #970707 0%, #cf0505 98%);
 }
+html body .filter .jumpWindow.waterRecord, html body .filter .jumpWindow.recordWindow {
+  width: 950px;
+  display: none;
+}
+html body .filter .jumpWindow.waterRecord.display, html body .filter .jumpWindow.recordWindow.display {
+  display: block;
+}
+html body .filter .jumpWindow.waterRecord.recordWindow table tr td, html body .filter .jumpWindow.recordWindow.recordWindow table tr td {
+  width: 25%;
+}
+html body .filter .jumpWindow.waterRecord table, html body .filter .jumpWindow.recordWindow table {
+  width: 100%;
+  height: auto;
+  background: #f1f1f1;
+  -webkit-box-shadow: 0 0 0 1px #b8151a;
+          box-shadow: 0 0 0 1px #b8151a;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 24px 0;
+}
+html body .filter .jumpWindow.waterRecord table tr:last-child td p, html body .filter .jumpWindow.recordWindow table tr:last-child td p {
+  border: none;
+}
+html body .filter .jumpWindow.waterRecord table tr th, html body .filter .jumpWindow.recordWindow table tr th {
+  height: 35px;
+  vertical-align: middle;
+  background: -webkit-gradient(linear, left bottom, left top, from(#eeeeee), to(#ffffff));
+  background: linear-gradient(to top, #eeeeee 0%, #ffffff 100%);
+  border-bottom: solid 1px #b8151a;
+}
+html body .filter .jumpWindow.waterRecord table tr th:first-child, html body .filter .jumpWindow.recordWindow table tr th:first-child {
+  padding-left: 16px;
+}
+html body .filter .jumpWindow.waterRecord table tr th:last-child, html body .filter .jumpWindow.recordWindow table tr th:last-child {
+  padding-right: 16px;
+}
+html body .filter .jumpWindow.waterRecord table tr th p, html body .filter .jumpWindow.recordWindow table tr th p {
+  width: 100%;
+  color: #b8151a;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow.waterRecord table tr td, html body .filter .jumpWindow.recordWindow table tr td {
+  width: 34%;
+  height: 40px;
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.waterRecord table tr td:first-child, html body .filter .jumpWindow.recordWindow table tr td:first-child {
+  padding-left: 16px;
+}
+html body .filter .jumpWindow.waterRecord table tr td:last-child, html body .filter .jumpWindow.recordWindow table tr td:last-child {
+  padding-right: 16px;
+}
+html body .filter .jumpWindow.waterRecord table tr td p, html body .filter .jumpWindow.recordWindow table tr td p {
+  width: 100%;
+  height: 100%;
+  color: #ba9141;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: solid 1px #b74f4e;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 html body .filter .jumpWindow .title {
   width: 100%;
   height: 75px;
-  border-bottom: solid 3px #c30000;
+  border-bottom: solid 3px #b8151a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9460,6 +9539,12 @@ html body .help .center .helpMainWrap .leftSide .btnBox .innerBox {
 html body .help .center .helpMainWrap .leftSide .btnBox .innerBox.display {
   display: block;
 }
+html body .help .center .helpMainWrap .leftSide .btnBox .innerBox.new {
+  width: 262px;
+}
+html body .help .center .helpMainWrap .leftSide .btnBox .innerBox.new button {
+  font-size: 14px;
+}
 html body .help .center .helpMainWrap .leftSide .btnBox .innerBox button {
   width: 100%;
   height: 40px;
@@ -9479,12 +9564,16 @@ html body .help .center .helpMainWrap .leftSide .btnBox .innerBox button:hover, 
   color: #ffffff;
 }
 html body .help .center .helpMainWrap .leftSide .btnBox .innerBox button:last-child {
-  margin: 0;
+  margin-bottom: 12px;
 }
 html body .help .center .helpMainWrap .rightSide {
   width: 100%;
   height: auto;
   margin-top: -10px;
+  display: none;
+}
+html body .help .center .helpMainWrap .rightSide.display {
+  display: block;
 }
 html body .help .center .helpMainWrap .rightSide .title {
   width: 100%;
@@ -9640,6 +9729,9 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li .content
 html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li .content p:last-child {
   margin: 0;
 }
+html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li .content p .remind {
+  color: #292CFF;
+}
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox {
   width: 100%;
   height: auto;
@@ -9654,6 +9746,15 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .textBox {
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox:active, html body .help .center .helpMainWrap .rightSide .helpInfo .textBox.active {
   border-color: #b8151a;
+}
+html body .help .center .helpMainWrap .rightSide .helpInfo .textBox h2 {
+  color: #ba9141;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+html body .help .center .helpMainWrap .rightSide .helpInfo .textBox h2:first-child {
+  margin-top: 0;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox p {
   color: #3a3a3a;

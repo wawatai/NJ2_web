@@ -96,6 +96,10 @@
                         ul {
     
                             .smallTitle {
+
+                                p {
+                                    color: $mainFont_1;
+                                }
     
                                 .arrow_ic {
                                     transform: scaleY(1);
@@ -111,7 +115,7 @@
                         li {
                             width: 100%;
                             height: 46px;
-                            border-bottom: solid 1px $jumpWindow_News_Border;
+                            border-bottom: solid 1px $jumpWindow_Border;
                             display: flex;
                             align-items: center;
                             position: relative;
@@ -134,7 +138,7 @@
                                 }
     
                                 p {
-                                    color: $jumpWindow_smallTitle_1;
+                                    color: $mainFont_2;
                                 }
     
                                 .arrow_ic {
@@ -146,7 +150,7 @@
     
                             p {
                                 width: 100%;
-                                color: $mainFont_1;
+                                color: $mainFont_3;
                                 font-size: 18px;
                                 font-weight: bold;
                                 @include textHidden;
@@ -207,7 +211,7 @@
                 padding: 20px 0;
 
                 .smallTitle {
-                    color: $jumpWindow_smallTitle_2;
+                    color: $mainFont_2;
                     font-size: 16px;
                     font-weight: bold;
                     margin-bottom: 16px;
@@ -231,7 +235,7 @@
 
                     i {
                         position: absolute;
-                        right: 38px;
+                        right: 52px;
                         width: 9px;
                         height: 16px;
                         pointer-events: none;
@@ -307,7 +311,7 @@
                     }
 
                     p {
-                        color: $jumpWindow_smallTitle_2;
+                        color: $mainFont_3;
                         font-size: 16px;
                         font-weight: bold;
                     }
@@ -498,10 +502,106 @@
             }
         }
 
+        //waterRecord
+        &.waterRecord,
+        &.recordWindow {
+            width: 950px;
+            display: none;
+
+            &.display {
+                display: block;
+            }
+
+            &.recordWindow {
+
+                table {
+
+                    tr {
+
+                        td {
+                            width: 25%;
+                        }
+                    }
+                }
+            }
+
+            table {
+                width: 100%;
+                height: auto;
+                background: $jumpWindow_table_BG;
+                box-shadow: 0 0 0 1px $jumpWindow_Border;
+                border-radius: 5px;
+                overflow: hidden;
+                margin: 24px 0;
+
+                tr {
+
+                    &:last-child {
+
+                        td {
+
+                            p {
+                                border: none;
+                            }
+                        }
+                    }
+
+                    th {
+                        height: 35px;
+                        vertical-align: middle;
+                        background: $jumpWindow_table_TitleBG;
+                        border-bottom: solid 1px $jumpWindow_Border;
+
+                        &:first-child {
+                            padding-left: 16px;
+                        }
+                        &:last-child {
+                            padding-right: 16px;
+                        }
+
+                        p {
+                            width: 100%;
+                            color: $mainFont_1;
+                            font-size: 16px;
+                            font-weight: bold;
+                            text-align: center;
+                            @include textHidden;
+                        }
+                    }
+
+                    td {
+                        width: 34%;
+                        height: 40px;
+                        vertical-align: middle;
+
+                        &:first-child {
+                            padding-left: 16px;
+                        }
+                        &:last-child {
+                            padding-right: 16px;
+                        }
+
+                        p {
+                            width: 100%;
+                            height: 100%;
+                            color: $mainFont_2;
+                            font-size: 14px;
+                            font-weight: bold;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-bottom: solid 1px $jumpWindow_table_Border;
+                            @include textHidden;
+                        }
+                    }
+                }
+            }
+        }
+
         .title {
             width: 100%;
             height: 75px;
-            border-bottom: solid 3px $jumpWindow_TitleBorder;
+            border-bottom: solid 3px $jumpWindow_Border;
             display: flex;
             align-items: center;
             justify-content: center;
