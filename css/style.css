@@ -33,7 +33,6 @@ input:disabled {
 
 .registerBG {
   background: url("../images/registerBG.jpg") no-repeat top center;
-  background-size: 100%;
 }
 
 .slick-arrow {
@@ -342,7 +341,7 @@ footer .qs {
 }
 
 .innerPage .medal div {
-  background: url("../images/levelMedal01.png") no-repeat;
+  background: url("../images/levelMedal01_active.png") no-repeat;
   background-size: contain;
 }
 
@@ -551,6 +550,11 @@ footer .qs {
 
 .innerPage .rightSide .mail_ic {
   background: url("../images/icon/svg/innerNav_mail_active.svg") no-repeat center;
+  background-size: contain;
+}
+
+.innerPage .rightSide .deposit_ic {
+  background: url("../images/icon/svg/innerRightSide_deposit.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -1015,11 +1019,6 @@ i {
   display: block;
 }
 
-html, body {
-  width: 100%;
-  height: auto;
-}
-
 input[type=date]::-webkit-inner-spin-button,
 input[type=date]::-webkit-calendar-picker-indicator {
   opacity: 0;
@@ -1028,6 +1027,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 html {
   width: 100%;
   height: auto;
+  background: #bd9c66;
 }
 html body {
   width: 100%;
