@@ -8934,10 +8934,55 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyBox .amoun
 }
 html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList {
   width: 100%;
-  height: 245px;
+  height: 62px;
   overflow: hidden;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+}
+html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList button {
+  width: 300px;
+  height: 42px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList button:hover, html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList button:active, html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList button.active {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
+}
+html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList button:first-child {
+  margin-bottom: 20px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList button:last-child {
+  margin-top: 20px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList button:last-child i {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList button i {
+  width: 13px;
+  height: 16px;
+  margin-left: 5px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-filter: grayscale(1) brightness(15);
+          filter: grayscale(1) brightness(15);
 }
 html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList ul {
   width: 100%;
@@ -8998,39 +9043,6 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList ul li
   height: 15px;
   margin-left: 5px;
   cursor: pointer;
-}
-html body .innerPage .center .innerMainWrap .rightSide.transfer .openBtn {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 15px 0 20px;
-  cursor: pointer;
-}
-html body .innerPage .center .innerMainWrap .rightSide.transfer .openBtn.active i {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-html body .innerPage .center .innerMainWrap .rightSide.transfer .openBtn p {
-  color: #ba9141;
-  font-size: 16px;
-  font-weight: bold;
-}
-html body .innerPage .center .innerMainWrap .rightSide.transfer .openBtn i {
-  width: 13px;
-  height: 16px;
-  margin-left: 10px;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 html body .innerPage .center .innerMainWrap .rightSide.transfer .smallRemind {
   color: #929292;
@@ -9314,10 +9326,55 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyBox .box
 }
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList {
   width: 100%;
-  height: 245px;
+  height: 62px;
   overflow: hidden;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+}
+html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList button {
+  width: 300px;
+  height: 42px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList button:hover, html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList button:active, html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList button.active {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
+}
+html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList button:first-child {
+  margin-bottom: 20px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList button:last-child {
+  margin-top: 20px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList button:last-child i {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList button i {
+  width: 13px;
+  height: 16px;
+  margin-left: 5px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-filter: grayscale(1) brightness(15);
+          filter: grayscale(1) brightness(15);
 }
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList ul {
   width: 100%;
@@ -9378,39 +9435,6 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList ul 
   height: 15px;
   margin-left: 5px;
   cursor: pointer;
-}
-html body .innerPage .center .innerMainWrap .rightSide.withdrawal .openBtn {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 15px 0 20px;
-  cursor: pointer;
-}
-html body .innerPage .center .innerMainWrap .rightSide.withdrawal .openBtn.active i {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-html body .innerPage .center .innerMainWrap .rightSide.withdrawal .openBtn p {
-  color: #ba9141;
-  font-size: 16px;
-  font-weight: bold;
-}
-html body .innerPage .center .innerMainWrap .rightSide.withdrawal .openBtn i {
-  width: 13px;
-  height: 16px;
-  margin-left: 10px;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox {
   width: 100%;

@@ -577,17 +577,25 @@ $(function(){
 //moneyList切換
 $(function(){
     $(".openBtn").on("click",function(){
-        $(".moneyList,.openBtn")
+        $(".moneyList")
         .toggleClass("active");
 
         var n = $(".moneyList li").length;
         var total = Math.ceil(n / 3);
 
         $(".moneyList")
-        .css("height","245px");
+        .css("height","62px");
 
         $(".moneyList.active")
-        .css("height",""+ (total * 85) +"");
+        .css("height",""+ (total * 85 + 124) +"");
+    })
+
+    $(".closeBtn").on("click",function(){
+        $(".moneyList")
+        .removeClass("active");
+
+        $(".moneyList")
+        .css("height","62px");
     })
 })
 

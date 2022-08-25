@@ -4026,9 +4026,39 @@
                     //moneyList
                     .moneyList {
                         width: 100%;
-                        height: 245px;
+                        height: 62px;
                         overflow: hidden;
                         transition: 0.3s all;
+
+                        button {
+                            width: 300px;
+                            height: 42px;
+                            @include mainBtn;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 auto;
+
+                            &:first-child {
+                                margin-bottom: 20px;
+                            }
+
+                            &:last-child {
+                                margin-top: 20px;
+
+                                i {
+                                    transform: rotate(-90deg);
+                                }
+                            }
+
+                            i {
+                                width: 13px;
+                                height: 16px;
+                                margin-left: 5px;
+                                transform: rotate(90deg);
+                                filter: grayscale(1) brightness(15);
+                            }
+                        }
 
                         ul {
                             width: 100%;
@@ -4069,36 +4099,36 @@
                             }
                         }
                     }
-                    .openBtn {
-                        width: 100%;
-                        height: auto;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin: 15px 0 20px;
-                        cursor: pointer;
+                    // .openBtn {
+                    //     width: 100%;
+                    //     height: auto;
+                    //     display: flex;
+                    //     align-items: center;
+                    //     justify-content: center;
+                    //     margin: 15px 0 20px;
+                    //     cursor: pointer;
 
-                        &.active {
+                    //     &.active {
 
-                            i {
-                                transform: rotate(-90deg);
-                            }
-                        }
+                    //         i {
+                    //             transform: rotate(-90deg);
+                    //         }
+                    //     }
 
-                        p {
-                            color: $mainFont_2;
-                            font-size: 16px;
-                            font-weight: bold;
-                        }
+                    //     p {
+                    //         color: $mainFont_2;
+                    //         font-size: 16px;
+                    //         font-weight: bold;
+                    //     }
 
-                        i {
-                            width: 13px;
-                            height: 16px;
-                            margin-left: 10px;
-                            transition: 0.3s all;
-                            transform: rotate(90deg);
-                        }
-                    }
+                    //     i {
+                    //         width: 13px;
+                    //         height: 16px;
+                    //         margin-left: 10px;
+                    //         transition: 0.3s all;
+                    //         transform: rotate(90deg);
+                    //     }
+                    // }
 
                     .smallRemind {
                         color: $disable;
@@ -4279,9 +4309,39 @@
                     //moneyList
                     .moneyList {
                         width: 100%;
-                        height: 245px;
+                        height: 62px;
                         overflow: hidden;
                         transition: 0.3s all;
+
+                        button {
+                            width: 300px;
+                            height: 42px;
+                            @include mainBtn;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 auto;
+
+                            &:first-child {
+                                margin-bottom: 20px;
+                            }
+
+                            &:last-child {
+                                margin-top: 20px;
+
+                                i {
+                                    transform: rotate(-90deg);
+                                }
+                            }
+
+                            i {
+                                width: 13px;
+                                height: 16px;
+                                margin-left: 5px;
+                                transform: rotate(90deg);
+                                filter: grayscale(1) brightness(15);
+                            }
+                        }
 
                         ul {
                             width: 100%;
@@ -4322,36 +4382,36 @@
                             }
                         }
                     }
-                    .openBtn {
-                        width: 100%;
-                        height: auto;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin: 15px 0 20px;
-                        cursor: pointer;
+                    // .openBtn {
+                    //     width: 100%;
+                    //     height: auto;
+                    //     display: flex;
+                    //     align-items: center;
+                    //     justify-content: center;
+                    //     margin: 15px 0 20px;
+                    //     cursor: pointer;
 
-                        &.active {
+                    //     &.active {
 
-                            i {
-                                transform: rotate(-90deg);
-                            }
-                        }
+                    //         i {
+                    //             transform: rotate(-90deg);
+                    //         }
+                    //     }
 
-                        p {
-                            color: $mainFont_2;
-                            font-size: 16px;
-                            font-weight: bold;
-                        }
+                    //     p {
+                    //         color: $mainFont_2;
+                    //         font-size: 16px;
+                    //         font-weight: bold;
+                    //     }
 
-                        i {
-                            width: 13px;
-                            height: 16px;
-                            margin-left: 10px;
-                            transition: 0.3s all;
-                            transform: rotate(90deg);
-                        }
-                    }
+                    //     i {
+                    //         width: 13px;
+                    //         height: 16px;
+                    //         margin-left: 10px;
+                    //         transition: 0.3s all;
+                    //         transform: rotate(90deg);
+                    //     }
+                    // }
 
                     //applyBox
                     .applyBox {
