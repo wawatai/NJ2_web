@@ -893,6 +893,15 @@ $(function(){
     })
 })
 
+//deposit
+$(function(){
+    $(".depList li").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+    })
+})
+
 //filter open + close
 $(function(){
     $('.jumpWindow .close_ic,.jumpWindow .close').click(function(){

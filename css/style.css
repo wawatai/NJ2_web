@@ -786,6 +786,46 @@ footer .qs {
   background-size: contain;
 }
 
+.innerPage .rightSide.deposit .help_ic {
+  background: url("../images/icon/svg/help_deposit.svg") no-repeat center;
+  background-size: contain;
+}
+
+.innerPage .rightSide.deposit .vega_ic {
+  background: url("../images/deposit_vega.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .rightSide.deposit .sticpay_ic {
+  background: url("../images/deposit_sticpay.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .rightSide.deposit .iwallet_ic {
+  background: url("../images/deposit_iwallet.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .rightSide.deposit .usdt_ic {
+  background: url("../images/deposit_usdt.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .rightSide.deposit .tigerpay_ic {
+  background: url("../images/deposit_tigerpay.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .rightSide.deposit .imove_ic {
+  background: url("../images/deposit_imove.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .rightSide.deposit .card_ic {
+  background: url("../images/deposit_card.png") no-repeat;
+  background-size: contain;
+}
+
 .help .leftSide .star_ic {
   background: url("../images/icon/innerPage_star.png") no-repeat;
   background-size: contain;
@@ -1027,6 +1067,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 html {
   width: 100%;
   height: auto;
+}
+html.forRegister {
   background: #bd9c66;
 }
 html body {
@@ -1867,6 +1909,7 @@ html body .mainWrap .center .marqueeWrap {
 html body .mainWrap .center .marqueeWrap .marquee {
   width: 100%;
   height: 52px;
+  background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
   -webkit-box-shadow: 0 2px 5px 0 #0000002c inset;
@@ -3596,6 +3639,7 @@ html body .gameWrap .content .marqueeWrap {
 html body .gameWrap .content .marqueeWrap .marquee {
   width: 100%;
   height: 52px;
+  background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
   -webkit-box-shadow: 0 2px 5px 0 #0000002c inset;
@@ -3946,6 +3990,7 @@ html body .eventWrap .content .marqueeWrap {
 html body .eventWrap .content .marqueeWrap .marquee {
   width: 100%;
   height: 52px;
+  background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
   -webkit-box-shadow: 0 2px 5px 0 #0000002c inset;
@@ -8860,6 +8905,397 @@ html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .downBox 
   font-size: 12px;
   font-weight: bold;
 }
+html body .innerPage .center .innerMainWrap .rightSide.deposit .btnBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 10px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .btnBox button {
+  width: auto;
+  height: 28px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f0ddbc), color-stop(70%, #fff7e2));
+  background: linear-gradient(to top, #f0ddbc 0%, #fff7e2 70%);
+  border: solid 1px #a47d3b;
+  border-radius: 30px;
+  color: #775012;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .btnBox button:hover, html body .innerPage .center .innerMainWrap .rightSide.deposit .btnBox button:active, html body .innerPage .center .innerMainWrap .rightSide.deposit .btnBox button.active {
+  background: #a47d3b;
+  color: #ffffff;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .btnBox button i {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li {
+  width: auto;
+  height: 200px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 5px 1px #0000001d;
+          box-shadow: 0 2px 5px 1px #0000001d;
+  border-radius: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li.active {
+  background: #b8151a;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li.active .innerBox {
+  background: #b8151a;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li.active .innerBox::before {
+  display: none;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li.active .innerBox::after {
+  display: block;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li.active .name {
+  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .innerBox {
+  width: 94%;
+  height: 94%;
+  background: #daa448;
+  border-radius: 8px;
+  position: relative;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .innerBox::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .innerBox::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 14px;
+  height: 14px;
+  border: solid 2px #ffffff;
+  border-radius: 50%;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .innerBox .box {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  background: #ffffff;
+  border-radius: 100px 7px 7px 7px;
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .innerBox .box .vega_ic {
+  width: 79px;
+  height: 71px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .innerBox .box .sticpay_ic {
+  width: 157px;
+  height: 32px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .innerBox .box .iwallet_ic {
+  width: 167px;
+  height: 50px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .innerBox .box .usdt_ic {
+  width: 78px;
+  height: 78px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .innerBox .box .tigerpay_ic {
+  width: 113px;
+  height: 70px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .innerBox .box .imove_ic {
+  width: 140px;
+  height: 36px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .innerBox .box .card_ic {
+  width: 78px;
+  height: 73px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .name {
+  width: 165px;
+  height: 35px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ae7f30), to(#dba955));
+  background: linear-gradient(to top, #ae7f30 0%, #dba955 100%);
+  border-radius: 16px 16px 0 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .name p {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent {
+  width: 100%;
+  height: auto;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(44%, #ffffff), to(#f9f9f9));
+  background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
+  border-radius: 16px;
+  border: solid 1px #daaf6d;
+  -webkit-box-shadow: 0 2px 3px 1px #00000049;
+          box-shadow: 0 2px 3px 1px #00000049;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 48px 0;
+  margin-bottom: 20px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .smallTitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 8px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .smallTitle em {
+  color: #b8151a;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .smallTitle p {
+  color: #ba9141;
+  font-size: 16px;
+  font-weight: bold;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .selectBox {
+  width: auto;
+  height: auto;
+  position: relative;
+  margin-bottom: 32px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .selectBox select {
+  width: 300px;
+  height: 42px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: solid 1px #daaf6d;
+  color: #b08a48;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .selectBox i {
+  width: 9px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+  right: 15px;
+  pointer-events: none;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .inputBox {
+  width: auto;
+  height: auto;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .inputBox input {
+  width: 300px;
+  height: 42px;
+  background: #ffffff;
+  border: solid 1px #daaf6d;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
+  color: #3a3a3a;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 16px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .inputBox input::-webkit-input-placeholder {
+  color: #b08a48;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .inputBox input::-moz-placeholder {
+  color: #b08a48;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .inputBox input:-ms-input-placeholder {
+  color: #b08a48;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .inputBox input::-ms-input-placeholder {
+  color: #b08a48;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .inputBox input::placeholder {
+  color: #b08a48;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .remind {
+  width: 100%;
+  color: #292CFF;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 5px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .remind.sp {
+  margin-top: 10px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .checkBtn {
+  width: 300px;
+  height: 45px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 32px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .checkBtn:hover, html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .checkBtn:active, html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .checkBtn.active {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  border: solid 1px #daaf6d;
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
+  border: none;
+  padding: 16px 48px 24px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .smallTitle {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .smallTitle i {
+  width: 14px;
+  height: 14px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 10px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .smallTitle p {
+  color: #b8151a;
+  font-size: 18px;
+  font-weight: bold;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .smallTitle .line {
+  width: 100%;
+  height: 2px;
+  background: #c30505;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .content {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .content:last-child {
+  margin: 0;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .content p {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .content p.remind {
+  color: #292CFF;
+}
+html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox .content p.innerTitle {
+  color: #ba9141;
+  margin-bottom: 5px;
+}
 html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyBox {
   width: 100%;
   height: 180px;
@@ -10182,7 +10618,7 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .uploadBox .
   width: 100%;
   height: auto;
   border-radius: 5px;
-  border: dashed 3px #b8151a;
+  border: dashed 3px #cccccc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10206,8 +10642,8 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .uploadBox .
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .uploadBox .box .innerBox button {
   width: 257px;
   height: 42px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -10217,8 +10653,8 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .uploadBox .
   margin-bottom: 10px;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .uploadBox .box .innerBox button:hover, html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .uploadBox .box .innerBox button:active, html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .uploadBox .box .innerBox button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#970707), color-stop(98%, #cf0505));
-  background: linear-gradient(to bottom, #970707 0%, #cf0505 98%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .uploadBox .box .innerBox .remind {
   color: #292CFF;
@@ -10247,8 +10683,8 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .btnBox butt
   height: 42px;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .btnBox button.sendBtn {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to top, #970707 0%, #cf0505 98%);
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -10257,8 +10693,8 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .btnBox butt
   letter-spacing: 1px;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .btnBox button.sendBtn:hover, html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .btnBox button.sendBtn:active, html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .btnBox button.sendBtn.active {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#970707), color-stop(98%, #cf0505));
+  background: linear-gradient(to bottom, #970707 0%, #cf0505 98%);
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox .btnBox button:last-child {
   background: -webkit-gradient(linear, left bottom, left top, from(#e0e0e0), color-stop(70%, #ffffff));

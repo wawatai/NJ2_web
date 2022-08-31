@@ -44,6 +44,7 @@
             .marquee {
                 width: 100%;
                 height: 52px;
+                background: $marquee_BG;
                 border: solid 1px $marquee_Border;
                 border-radius: 30px;
                 box-shadow: 0 2px 5px 0 $marquee_Shadow inset;

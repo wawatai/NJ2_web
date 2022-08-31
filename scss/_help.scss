@@ -404,7 +404,7 @@
                                     width: 100%;
                                     height: auto;
                                     border-radius: 5px;
-                                    border: dashed 3px $helpMoreList_Border;
+                                    border: dashed 3px $help_upload_Border;
                                     display: flex;
                                     flex-direction: column;
                                     justify-content: center;
@@ -420,7 +420,7 @@
                                     button {
                                         width: 257px;
                                         height: 42px;
-                                        @include secondBtn;
+                                        @include mainBtn;
                                         margin-bottom: 10px;
                                     }
         
@@ -449,7 +449,7 @@
                                 height: 42px;
 
                                 &.sendBtn {
-                                    @include mainBtn;
+                                    @include secondBtn;
                                 }
         
                                 &:last-child {

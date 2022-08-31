@@ -398,6 +398,14 @@ $mail_BG: #f7f7f7;
     justify-content: center;
 }
 
+$deposit_depList_BG: #ffffff;
+$deposit_depList_BGActive: #b8151a;
+$deposit_depList_Shadow: #0000001d;
+$deposit_depList_nameLinear: linear-gradient(to top,#ae7f30 0%,#dba955 100%);
+$deposit_depList_nameLinearActive: linear-gradient(to top,#970707 0%,#cf0505 98%);
+$deposit_depList_name: #ffffff;
+$deposit_depList_innerBG: #daa448;
+
 //help
 @mixin helpLeftList {
     background: linear-gradient(to bottom,#ffffff 44%,#f9f9f9 100%);
@@ -445,6 +453,7 @@ $mail_BG: #f7f7f7;
     }
 }
 $helpMoreList_Border: #b8151a;
+$help_upload_Border: #cccccc;
 
 //table樣式
 $table_TitleBG: linear-gradient(to top,#b78c4b 0%,#d5ab6a 100%);
@@ -490,6 +499,7 @@ $jumpWindow_table_TitleBG: linear-gradient(to top,#eeeeee 0%,#ffffff 100%);
 $jumpWindow_table_BG: #f1f1f1;
 $jumpWindow_table_Border: #b74f4e;
 
+$register_htmlBG: #bd9c66;
 $register_BG: #ffffff;
 $register_em: #ae0606;
 $register_Color: #3b5461;

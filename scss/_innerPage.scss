@@ -3975,6 +3975,319 @@
                     }
                 }
 
+                //deposit
+                &.deposit {
+
+                    .btnBox {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-bottom: 10px;
+
+                        button {
+                            width: auto;
+                            height: 28px;
+                            @include lightBtn_1;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 0 10px;
+
+                            i {
+                                width: 16px;
+                                height: 16px;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+
+                    .depList {
+                        width: 100%;
+                        height: auto;
+                        display: grid;
+                        grid-template-columns: repeat(4,1fr);
+                        gap: 20px;
+                        margin-bottom: 20px;
+
+                        li {
+                            width: auto;
+                            height: 200px;
+                            background: $deposit_depList_BG;
+                            box-shadow: 0 2px 5px 1px $deposit_depList_Shadow;
+                            border-radius: 10px;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+
+                            &.active {
+                                background: $deposit_depList_BGActive;
+
+                                .innerBox {
+                                    background: $deposit_depList_BGActive;
+
+                                    &::before {
+                                        display: none;
+                                    }
+                                    &::after {
+                                        display: block;
+                                    }
+                                }
+
+                                .name {
+                                    background: $deposit_depList_nameLinearActive;
+                                }
+                            }
+
+                            .innerBox {
+                                width: 94%;
+                                height: 94%;
+                                background: $deposit_depList_innerBG;
+                                border-radius: 8px;
+                                position: relative;
+
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 8px;
+                                    left: 8px;
+                                    width: 16px;
+                                    height: 16px;
+                                    background: $deposit_depList_BG;
+                                    border-radius: 50%;
+                                    box-shadow: 0 2px 5px 0 $deposit_depList_Shadow inset;
+                                }
+
+                                &::after {
+                                    display: none;
+                                    content: "";
+                                    position: absolute;
+                                    top: 8px;
+                                    left: 8px;
+                                    width: 14px;
+                                    height: 14px;
+                                    border: solid 2px $deposit_depList_BG;
+                                    border-radius: 50%;
+                                }
+
+                                .box {
+                                    width: calc(100% - 2px);
+                                    height: calc(100% - 2px);
+                                    background: $deposit_depList_BG;
+                                    border-radius: 100px 7px 7px 7px;
+                                    position: absolute;
+                                    right: 1px;
+                                    bottom: 1px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    .vega_ic {
+                                        width: 79px;
+                                        height: 71px;
+                                    }
+                                    .sticpay_ic {
+                                        width: 157px;
+                                        height: 32px;
+                                    }
+                                    .iwallet_ic {
+                                        width: 167px;
+                                        height: 50px;
+                                    }
+                                    .usdt_ic {
+                                        width: 78px;
+                                        height: 78px;
+                                    }
+                                    .tigerpay_ic {
+                                        width: 113px;
+                                        height: 70px;
+                                    }
+                                    .imove_ic {
+                                        width: 140px;
+                                        height: 36px;
+                                    }
+                                    .card_ic {
+                                        width: 78px;
+                                        height: 73px;
+                                    }
+                                }
+                            }
+
+                            .name {
+                                width: 165px;
+                                height: 35px;
+                                background: $deposit_depList_nameLinear;
+                                border-radius: 16px 16px 0 0;
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                bottom: 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                p {
+                                    color: $deposit_depList_name;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+
+                    .depContent {
+                        width: 100%;
+                        height: auto;
+                        @include innerBG_1;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 48px 0;
+                        margin-bottom: 20px;
+
+                        .smallTitle {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 8px;
+
+                            em {
+                                color: $mainFont_1;
+                                font-size: 16px;
+                                font-weight: bold;
+                                margin-right: 5px;
+                            }
+
+                            p {
+                                color: $mainFont_2;
+                                font-size: 16px;
+                                font-weight: bold;
+                            }
+                        }
+
+                        .selectBox {
+                            width: auto;
+                            height: auto;
+                            position: relative;
+                            margin-bottom: 32px;
+
+                            select {
+                                width: 300px;
+                                height: 42px;
+                                @include mainSelect;
+                            }
+
+                            i {
+                                width: 9px;
+                                height: 16px;
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%) rotate(-90deg);
+                                right: 15px;
+                                pointer-events: none;
+                            }
+                        }
+
+                        .inputBox {
+                            width: auto;
+                            height: auto;
+
+                            input {
+                                width: 300px;
+                                height: 42px;
+                                @include mainInput;
+                            }
+                        }
+
+                        .remind {
+                            width: 100%;
+                            color: $remind;
+                            font-size: 14px;
+                            font-weight: bold;
+                            text-align: center;
+                            line-height: 20px;
+                            margin-top: 5px;
+
+                            &.sp {
+                                margin-top: 10px;
+                            }
+                        }
+
+                        .checkBtn {
+                            width: 300px;
+                            height: 45px;
+                            @include mainBtn;
+                            margin-top: 32px;
+                        }
+                    }
+
+                    .remindBox {
+                        width: 100%;
+                        height: auto;
+                        @include innerBG_2;
+                        border: none;
+                        padding: 16px 48px 24px;
+
+                        .smallTitle {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 16px;
+
+                            i {
+                                width: 14px;
+                                height: 14px;
+                                flex-shrink: 0;
+                                margin: 0 10px;
+                            }
+
+                            p {
+                                color: $mainFont_1;
+                                font-size: 18px;
+                                font-weight: bold;
+                                flex-shrink: 0;
+                            }
+
+                            .line {
+                                width: 100%;
+                                height: 2px;
+                                background: $line;
+                            }
+                        }
+
+                        .content {
+                            width: 100%;
+                            height: auto;
+                            margin-bottom: 10px;
+
+                            &:last-child {
+                                margin: 0;
+                            }
+
+                            p {
+                                color: $mainFont_3;
+                                font-size: 16px;
+                                font-weight: bold;
+                                line-height: 24px;
+
+                                &.remind {
+                                    color: $remind;
+                                }
+
+                                &.innerTitle {
+                                    color: $mainFont_2;
+                                    margin-bottom: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+
                 //transfer
                 &.transfer {
 
