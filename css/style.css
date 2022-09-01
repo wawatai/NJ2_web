@@ -2248,6 +2248,7 @@ html body footer .center .top .linkBox button {
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
+  font-size: 18px;
 }
 html body footer .center .top .linkBox button:hover, html body footer .center .top .linkBox button:active, html body footer .center .top .linkBox button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
@@ -8124,14 +8125,6 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post 
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li.read::before,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li.read::before {
   display: none;
-}
-html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li.read:hover, html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li.read:active, html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li.read.active,
-html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li.read:hover,
-html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li.read:active,
-html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li.read.active {
-  border-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li.read div .smallTitle,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li.read div .content,
