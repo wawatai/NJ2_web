@@ -687,6 +687,14 @@ footer .qs {
     background: url('../images/icon/svg/help_about_active.svg') no-repeat;
     background-size: contain;
 }
+.help .rightSide .new_ic {
+    background: url('../images/icon/svg/help_new_active.svg') no-repeat center;
+    background-size: contain;
+}
+.help .rightSide .often_ic {
+    background: url('../images/icon/svg/help_often_active.svg') no-repeat center;
+    background-size: contain;
+}
 .help .rightSide .star_ic {
     background: url('../images/icon/mainWrap_star.png') no-repeat;
     background-size: contain;
@@ -713,6 +721,10 @@ footer .qs {
 }
 .help .rightSide .upload_ic {
     background: url('../images/icon/svg/help_upload.svg') no-repeat;
+    background-size: contain;
+}
+.help .rightSide .depositWay {
+    background: url('../images/help_depositWay.jpg') no-repeat;
     background-size: contain;
 }
 

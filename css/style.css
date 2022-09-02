@@ -864,6 +864,16 @@ footer .qs {
   background-size: contain;
 }
 
+.help .rightSide .new_ic {
+  background: url("../images/icon/svg/help_new_active.svg") no-repeat center;
+  background-size: contain;
+}
+
+.help .rightSide .often_ic {
+  background: url("../images/icon/svg/help_often_active.svg") no-repeat center;
+  background-size: contain;
+}
+
 .help .rightSide .star_ic {
   background: url("../images/icon/mainWrap_star.png") no-repeat;
   background-size: contain;
@@ -896,6 +906,11 @@ footer .qs {
 
 .help .rightSide .upload_ic {
   background: url("../images/icon/svg/help_upload.svg") no-repeat;
+  background-size: contain;
+}
+
+.help .rightSide .depositWay {
+  background: url("../images/help_depositWay.jpg") no-repeat;
   background-size: contain;
 }
 
@@ -1159,8 +1174,8 @@ html body header .top .user li:not(.platform) .loginForm div input {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001a inset;
-          box-shadow: 0 2px 5px 0 #0000001a inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843) inset;
   color: #b11319;
   font-size: 16px;
   font-weight: bold;
@@ -1266,8 +1281,8 @@ html body header .top .user li:not(.platform).lang select {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001a inset;
-          box-shadow: 0 2px 5px 0 #0000001a inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843) inset;
   color: #daaf6d;
   font-size: 15px;
   font-weight: bold;
@@ -1567,8 +1582,8 @@ html body .ad .single-item .slick-dots li button::before {
   height: 15px;
   background: #f9f9f9;
   border-radius: 50%;
-  -webkit-box-shadow: 0 2px 5px 0 #00000049 inset;
-          box-shadow: 0 2px 5px 0 #00000049 inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098) inset;
   border: none;
   color: transparent;
   opacity: 1;
@@ -1623,7 +1638,7 @@ html body .multiple-items.card .slick-list .slick-track li .cardBG .nameBox p {
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  text-shadow: -1px 2px 2px #00000080;
+  text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.5019607843);
 }
 html body .multiple-items.card .slick-list .slick-track li .cardBG .nameBox p:first-child {
   font-size: 18px;
@@ -1634,7 +1649,7 @@ html body .multiple-items.card .slick-list .slick-track li .cardBG .num {
   color: #ffffff;
   font-size: 21px;
   font-weight: bold;
-  text-shadow: -1px 2px 2px #00000080;
+  text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.5019607843);
   text-align: center;
   letter-spacing: 1px;
   position: absolute;
@@ -1912,8 +1927,8 @@ html body .mainWrap .center .marqueeWrap .marquee {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000002c inset;
-          box-shadow: 0 2px 5px 0 #0000002c inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1996,7 +2011,7 @@ html body .mainWrap .center .typeList .typeBox.hotGame .pageBtn.prev, html body 
 html body .mainWrap .center .typeList .typeBox .pageBtn {
   width: 52px;
   height: 52px;
-  background: #00000033;
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   position: absolute;
   z-index: 10;
@@ -2158,8 +2173,8 @@ html body footer .center .top .listBox .list {
   height: 280px;
   background: #f3f3f3;
   border-radius: 16px;
-  -webkit-box-shadow: 0 0 10px 1px #0000001c inset;
-          box-shadow: 0 0 10px 1px #0000001c inset;
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1098039216) inset;
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1098039216) inset;
   padding: 16px 24px;
 }
 html body footer .center .top .listBox .list .title {
@@ -2484,7 +2499,7 @@ html body .filter {
   width: 100%;
   height: 100%;
   z-index: 1000;
-  background: #0000009e;
+  background: rgba(0, 0, 0, 0.6196078431);
   top: 0px;
   left: 0px;
   -webkit-box-align: center;
@@ -2533,8 +2548,8 @@ html body .filter .jumpWindow.forgetPassword form input {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -2683,8 +2698,8 @@ html body .filter .jumpWindow.news .box .infoBox, html body .filter .jumpWindow.
 }
 html body .filter .jumpWindow.news .box .infoBox.active, html body .filter .jumpWindow.rules .box .infoBox.active {
   background: #ffffff;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
 }
 html body .filter .jumpWindow.news .box .infoBox:last-child, html body .filter .jumpWindow.rules .box .infoBox:last-child {
   margin-bottom: 0;
@@ -2878,8 +2893,8 @@ html body .filter .jumpWindow.betWindow .bottom .inputBox input {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -2986,8 +3001,8 @@ html body .filter .jumpWindow.betWindow .enterGame div input::before {
   background: #f9f9f9;
   border-radius: 50%;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 0 #0000001d inset;
-          box-shadow: 0 2px 3px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
 }
 html body .filter .jumpWindow.betWindow .enterGame div input::after {
   display: none;
@@ -3409,8 +3424,8 @@ html body .filter .jumpWindow.changePhone .content .inputBox input {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -3500,8 +3515,8 @@ html body .filter .jumpWindow.changePassword .content .inputBox input {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -3643,8 +3658,8 @@ html body .gameWrap .content .marqueeWrap .marquee {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000002c inset;
-          box-shadow: 0 2px 5px 0 #0000002c inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3730,8 +3745,8 @@ html body .gameWrap .content .searchWrap input {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -3873,7 +3888,7 @@ html body .gameWrap .content .gameBox li div .mask {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #0000009e;
+  background: rgba(0, 0, 0, 0.6196078431);
   z-index: 1;
   opacity: 0;
   -webkit-transition: 0.3s all;
@@ -3912,7 +3927,7 @@ html body .gameWrap .content .gameBox li p {
 }
 html body .gameWrap .content .gameBox li span {
   display: none;
-  background: #ffffffc7;
+  background: rgba(255, 255, 255, 0.7803921569);
   color: #b8151a;
   font-size: 13px;
   font-weight: bold;
@@ -3931,7 +3946,7 @@ html body .gameWrap .content .gameBox li span::before {
   bottom: 0;
   border-style: solid;
   border-width: 0 0 23px 12px;
-  border-color: #ffffffc7 transparent;
+  border-color: rgba(255, 255, 255, 0.7803921569) transparent;
 }
 html body .eventWrap {
   width: 100%;
@@ -3994,8 +4009,8 @@ html body .eventWrap .content .marqueeWrap .marquee {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000002c inset;
-          box-shadow: 0 2px 5px 0 #0000002c inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4193,6 +4208,7 @@ html body .eventWrap .content .eventBox li .textBox button {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 20px;
+  padding: 0 20px 3px;
   position: absolute;
   right: 16px;
   top: -25px;
@@ -4311,8 +4327,8 @@ html body .innerPage .center .banner {
   background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
   border-radius: 10px;
   border: solid 1px #fadaa5;
-  -webkit-box-shadow: 0 2px 5px 0 #0000006b;
-          box-shadow: 0 2px 5px 0 #0000006b;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4196078431);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4196078431);
   position: relative;
   z-index: 2;
   margin: 0 auto -32px;
@@ -4329,8 +4345,8 @@ html body .innerPage .center .banner .marqueeWrap .marquee {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000002c inset;
-          box-shadow: 0 2px 5px 0 #0000002c inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4532,8 +4548,8 @@ html body .innerPage .center .innerMainWrap {
   background: #f7f7f7;
   border-radius: 10px;
   border: solid 1px #f3d197;
-  -webkit-box-shadow: 0 2px 5px 0 #00000042 inset;
-          box-shadow: 0 2px 5px 0 #00000042 inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2588235294) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2588235294) inset;
   padding: 90px 24px 24px;
   margin-bottom: 42px;
   display: -webkit-box;
@@ -4663,8 +4679,8 @@ html body .innerPage .center .innerMainWrap .rightSide.member .memberInfo {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4811,8 +4827,8 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   border-top: solid 5px #c30505;
   border-radius: 0 0 16px 16px;
   display: none;
@@ -4879,8 +4895,8 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .topBox 
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -5022,8 +5038,8 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .midBox 
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -5152,8 +5168,8 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .bottomB
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -5247,8 +5263,8 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox {
   background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 1px #00000049;
-          box-shadow: 0 2px 3px 1px #00000049;
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5269,8 +5285,8 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box {
   background: linear-gradient(to bottom, #fdeec6 32%, #e2c28d 100%);
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 0 #00000049;
-          box-shadow: 0 2px 5px 0 #00000049;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5406,8 +5422,8 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .detailBox ul li {
   height: 120px;
   background: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 3px 1px #0000001e;
-          box-shadow: 0 2px 3px 1px #0000001e;
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
+          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -5585,8 +5601,8 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .remindBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   border: none;
   padding: 12px 40px;
 }
@@ -5625,8 +5641,8 @@ html body .innerPage .center .innerMainWrap .rightSide.invite .bigBox {
   background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 1px #00000049;
-          box-shadow: 0 2px 3px 1px #00000049;
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5697,8 +5713,8 @@ html body .innerPage .center .innerMainWrap .rightSide.invite .bigBox .box .inpu
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -5751,8 +5767,8 @@ html body .innerPage .center .innerMainWrap .rightSide.invite .bigBox .box .link
   background: linear-gradient(to bottom, #fdeec6 32%, #e2c28d 100%);
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 0 #00000049;
-          box-shadow: 0 2px 5px 0 #00000049;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5793,8 +5809,8 @@ html body .innerPage .center .innerMainWrap .rightSide.invite .remindBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   border: none;
   padding: 12px 40px;
 }
@@ -5840,8 +5856,8 @@ html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyBox {
   background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 1px #00000049;
-          box-shadow: 0 2px 3px 1px #00000049;
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5942,8 +5958,8 @@ html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyList ul li {
   height: 70px;
   background: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 3px 1px #0000001e;
-          box-shadow: 0 2px 3px 1px #0000001e;
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
+          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -6028,8 +6044,8 @@ html body .innerPage .center .innerMainWrap .rightSide.card .applyBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6094,8 +6110,8 @@ html body .innerPage .center .innerMainWrap .rightSide.card .applyBox .inputBox 
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -6189,8 +6205,8 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   border-top: solid 5px #c30505;
   border-radius: 0 0 16px 16px;
   display: none;
@@ -6282,8 +6298,8 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -6694,8 +6710,8 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   border-radius: 0 0 16px 16px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox {
@@ -6785,8 +6801,8 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topB
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -7260,8 +7276,8 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   border-top: solid 5px #c30505;
   border-radius: 0 0 16px 16px;
   padding: 24px;
@@ -7498,8 +7514,8 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBo
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -7906,8 +7922,8 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   border-top: solid 5px #c30505;
   border-radius: 0 0 16px 16px;
   position: relative;
@@ -7965,8 +7981,8 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .btnBo
   background: #f9f9f9;
   border-radius: 50%;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 0 #0000001d inset;
-          box-shadow: 0 2px 3px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .btnBox .inputBox input::after {
   display: none;
@@ -8095,8 +8111,8 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post 
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li.active {
   background: #ffffff;
   border-color: #b8151a;
-  -webkit-box-shadow: 0 2px 5px 0 #00000049;
-          box-shadow: 0 2px 5px 0 #00000049;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098);
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li:hover::before, html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li:active::before, html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li.active::before,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li:hover::before,
@@ -8195,8 +8211,8 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post 
   background: #f9f9f9;
   border-radius: 50%;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 0 #0000001d inset;
-          box-shadow: 0 2px 3px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li input::after,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li input::after {
@@ -8545,8 +8561,8 @@ html body .innerPage .center .innerMainWrap .rightSide.point .applyBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   border-top: solid 5px #c30505;
   border-radius: 0 0 16px 16px;
   display: none;
@@ -8601,8 +8617,8 @@ html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -8939,6 +8955,10 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .btnBox button i 
   height: 16px;
   margin-right: 5px;
 }
+html body .innerPage .center .innerMainWrap .rightSide.deposit .btnBox button:hover .help_ic, html body .innerPage .center .innerMainWrap .rightSide.deposit .btnBox button:active .help_ic, html body .innerPage .center .innerMainWrap .rightSide.deposit .btnBox button.active .help_ic {
+  -webkit-filter: brightness(500%);
+          filter: brightness(500%);
+}
 html body .innerPage .center .innerMainWrap .rightSide.deposit .depList {
   width: 100%;
   height: auto;
@@ -8953,8 +8973,8 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li {
   width: auto;
   height: 200px;
   background: #ffffff;
-  -webkit-box-shadow: 0 2px 5px 1px #0000001d;
-          box-shadow: 0 2px 5px 1px #0000001d;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1137254902);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1137254902);
   border-radius: 10px;
   position: relative;
   display: -webkit-box;
@@ -9000,8 +9020,8 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .inne
   height: 16px;
   background: #ffffff;
   border-radius: 50%;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
 }
 html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .innerBox::after {
   display: none;
@@ -9093,8 +9113,8 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent {
   background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 1px #00000049;
-          box-shadow: 0 2px 3px 1px #00000049;
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9176,8 +9196,8 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .inpu
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -9210,6 +9230,9 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .remi
 html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .remind.sp {
   margin-top: 10px;
 }
+html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .remind.sp .emphasize {
+  color: #b8151a;
+}
 html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .checkBtn {
   width: 300px;
   height: 45px;
@@ -9233,8 +9256,8 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   border: none;
   padding: 16px 48px 24px;
 }
@@ -9296,8 +9319,8 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyBox {
   background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 1px #00000049;
-          box-shadow: 0 2px 3px 1px #00000049;
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9427,8 +9450,8 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList ul li
   height: 70px;
   background: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 3px 1px #0000001e;
-          box-shadow: 0 2px 3px 1px #0000001e;
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
+          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -9486,8 +9509,8 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9508,8 +9531,8 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox .topBo
   background: linear-gradient(to bottom, #fff3d3 32%, #f2dcb6 100%);
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 1px #0000001d;
-          box-shadow: 0 2px 3px 1px #0000001d;
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1137254902);
+          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1137254902);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9585,8 +9608,8 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox .input
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -9672,8 +9695,8 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyBox {
   background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 1px #00000049;
-          box-shadow: 0 2px 3px 1px #00000049;
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9819,8 +9842,8 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList ul 
   height: 70px;
   background: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 3px 1px #0000001e;
-          box-shadow: 0 2px 3px 1px #0000001e;
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
+          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -9884,8 +9907,8 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox ul l
   height: 135px;
   background: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 3px 1px #0000001e;
-          box-shadow: 0 2px 3px 1px #0000001e;
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
+          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -9930,8 +9953,8 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .box
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9996,8 +10019,8 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .box
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
-          box-shadow: 0 2px 5px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -10046,8 +10069,8 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .rem
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   border: none;
   padding: 16px 48px 24px;
 }
@@ -10164,8 +10187,8 @@ html body .help .center .marqueeWrap .marquee {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
-  -webkit-box-shadow: 0 2px 5px 0 #0000002c inset;
-          box-shadow: 0 2px 5px 0 #0000002c inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10233,8 +10256,8 @@ html body .help .center .helpMainWrap {
   background: #f7f7f7;
   border-radius: 10px;
   border: solid 1px #f3d197;
-  -webkit-box-shadow: 0 2px 5px 0 #00000042 inset;
-          box-shadow: 0 2px 5px 0 #00000042 inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2588235294) inset;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2588235294) inset;
   padding: 90px 24px 24px;
   padding: 70px 24px 24px;
   margin-bottom: 42px;
@@ -10467,8 +10490,8 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   overflow: hidden;
   margin-bottom: 20px;
 }
@@ -10549,10 +10572,10 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .textBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   overflow: hidden;
-  padding: 16px 24px;
+  padding: 24px;
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .textBox:active, html body .help .center .helpMainWrap .rightSide .helpInfo .textBox.active {
   border-color: #b8151a;
@@ -10709,8 +10732,8 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .imgBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px #00000049;
-          box-shadow: 0 2px 5px 1px #00000049;
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
   overflow: hidden;
   padding: 32px 0;
 }
@@ -10734,6 +10757,9 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .img.KYCImg_1 {
 }
 html body .help .center .helpMainWrap .rightSide .helpInfo .img.KYCImg_2 {
   height: 743px;
+}
+html body .help .center .helpMainWrap .rightSide .helpInfo .img.depositWay {
+  height: 572px;
 }
 html body .register {
   width: 100%;
@@ -10772,8 +10798,8 @@ html body .register .box .inputBox input {
   background: #e4eaf2;
   border: none;
   border-radius: 5px;
-  -webkit-box-shadow: 0 -2px 5px 0 #0000001d, 0 2px 3px 0 #0000001d inset;
-          box-shadow: 0 -2px 5px 0 #0000001d, 0 2px 3px 0 #0000001d inset;
+  -webkit-box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.1137254902), 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.1137254902), 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
   color: #2a4858;
   font-size: 18px;
   font-weight: bold;
@@ -10861,8 +10887,8 @@ html body .register .box .checkBox input::before {
   background: #f9f9f9;
   border-radius: 50%;
   border: solid 1px #c90b0b;
-  -webkit-box-shadow: 0 2px 3px 0 #0000001d inset;
-          box-shadow: 0 2px 3px 0 #0000001d inset;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
 }
 html body .register .box .checkBox input::after {
   display: none;

@@ -344,7 +344,7 @@
                         height: auto;
                         min-height: 600px;
                         @include helpMoreList;
-                        padding: 16px 24px;
+                        padding: 24px;
 
                         h2 {
                             color: $mainFont_2;
@@ -471,6 +471,7 @@
                             height: 1383px;
                             margin: 0 auto;
                         }
+
                     }
 
                     .img {
@@ -485,6 +486,9 @@
                         }
                         &.KYCImg_2 {
                             height: 743px;
+                        }
+                        &.depositWay {
+                            height: 572px;
                         }
                     }
                 }

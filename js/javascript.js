@@ -369,6 +369,13 @@ $(function(){
         .addClass("display");
     })
 
+    $(".gameWrap .platformBox .love").on("click",function(){
+        $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
+        .removeClass("display");
+        $(".gameWrap .gameBox .love")
+        .addClass("display");
+    })
+
     $(".gameWrap .platformBox .boo").on("click",function(){
         $(".gameWrap .gameBox li,.gameWrap .gameBox li span")
         .removeClass("display");

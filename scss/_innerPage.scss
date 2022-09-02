@@ -3994,6 +3994,12 @@
                                 height: 16px;
                                 margin-right: 5px;
                             }
+
+                            &:hover,&:active,&.active {
+                                .help_ic {
+                                    filter: brightness(500%);
+                                  }
+                            }
                         }
                     }
 
@@ -4209,6 +4215,11 @@
 
                             &.sp {
                                 margin-top: 10px;
+
+                                .emphasize {
+                                    color: $mainFont_1;
+                                }
+                            
                             }
                         }
 
