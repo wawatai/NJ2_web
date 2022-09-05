@@ -575,7 +575,7 @@ $(function(){
 
 //gameWrap愛心
 $(function(){
-    $(".gameWrap .love").on("click",function(){
+    $(".gameWrap .gameBox .love").on("click",function(){
         $(this)
         .toggleClass("active");
     })
