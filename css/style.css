@@ -11515,7 +11515,7 @@ html body .registerBG {
 html body .agentWrap {
   width: 100%;
   height: auto;
-  padding-top: 10px;
+  padding-top: 5px;
   overflow: hidden;
   display: none;
 }
@@ -11937,7 +11937,7 @@ html body .agentWrap .applyBox .agentCenter button {
 html body .agentHelp {
   width: 100%;
   height: auto;
-  padding-top: 10px;
+  padding-top: 5px;
   display: none;
 }
 html body .agentHelp.display {

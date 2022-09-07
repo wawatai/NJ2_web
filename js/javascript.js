@@ -1074,7 +1074,7 @@ $(function(){
         .addClass('display');
     })
 
-    $("header .agent button,footer.agent button").on("click",function(){
+    $("header .agent button,.agentWrap .agentCenter button").on("click",function(){
         $('.jumpWindow')
         .removeClass('display');
         $('.filter,.agentRegister')
