@@ -1596,11 +1596,15 @@ html body header .gameNav ul ol {
 html body header .gameNav ul ol.sp {
   width: auto;
 }
+html body header .gameNav ul ol.sp li {
+  width: auto;
+  padding: 0 20px;
+}
 html body header .gameNav ul ol.sp li:hover p, html body header .gameNav ul ol.sp li:active p, html body header .gameNav ul ol.sp li.active p {
   color: #b8151a;
 }
 html body header .gameNav ul ol li {
-  width: auto;
+  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1613,7 +1617,6 @@ html body header .gameNav ul ol li {
           justify-content: center;
   position: relative;
   cursor: pointer;
-  padding: 0 20px;
   margin-right: 35px;
 }
 html body header .gameNav ul ol li:first-child {
