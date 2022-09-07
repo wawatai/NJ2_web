@@ -390,6 +390,15 @@ footer .qs {
     background: url('../images/icon/svg/innerNav_mail_active.svg') no-repeat center;
     background-size: contain;
 }
+.innerPage .leftSide .btnBox .agent_ic::before {
+    background: url('../images/icon/svg/innerNav_agent.svg') no-repeat center;
+    background-size: contain;
+}
+.innerPage .leftSide .btnBox li:hover .agent_ic::before,
+.innerPage .leftSide .btnBox li.active .agent_ic::before {
+    background: url('../images/icon/svg/innerNav_agent_active.svg') no-repeat center;
+    background-size: contain;
+}
 .innerPage .rightSide .star_ic {
     background: url('../images/icon/mainWrap_star.png') no-repeat;
     background-size: contain;
@@ -762,6 +771,85 @@ footer .qs {
 .register .infoBox {
     background: url('../images/register_rightBG.png') no-repeat;
     background-size: contain;
+}
+
+//agent
+.agentWrap .topBanner,
+.agentHelp .topBanner {
+    background: url('../images/agent_banner.png') no-repeat;
+    background-size: contain;
+}
+.agentWrap .typeImg {
+    background: url('../images/agent_typeImg.png') no-repeat;
+    background-size: contain;
+}
+.agentWrap .introImg {
+    background: url('../images/agent_introImg.png') no-repeat;
+    background-size: 500%;
+}
+.agentWrap .introBox li::before {
+    background: url('../images/agent_star.png') no-repeat;
+    background-size: contain;
+}
+.agentWrap .introBox .introIC_1 {
+    background: url('../images/agent_introIC_1.png') no-repeat;
+    background-size: contain;
+}
+.agentWrap .systemBox .systemIC_1 {
+    background: url('../images/agent_systemIC_1.png') no-repeat;
+    background-size: contain;
+}
+.agentWrap .systemBox .systemIC_2 {
+    background: url('../images/agent_systemIC_2.png') no-repeat;
+    background-size: contain;
+}
+.agentWrap .systemImg {
+    background: url('../images/agent_systemImg.png') no-repeat;
+    background-size: contain;
+}
+.agentWrap .systemBox .systemIC_3 {
+    background: url('../images/agent_systemIC_3.png') no-repeat;
+    background-size: contain;
+}
+.agentWrap .systemBox .systemIC_4 {
+    background: url('../images/agent_systemIC_4.png') no-repeat;
+    background-size: contain;
+}
+.agentWrap .systemBox .systemIC_5 {
+    background: url('../images/agent_systemIC_5.png') no-repeat;
+    background-size: contain;
+}
+.agentWrap .agentCenter button {
+    background: url('../images/agent_footerBtn.png') no-repeat;
+    background-size: contain;
+}
+.agentHelp .bigTitle .star_ic {
+    background: url('../images/icon/innerPage_star.png') no-repeat;
+    background-size: contain;
+}
+.agentHelp .lineTitle .smallStar_ic {
+    background: url('../images/icon/innerPage_star.png') no-repeat;
+    background-size: contain;
+}
+.agentHelp .lineTitle .star_ic {
+    background: url('../images/icon/mainWrap_star.png') no-repeat;
+    background-size: contain;
+}
+.agentHelp .leftSide .star_ic {
+    background: url('../images/icon/innerPage_star.png') no-repeat;
+    background-size: contain;
+}
+.jumpWindow.agentRegister::before {
+    background: url('../images/agent_register_BG_1.png') no-repeat;
+    background-size: contain;
+}
+.jumpWindow.agentRegister::after {
+    background: url('../images/agent_register_BG_2.png') no-repeat;
+    background-size: contain;
+}
+.jumpWindow.agentRegister {
+    background: url('../images/agent_register_rightBG.png') no-repeat !important;
+    background-size: cover !important;
 }
 
 

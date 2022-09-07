@@ -1073,4 +1073,124 @@ $(function(){
         $('.filter,.plsGo')
         .addClass('display');
     })
+
+    $("header .agent button,footer.agent button").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.agentRegister')
+        .addClass('display');
+    })
+})
+
+//agent
+$(function(){
+    $("header .gameNav.forAgent li").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+
+        var n = $(this).index() - 1;
+
+        $("main>div:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+
+    $(".agentHelp .leftSide li").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+    })
+
+    $('.agentHelp.rule .leftSide li').click(function(){
+        var n = $(this).index();
+        var target = $(".rule .box:eq("+ n +") .smallTitle").offset().top - 36;
+        var ori = $(".rule .rightSide").offset().top;
+        var scrollVal = $(".rule .rightSide").scrollTop();
+
+        $(".rule .rightSide").animate({
+            scrollTop: target - ori + scrollVal,
+        },300)
+    });
+
+    $('.agentHelp.normal .leftSide li').click(function(){
+        var n = $(this).index();
+        var target = $(".normal .lineTitle:eq("+ n +")").offset().top - 10;
+        var ori = $(".normal .rightSide").offset().top;
+        var scrollVal = $(".normal .rightSide").scrollTop();
+
+        $(".normal .rightSide").animate({
+            scrollTop: target - ori + scrollVal,
+        },300)
+    });
+
+    $(function(){
+        $(".rule .rightSide").scroll(function () {
+            var scrollVal = $(this).scrollTop();
+            if(scrollVal < 100){
+                $(".leftSide li:nth-of-type(1)") 
+                .addClass("active")
+                .siblings().removeClass("active");
+            }else if(scrollVal >= 5200){
+                $(".leftSide li:nth-of-type(11)") 
+                .addClass("active")
+                .siblings().removeClass("active");
+            }else if(scrollVal >= 5100){
+                $(".leftSide li:nth-of-type(10)") 
+                .addClass("active")
+                .siblings().removeClass("active");
+            }else if(scrollVal >= 4700){
+                $(".leftSide li:nth-of-type(9)") 
+                .addClass("active")
+                .siblings().removeClass("active");
+            }else if(scrollVal >= 4300){
+                $(".leftSide li:nth-of-type(8)") 
+                .addClass("active")
+                .siblings().removeClass("active");
+            }else if(scrollVal >= 3700){
+                $(".leftSide li:nth-of-type(7)")
+                .addClass("active")
+                .siblings().removeClass("active");
+            }else if(scrollVal >= 2900){
+                $(".leftSide li:nth-of-type(6)")
+                .addClass("active")
+                .siblings().removeClass("active");
+            }else if(scrollVal >= 1900){
+                $(".leftSide li:nth-of-type(5)")
+                .addClass("active")
+                .siblings().removeClass("active");
+            }else if(scrollVal >= 1100){
+                $(".leftSide li:nth-of-type(4)")
+                .addClass("active")
+                .siblings().removeClass("active");
+            }else if(scrollVal >= 700){
+                $(".leftSide li:nth-of-type(3)")
+                .addClass("active")
+                .siblings().removeClass("active");
+            }else if(scrollVal >= 100){
+                $(".leftSide li:nth-of-type(2)")
+                .addClass("active")
+                .siblings().removeClass("active");
+            }
+        })
+    })
+    
+    $(function(){
+        $(".normal .rightSide").scroll(function () {
+            var scrollVal = $(this).scrollTop();
+            if(scrollVal < 100){
+                $(".leftSide li:nth-of-type(1)") 
+                .addClass("active")
+                .siblings().removeClass("active");
+            }else if(scrollVal >= 700){
+                $(".leftSide li:nth-of-type(3)")
+                .addClass("active")
+                .siblings().removeClass("active");
+            }else if(scrollVal >= 500){
+                $(".leftSide li:nth-of-type(2)")
+                .addClass("active")
+                .siblings().removeClass("active");
+            }
+        })
+    })
 })

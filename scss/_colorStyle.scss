@@ -103,6 +103,7 @@ $headerMoneyList_secondBorder: #a8a8a8;
 //headerNav
 $headerNav_Word: #ffffff;
 $headerNav_Hover: #b37d1f;
+$headerNav_agentHover: #b8151a;
 
 //ad
 @mixin ad_Dot {
@@ -167,6 +168,7 @@ $footer_Title: #ba9141;
 $footer_List_Word: #1f2629;
 $footer_List_Active: linear-gradient(to top,#970707 0%,#cf0505 98%);
 $footer_bottomBG: #b8151a;
+$footer_bottomColor: #ffffff;
 @mixin footerBtn_2 {
     background: linear-gradient(to top,#ebebeb 0%,#ffffff 100%);
     border-radius: 30px;
@@ -470,6 +472,11 @@ $table_inner_TableTitleBG: #f7f7f7;
 $table_inner_TableBorder: #b8151a;
 $table_inner_TableBG: #ffffff;
 $table_point_BtnBoxBG: #cbaa72;
+$table_agent_TitleBG: #b8151a;
+$table_agent_Title: #ffffff;
+$table_agent_Border: #b8151a;
+$table_agent_BG: #f3f3f3;
+$table_agent_secondBG: #eaeaea;
 
 //page
 $page_line: #d0d0d0;
@@ -513,6 +520,48 @@ $register_Color: #3b5461;
 
     &:hover,&:active,&.active {
         background: linear-gradient(to top,#ffffff 15%,#f2f2f2 100%);
+    }
+}
+
+//agent
+$agent_Color_1: #d38c19;
+$agent_Color_2: #4d4d4d;
+$agent_BG_1: #ffffff;
+$agent_BG_2: #ffebcb;
+$agent_Border: #b8151a;
+@mixin agentInput {
+    background: #e4eaf2;
+    border-radius: 5px;
+    box-shadow: -2px -3px 5px 0 #0000001d,1px 2px 3px #d2dae7 inset;
+    border: none;
+    color: #2b4858;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 12px;
+
+    &::placeholder {
+        color: #91a2c0;
+    }
+}
+$agent_register_depositBG: #f5f5f5;
+$agent_register_depositBorder: #daaf6d;
+@mixin agentHelpList {
+    background: linear-gradient(to bottom,#ffffff 44%,#f9f9f9 100%);
+    border: solid 1px #daaf6d;
+    border-left: none;
+    border-radius: 0 30px 30px 0;
+    color: #ababab;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s all;
+    padding-left: 16px;
+
+    &:hover,&:active,&.active {
+        border-color: #b8151a;
+        color: #b8151a;
     }
 }
 
