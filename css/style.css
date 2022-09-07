@@ -12192,7 +12192,7 @@ html body .agentHelp .center .rightSide .box .smallTitle {
   color: #ba9141;
   font-size: 20px;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 30px 0 20px;
 }
 html body .agentHelp .center .rightSide .box .smallTitle:first-child {
   margin-top: 0;
@@ -12202,7 +12202,7 @@ html body .agentHelp .center .rightSide .box p:not(.smallTitle) {
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 html body .agentHelp .center .rightSide .box p:not(.smallTitle).sp {
   padding-left: 10px;
