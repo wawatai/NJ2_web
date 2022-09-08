@@ -1089,8 +1089,19 @@ $(function(){
     })
 })
 
+if($(this).hasClass("bug") == true)
+{
+    $(this).remove();
+}
+for(var b = 0;b < 11;b ++)
+{
+
+}
+
 //agent
 $(function(){
+    var arr = [];
+    var i = 0;
     $("header .gameNav.forAgent li").on("click",function(){
         $(this)
         .addClass("active")
@@ -1101,6 +1112,13 @@ $(function(){
         $("main>div:eq("+ n +")")
         .addClass("display")
         .siblings().removeClass("display");
+
+        $(".rule .box .smallTitle").each(function(){
+            var ori = $(".rule .rightSide").offset().top;
+            arr[i] = $(this).offset().top - ori - 37;
+
+            i ++;
+        })
     })
 
     $(".agentHelp .leftSide li").on("click",function(){
@@ -1134,67 +1152,27 @@ $(function(){
     $(function(){
         $(".rule .rightSide").scroll(function () {
             var scrollVal = $(this).scrollTop();
-            if(scrollVal < 100){
-                $(".leftSide li:nth-of-type(1)") 
-                .addClass("active")
-                .siblings().removeClass("active");
-            }else if(scrollVal >= 5200){
-                $(".leftSide li:nth-of-type(11)") 
-                .addClass("active")
-                .siblings().removeClass("active");
-            }else if(scrollVal >= 5100){
-                $(".leftSide li:nth-of-type(10)") 
-                .addClass("active")
-                .siblings().removeClass("active");
-            }else if(scrollVal >= 4700){
-                $(".leftSide li:nth-of-type(9)") 
-                .addClass("active")
-                .siblings().removeClass("active");
-            }else if(scrollVal >= 4300){
-                $(".leftSide li:nth-of-type(8)") 
-                .addClass("active")
-                .siblings().removeClass("active");
-            }else if(scrollVal >= 3700){
-                $(".leftSide li:nth-of-type(7)")
-                .addClass("active")
-                .siblings().removeClass("active");
-            }else if(scrollVal >= 2900){
-                $(".leftSide li:nth-of-type(6)")
-                .addClass("active")
-                .siblings().removeClass("active");
-            }else if(scrollVal >= 1900){
-                $(".leftSide li:nth-of-type(5)")
-                .addClass("active")
-                .siblings().removeClass("active");
-            }else if(scrollVal >= 1100){
-                $(".leftSide li:nth-of-type(4)")
-                .addClass("active")
-                .siblings().removeClass("active");
-            }else if(scrollVal >= 700){
-                $(".leftSide li:nth-of-type(3)")
-                .addClass("active")
-                .siblings().removeClass("active");
-            }else if(scrollVal >= 100){
-                $(".leftSide li:nth-of-type(2)")
+            if(scrollVal >= arr[3])
+            {
+                $(".leftSide li:eq(3)")
                 .addClass("active")
                 .siblings().removeClass("active");
             }
-        })
-    })
-    
-    $(function(){
-        $(".normal .rightSide").scroll(function () {
-            var scrollVal = $(this).scrollTop();
-            if(scrollVal < 100){
-                $(".leftSide li:nth-of-type(1)") 
+            else if(scrollVal >= arr[2])
+            {
+                $(".leftSide li:eq(2)")
                 .addClass("active")
                 .siblings().removeClass("active");
-            }else if(scrollVal >= 700){
-                $(".leftSide li:nth-of-type(3)")
+            }
+            else if(scrollVal >= arr[1])
+            {
+                $(".leftSide li:eq(1)")
                 .addClass("active")
                 .siblings().removeClass("active");
-            }else if(scrollVal >= 500){
-                $(".leftSide li:nth-of-type(2)")
+            }
+            else if(scrollVal >= arr[0])
+            {
+                $(".leftSide li:eq(0)")
                 .addClass("active")
                 .siblings().removeClass("active");
             }
