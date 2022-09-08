@@ -2860,12 +2860,18 @@ html body .filter .jumpWindow.news.rules .box .infoBox ul li:not(.smallTitle), h
 }
 html body .filter .jumpWindow.news.rules .box .infoBox ul li:not(.smallTitle) p, html body .filter .jumpWindow.rules.rules .box .infoBox ul li:not(.smallTitle) p {
   font-size: 14px;
-  white-space: pre-wrap;
+  white-space: unset;
   line-height: 20px;
   margin-bottom: 10px;
 }
+html body .filter .jumpWindow.news.rules .box .infoBox ul li:not(.smallTitle) p.sp, html body .filter .jumpWindow.rules.rules .box .infoBox ul li:not(.smallTitle) p.sp {
+  padding-left: 10px;
+}
 html body .filter .jumpWindow.news.rules .box .infoBox ul li:not(.smallTitle) p:last-child, html body .filter .jumpWindow.rules.rules .box .infoBox ul li:not(.smallTitle) p:last-child {
   margin: 0;
+}
+html body .filter .jumpWindow.news.rules .box .infoBox ul li:not(.smallTitle) p span, html body .filter .jumpWindow.rules.rules .box .infoBox ul li:not(.smallTitle) p span {
+  color: #b8151a;
 }
 html body .filter .jumpWindow.news.rules .checkBtn, html body .filter .jumpWindow.rules.rules .checkBtn {
   width: 216px;
@@ -2891,6 +2897,7 @@ html body .filter .jumpWindow.news .box, html body .filter .jumpWindow.rules .bo
   max-height: 380px;
   overflow-y: auto;
   margin-top: 20px;
+  padding: 0 10px;
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
 }

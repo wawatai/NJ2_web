@@ -101,12 +101,20 @@
 
                                 p {
                                     font-size: 14px;
-                                    white-space: pre-wrap;
+                                    white-space: unset;
                                     line-height: 20px;
                                     margin-bottom: 10px;
 
+                                    &.sp {
+                                        padding-left: 10px;
+                                    }
+
                                     &:last-child {
                                         margin: 0;
+                                    }
+
+                                    span {
+                                        color: $mainFont_1;
                                     }
                                 }
                             }
@@ -129,6 +137,7 @@
                 max-height: 380px;
                 overflow-y: auto;
                 margin-top: 20px;
+                padding: 0 10px;
                 @include scollBar;
 
                 .infoBox {
