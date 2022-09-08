@@ -1080,6 +1080,13 @@ $(function(){
         $('.filter,.agentRegister')
         .addClass('display');
     })
+
+    $(".agentRegister .bottom p").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.rules')
+        .addClass('display');
+    })
 })
 
 //agent
