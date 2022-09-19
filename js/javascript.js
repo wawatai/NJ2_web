@@ -1087,16 +1087,14 @@ $(function(){
         $('.filter,.rules')
         .addClass('display');
     })
+
+    $(".register .btnBox .checkBtn").on("click",function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.plsGo_2')
+        .addClass('display');
+    })
 })
-
-if($(this).hasClass("bug") == true)
-{
-    $(this).remove();
-}
-for(var b = 0;b < 11;b ++)
-{
-
-}
 
 //agent
 $(function(){

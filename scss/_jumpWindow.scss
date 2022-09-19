@@ -223,7 +223,8 @@
         }
 
         //單純轉跳彈窗
-        &.plsGo {
+        &.plsGo,
+        &.plsGo_2 {
             display: none;
             min-width: 320px;
             padding-bottom: 30px;
@@ -252,6 +253,26 @@
                 @include mainBtn;
                 display: block;
                 margin: 0 auto;
+            }
+
+            .img {
+                width: 244px;
+                height: 150px;
+                margin: 0 auto 10px;
+            }
+
+            .btnBox {
+                width: 100%;
+                height: auto;
+                display: flex;
+
+                button {
+                    width: 180px;
+
+                    &:first-child {
+                        @include secondBtn;
+                    }
+                }
             }
         }
 
