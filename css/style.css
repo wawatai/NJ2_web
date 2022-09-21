@@ -341,7 +341,32 @@ footer .qs {
 }
 
 .innerPage .medal div {
-  background: url("../images/levelMedal01_active.png") no-repeat;
+  background: url("../images/levelMedal02.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .vip2 .medal div {
+  background: url("../images/levelMedal03.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .vip3 .medal div {
+  background: url("../images/levelMedal04.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .vip4 .medal div {
+  background: url("../images/levelMedal05.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .vip5 .medal div {
+  background: url("../images/levelMedal06.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .vip6 .medal div {
+  background: url("../images/levelMedal07.png") no-repeat;
   background-size: contain;
 }
 
@@ -706,12 +731,62 @@ footer .qs {
 }
 
 .innerPage .rightSide.vip .slick-center .levelMedal {
-  background: url("../images/levelMedal01_active.png") no-repeat;
+  background: url("../images/levelMedal02.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .rightSide.vip .vip2.slick-center .levelMedal {
+  background: url("../images/levelMedal03.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .rightSide.vip .vip3.slick-center .levelMedal {
+  background: url("../images/levelMedal04.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .rightSide.vip .vip4.slick-center .levelMedal {
+  background: url("../images/levelMedal05.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .rightSide.vip .vip5.slick-center .levelMedal {
+  background: url("../images/levelMedal06.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .rightSide.vip .vip6.slick-center .levelMedal {
+  background: url("../images/levelMedal07.png") no-repeat;
   background-size: contain;
 }
 
 .innerPage .rightSide.vip .level_ic {
-  background: url("../images/levelMedal01_active.png") no-repeat center;
+  background: url("../images/levelMedal02.png") no-repeat center;
+  background-size: contain;
+}
+
+.innerPage .rightSide.vip .level_ic.vip2 {
+  background: url("../images/levelMedal03.png") no-repeat center;
+  background-size: contain;
+}
+
+.innerPage .rightSide.vip .level_ic.vip3 {
+  background: url("../images/levelMedal04.png") no-repeat center;
+  background-size: contain;
+}
+
+.innerPage .rightSide.vip .level_ic.vip4 {
+  background: url("../images/levelMedal05.png") no-repeat center;
+  background-size: contain;
+}
+
+.innerPage .rightSide.vip .level_ic.vip5 {
+  background: url("../images/levelMedal06.png") no-repeat center;
+  background-size: contain;
+}
+
+.innerPage .rightSide.vip .level_ic.vip6 {
+  background: url("../images/levelMedal07.png") no-repeat center;
   background-size: contain;
 }
 
@@ -1286,8 +1361,8 @@ html body header .top .user li:not(.platform) .loginForm div input {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001a inset;
+          box-shadow: 0 2px 5px 0 #0000001a inset;
   color: #b11319;
   font-size: 16px;
   font-weight: bold;
@@ -1393,8 +1468,8 @@ html body header .top .user li:not(.platform).lang select {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001a inset;
+          box-shadow: 0 2px 5px 0 #0000001a inset;
   color: #daaf6d;
   font-size: 15px;
   font-weight: bold;
@@ -1749,8 +1824,8 @@ html body header .agent .lang select {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1019607843) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001a inset;
+          box-shadow: 0 2px 5px 0 #0000001a inset;
   color: #daaf6d;
   font-size: 15px;
   font-weight: bold;
@@ -1789,8 +1864,8 @@ html body .ad .single-item .slick-dots li button::before {
   height: 15px;
   background: #f9f9f9;
   border-radius: 50%;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #00000049 inset;
+          box-shadow: 0 2px 5px 0 #00000049 inset;
   border: none;
   color: transparent;
   opacity: 1;
@@ -1845,7 +1920,7 @@ html body .multiple-items.card .slick-list .slick-track li .cardBG .nameBox p {
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.5019607843);
+  text-shadow: -1px 2px 2px #00000080;
 }
 html body .multiple-items.card .slick-list .slick-track li .cardBG .nameBox p:first-child {
   font-size: 18px;
@@ -1856,7 +1931,7 @@ html body .multiple-items.card .slick-list .slick-track li .cardBG .num {
   color: #ffffff;
   font-size: 21px;
   font-weight: bold;
-  text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.5019607843);
+  text-shadow: -1px 2px 2px #00000080;
   text-align: center;
   letter-spacing: 1px;
   position: absolute;
@@ -1926,6 +2001,116 @@ html body .multiple-items.vip .slick-list {
 html body .multiple-items.vip .slick-list .slick-track {
   top: 75px;
 }
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip2 .levelBG .levelCnt {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #ffe8d3), to(#ffc99e));
+  background: linear-gradient(to bottom, #ffe8d3 31%, #ffc99e 100%);
+  border-radius: 32px;
+  border: solid 2px #9f6f4e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip2 .levelBG .levelCnt .innerBox {
+  border-color: #dea076;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip2 .levelBG .levelCnt .innerBox .smallTitle {
+  color: #8d5128;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip3 .levelBG .levelCnt {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #feffae), to(#ffef6a));
+  background: linear-gradient(to bottom, #feffae 15%, #ffef6a 100%);
+  border-radius: 32px;
+  border: solid 2px #b98700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip3 .levelBG .levelCnt .innerBox {
+  border-color: #ebc501;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip3 .levelBG .levelCnt .innerBox .smallTitle {
+  color: #e18700;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip4 .levelBG .levelCnt {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #f0f0f0), color-stop(72%, #c5c5c5), color-stop(89%, #f0f0f0));
+  background: linear-gradient(to bottom, #f0f0f0 31%, #c5c5c5 72%, #f0f0f0 89%);
+  border-radius: 32px;
+  border: solid 2px #7a7b89;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip4 .levelBG .levelCnt .innerBox {
+  border-color: #a7a8b3;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip4 .levelBG .levelCnt .innerBox .smallTitle {
+  color: #6a6d7e;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip5 .levelBG .levelCnt {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(38%, #fff9d0), color-stop(74%, #fce4a4), to(#fff9d0));
+  background: linear-gradient(to bottom, #fff9d0 38%, #fce4a4 74%, #fff9d0 100%);
+  border-radius: 32px;
+  border: solid 2px #b57b23;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip5 .levelBG .levelCnt .innerBox {
+  border-color: #d9b759;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip5 .levelBG .levelCnt .innerBox .smallTitle {
+  color: #ad720b;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip6 .levelBG .levelCnt {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f4f4f4));
+  background: linear-gradient(to bottom, #ffffff 0%, #f4f4f4 100%);
+  border-radius: 32px;
+  border: solid 2px #b50809;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip6 .levelBG .levelCnt .innerBox {
+  border-color: #e7bb6c;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip6 .levelBG .levelCnt .innerBox .smallTitle {
+  color: #d57f00;
+}
 html body .multiple-items.vip .slick-list .slick-track li.slick-center .levelBG {
   width: 440px;
   -webkit-transform: scale(1.2);
@@ -1960,14 +2145,16 @@ html body .multiple-items.vip .slick-list .slick-track li .levelBG .levelMedal {
       flex-shrink: 0;
   position: relative;
   z-index: 1;
+  -webkit-filter: drop-shadow(1px 2px 3px #00000080);
+          filter: drop-shadow(1px 2px 3px #00000080);
 }
 html body .multiple-items.vip .slick-list .slick-track li .levelBG .levelCnt {
   width: 0;
   height: 156px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #f8e2d2), color-stop(34%, #dcb194), color-stop(72%, #f8e2d2));
-  background: linear-gradient(to top, #f8e2d2 4%, #dcb194 34%, #f8e2d2 72%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f8ea9f), color-stop(56%, #d8ff9a), to(#94d858));
+  background: linear-gradient(to bottom, #f8ea9f 10%, #d8ff9a 56%, #94d858 100%);
   border-radius: 32px;
-  border: solid 2px #9f6f4e;
+  border: solid 2px #168508;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1988,7 +2175,7 @@ html body .multiple-items.vip .slick-list .slick-track li .levelBG .levelCnt {
 html body .multiple-items.vip .slick-list .slick-track li .levelBG .levelCnt .innerBox {
   width: 94%;
   height: 90%;
-  border: solid 2px #dea076;
+  border: solid 2px #49bd43;
   border-radius: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2004,7 +2191,7 @@ html body .multiple-items.vip .slick-list .slick-track li .levelBG .levelCnt .in
   overflow: hidden;
 }
 html body .multiple-items.vip .slick-list .slick-track li .levelBG .levelCnt .innerBox .smallTitle {
-  color: #8d5128;
+  color: #146e0f;
   font-size: 20px;
   font-weight: bold;
   white-space: nowrap;
@@ -2134,8 +2321,8 @@ html body .mainWrap .center .marqueeWrap .marquee {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000002c inset;
+          box-shadow: 0 2px 5px 0 #0000002c inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2218,7 +2405,7 @@ html body .mainWrap .center .typeList .typeBox.hotGame .pageBtn.prev, html body 
 html body .mainWrap .center .typeList .typeBox .pageBtn {
   width: 52px;
   height: 52px;
-  background: rgba(0, 0, 0, 0.2);
+  background: #00000033;
   border-radius: 50%;
   position: absolute;
   z-index: 10;
@@ -2380,8 +2567,8 @@ html body footer .center .top .listBox .list {
   height: 280px;
   background: #f3f3f3;
   border-radius: 16px;
-  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1098039216) inset;
-          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1098039216) inset;
+  -webkit-box-shadow: 0 0 10px 1px #0000001c inset;
+          box-shadow: 0 0 10px 1px #0000001c inset;
   padding: 16px 24px;
 }
 html body footer .center .top .listBox .list .title {
@@ -2725,7 +2912,7 @@ html body .filter {
   width: 100%;
   height: 100%;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.6196078431);
+  background: #0000009e;
   top: 0px;
   left: 0px;
   -webkit-box-align: center;
@@ -2774,8 +2961,8 @@ html body .filter .jumpWindow.forgetPassword form input {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -2931,8 +3118,8 @@ html body .filter .jumpWindow.news .box .infoBox, html body .filter .jumpWindow.
 }
 html body .filter .jumpWindow.news .box .infoBox.active, html body .filter .jumpWindow.rules .box .infoBox.active {
   background: #ffffff;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
 }
 html body .filter .jumpWindow.news .box .infoBox:last-child, html body .filter .jumpWindow.rules .box .infoBox:last-child {
   margin-bottom: 0;
@@ -3155,8 +3342,8 @@ html body .filter .jumpWindow.betWindow .bottom .inputBox input {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -3263,8 +3450,8 @@ html body .filter .jumpWindow.betWindow .enterGame div input::before {
   background: #f9f9f9;
   border-radius: 50%;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 3px 0 #0000001d inset;
+          box-shadow: 0 2px 3px 0 #0000001d inset;
 }
 html body .filter .jumpWindow.betWindow .enterGame div input::after {
   display: none;
@@ -3686,8 +3873,8 @@ html body .filter .jumpWindow.changePhone .content .inputBox input {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -3777,8 +3964,8 @@ html body .filter .jumpWindow.changePassword .content .inputBox input {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -3937,8 +4124,8 @@ html body .filter .jumpWindow.agentRegister .box .top .right .row .inputBox inpu
   height: 100%;
   background: #e4eaf2;
   border-radius: 5px;
-  -webkit-box-shadow: -2px -3px 5px 0 rgba(0, 0, 0, 0.1137254902), 1px 2px 3px #d2dae7 inset;
-          box-shadow: -2px -3px 5px 0 rgba(0, 0, 0, 0.1137254902), 1px 2px 3px #d2dae7 inset;
+  -webkit-box-shadow: -2px -3px 5px 0 #0000001d, 1px 2px 3px #d2dae7 inset;
+          box-shadow: -2px -3px 5px 0 #0000001d, 1px 2px 3px #d2dae7 inset;
   border: none;
   color: #2b4858;
   font-size: 20px;
@@ -4040,8 +4227,8 @@ html body .filter .jumpWindow.agentRegister .box .top .right .row .depositBox di
   background: #f9f9f9;
   border-radius: 50%;
   border: solid 1px #c90b0b;
-  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 3px 0 #0000001d inset;
+          box-shadow: 0 2px 3px 0 #0000001d inset;
 }
 html body .filter .jumpWindow.agentRegister .box .top .left .row .depositBox div input::after,
 html body .filter .jumpWindow.agentRegister .box .top .right .row .depositBox div input::after {
@@ -4104,8 +4291,8 @@ html body .filter .jumpWindow.agentRegister .box .bottom div input::before {
   background: #f9f9f9;
   border-radius: 50%;
   border: solid 1px #c90b0b;
-  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 3px 0 #0000001d inset;
+          box-shadow: 0 2px 3px 0 #0000001d inset;
 }
 html body .filter .jumpWindow.agentRegister .box .bottom div input::after {
   display: none;
@@ -4239,8 +4426,8 @@ html body .gameWrap .content .marqueeWrap .marquee {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000002c inset;
+          box-shadow: 0 2px 5px 0 #0000002c inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4326,8 +4513,8 @@ html body .gameWrap .content .searchWrap input {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -4469,7 +4656,7 @@ html body .gameWrap .content .gameBox li div .mask {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: rgba(0, 0, 0, 0.6196078431);
+  background: #0000009e;
   z-index: 1;
   opacity: 0;
   -webkit-transition: 0.3s all;
@@ -4508,7 +4695,7 @@ html body .gameWrap .content .gameBox li p {
 }
 html body .gameWrap .content .gameBox li span {
   display: none;
-  background: rgba(255, 255, 255, 0.7803921569);
+  background: #ffffffc7;
   color: #b8151a;
   font-size: 13px;
   font-weight: bold;
@@ -4527,7 +4714,7 @@ html body .gameWrap .content .gameBox li span::before {
   bottom: 0;
   border-style: solid;
   border-width: 0 0 23px 12px;
-  border-color: rgba(255, 255, 255, 0.7803921569) transparent;
+  border-color: #ffffffc7 transparent;
 }
 html body .eventWrap {
   width: 100%;
@@ -4590,8 +4777,8 @@ html body .eventWrap .content .marqueeWrap .marquee {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000002c inset;
+          box-shadow: 0 2px 5px 0 #0000002c inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4908,8 +5095,8 @@ html body .innerPage .center .banner {
   background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
   border-radius: 10px;
   border: solid 1px #fadaa5;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4196078431);
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4196078431);
+  -webkit-box-shadow: 0 2px 5px 0 #0000006b;
+          box-shadow: 0 2px 5px 0 #0000006b;
   position: relative;
   z-index: 2;
   margin: 0 auto -32px;
@@ -4926,8 +5113,8 @@ html body .innerPage .center .banner .marqueeWrap .marquee {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000002c inset;
+          box-shadow: 0 2px 5px 0 #0000002c inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5027,6 +5214,8 @@ html body .innerPage .center .banner .bottom .left .medal {
 html body .innerPage .center .banner .bottom .left .medal div {
   width: 82px;
   height: 90px;
+  -webkit-filter: drop-shadow(1px 2px 3px #00000080);
+          filter: drop-shadow(1px 2px 3px #00000080);
 }
 html body .innerPage .center .banner .bottom .left .textBox {
   width: auto;
@@ -5129,8 +5318,8 @@ html body .innerPage .center .innerMainWrap {
   background: #f7f7f7;
   border-radius: 10px;
   border: solid 1px #f3d197;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2588235294) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2588235294) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #00000042 inset;
+          box-shadow: 0 2px 5px 0 #00000042 inset;
   padding: 90px 24px 24px;
   margin-bottom: 42px;
   display: -webkit-box;
@@ -5260,8 +5449,8 @@ html body .innerPage .center .innerMainWrap .rightSide.member .memberInfo {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5408,8 +5597,8 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   border-top: solid 5px #c30505;
   border-radius: 0 0 16px 16px;
   display: none;
@@ -5476,8 +5665,8 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .topBox 
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -5619,8 +5808,8 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .midBox 
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -5749,8 +5938,8 @@ html body .innerPage .center .innerMainWrap .rightSide.member .applyBox .bottomB
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -5844,8 +6033,8 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox {
   background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 0 #0000002f;
+          box-shadow: 0 2px 5px 0 #0000002f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5861,13 +6050,13 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox {
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box {
   width: 408px;
-  height: calc(100% + 1px);
+  height: calc(100% + 2px);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(32%, #fdeec6), to(#e2c28d));
   background: linear-gradient(to bottom, #fdeec6 32%, #e2c28d 100%);
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 0 #00000049;
+          box-shadow: 0 2px 5px 0 #00000049;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5876,6 +6065,8 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f8ea9f), color-stop(56%, #d8ff9a), to(#94d858));
+  background: linear-gradient(to bottom, #f8ea9f 10%, #d8ff9a 56%, #94d858 100%);
   border-radius: 16px;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -5888,6 +6079,26 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box {
       -ms-flex-pack: center;
           justify-content: center;
 }
+html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box.vip2 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #ffe8d3), to(#ffc99e));
+  background: linear-gradient(to bottom, #ffe8d3 31%, #ffc99e 100%);
+}
+html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box.vip3 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #feffae), to(#ffef6a));
+  background: linear-gradient(to bottom, #feffae 15%, #ffef6a 100%);
+}
+html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box.vip4 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #f0f0f0), color-stop(72%, #c5c5c5), color-stop(89%, #f0f0f0));
+  background: linear-gradient(to bottom, #f0f0f0 31%, #c5c5c5 72%, #f0f0f0 89%);
+}
+html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box.vip5 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(38%, #fff9d0), color-stop(74%, #fce4a4), to(#fff9d0));
+  background: linear-gradient(to bottom, #fff9d0 38%, #fce4a4 74%, #fff9d0 100%);
+}
+html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box.vip6 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f4f4f4));
+  background: linear-gradient(to bottom, #ffffff 0%, #f4f4f4 100%);
+}
 html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box .medal {
   width: 82px;
   height: 90px;
@@ -5895,6 +6106,8 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box .medal
 html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box .medal div {
   width: 100%;
   height: 100%;
+  -webkit-filter: drop-shadow(1px 2px 3px #00000080);
+          filter: drop-shadow(1px 2px 3px #00000080);
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip .levelBox .box .smallBox {
   width: auto;
@@ -6003,8 +6216,8 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .detailBox ul li {
   height: 120px;
   background: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
-          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
+  -webkit-box-shadow: 0 2px 3px 1px #0000001e;
+          box-shadow: 0 2px 3px 1px #0000001e;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -6142,7 +6355,7 @@ html body .innerPage .center .innerMainWrap .rightSide.vip table tr th p {
   white-space: nowrap;
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip table tr td {
-  height: 40px;
+  height: 53px;
   vertical-align: middle;
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip table tr td:first-child p {
@@ -6175,6 +6388,8 @@ html body .innerPage .center .innerMainWrap .rightSide.vip table tr td p i {
   width: 34px;
   height: 37px;
   margin-right: 10px;
+  -webkit-filter: drop-shadow(1px 1px 2px #00000080);
+          filter: drop-shadow(1px 1px 2px #00000080);
 }
 html body .innerPage .center .innerMainWrap .rightSide.vip .remindBox {
   width: 100%;
@@ -6182,8 +6397,8 @@ html body .innerPage .center .innerMainWrap .rightSide.vip .remindBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   border: none;
   padding: 12px 40px;
 }
@@ -6222,8 +6437,8 @@ html body .innerPage .center .innerMainWrap .rightSide.invite .bigBox {
   background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 0 #0000002f;
+          box-shadow: 0 2px 5px 0 #0000002f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6294,8 +6509,8 @@ html body .innerPage .center .innerMainWrap .rightSide.invite .bigBox .box .inpu
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -6348,8 +6563,8 @@ html body .innerPage .center .innerMainWrap .rightSide.invite .bigBox .box .link
   background: linear-gradient(to bottom, #fdeec6 32%, #e2c28d 100%);
   border-radius: 5px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 0 #00000049;
+          box-shadow: 0 2px 5px 0 #00000049;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6390,8 +6605,8 @@ html body .innerPage .center .innerMainWrap .rightSide.invite .remindBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   border: none;
   padding: 12px 40px;
 }
@@ -6437,8 +6652,8 @@ html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyBox {
   background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 0 #0000002f;
+          box-shadow: 0 2px 5px 0 #0000002f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6539,8 +6754,8 @@ html body .innerPage .center .innerMainWrap .rightSide.wallet .moneyList ul li {
   height: 70px;
   background: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
-          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
+  -webkit-box-shadow: 0 2px 3px 1px #0000001e;
+          box-shadow: 0 2px 3px 1px #0000001e;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -6625,8 +6840,8 @@ html body .innerPage .center .innerMainWrap .rightSide.card .applyBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6691,8 +6906,8 @@ html body .innerPage .center .innerMainWrap .rightSide.card .applyBox .inputBox 
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -6786,8 +7001,8 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   border-top: solid 5px #c30505;
   border-radius: 0 0 16px 16px;
   display: none;
@@ -6879,8 +7094,8 @@ html body .innerPage .center .innerMainWrap .rightSide.dealRecord .applyBox.deal
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -7291,8 +7506,8 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   border-radius: 0 0 16px 16px;
 }
 html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topBox {
@@ -7382,8 +7597,8 @@ html body .innerPage .center .innerMainWrap .rightSide.betRecord .applyBox .topB
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -7857,8 +8072,8 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   border-top: solid 5px #c30505;
   border-radius: 0 0 16px 16px;
   padding: 24px;
@@ -8095,8 +8310,8 @@ html body .innerPage .center .innerMainWrap .rightSide.eventApply .bigBox .topBo
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -8503,8 +8718,8 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   border-top: solid 5px #c30505;
   border-radius: 0 0 16px 16px;
   position: relative;
@@ -8562,8 +8777,8 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .btnBo
   background: #f9f9f9;
   border-radius: 50%;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 3px 0 #0000001d inset;
+          box-shadow: 0 2px 3px 0 #0000001d inset;
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .btnBox .inputBox input::after {
   display: none;
@@ -8692,8 +8907,8 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post 
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li.active {
   background: #ffffff;
   border-color: #b8151a;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 0 #00000049;
+          box-shadow: 0 2px 5px 0 #00000049;
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li:hover::before, html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li:active::before, html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li.active::before,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li:hover::before,
@@ -8792,8 +9007,8 @@ html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post 
   background: #f9f9f9;
   border-radius: 50%;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 3px 0 #0000001d inset;
+          box-shadow: 0 2px 3px 0 #0000001d inset;
 }
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .mail li input::after,
 html body .innerPage .center .innerMainWrap .rightSide.mail .mailBox .box .post li input::after {
@@ -9142,8 +9357,8 @@ html body .innerPage .center .innerMainWrap .rightSide.point .applyBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   border-top: solid 5px #c30505;
   border-radius: 0 0 16px 16px;
   display: none;
@@ -9198,8 +9413,8 @@ html body .innerPage .center .innerMainWrap .rightSide.point .applyBox .topBox .
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -9554,8 +9769,8 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li {
   width: auto;
   height: 200px;
   background: #ffffff;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1137254902);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1137254902);
+  -webkit-box-shadow: 0 2px 5px 1px #0000001d;
+          box-shadow: 0 2px 5px 1px #0000001d;
   border-radius: 10px;
   position: relative;
   display: -webkit-box;
@@ -9601,8 +9816,8 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .inne
   height: 16px;
   background: #ffffff;
   border-radius: 50%;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
 }
 html body .innerPage .center .innerMainWrap .rightSide.deposit .depList li .innerBox::after {
   display: none;
@@ -9694,8 +9909,8 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent {
   background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 0 #0000002f;
+          box-shadow: 0 2px 5px 0 #0000002f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9777,8 +9992,8 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .depContent .inpu
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -9837,8 +10052,8 @@ html body .innerPage .center .innerMainWrap .rightSide.deposit .remindBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   border: none;
   padding: 16px 48px 24px;
 }
@@ -9900,8 +10115,8 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyBox {
   background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 0 #0000002f;
+          box-shadow: 0 2px 5px 0 #0000002f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10031,8 +10246,8 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .moneyList ul li
   height: 70px;
   background: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
-          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
+  -webkit-box-shadow: 0 2px 3px 1px #0000001e;
+          box-shadow: 0 2px 3px 1px #0000001e;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -10090,8 +10305,8 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10112,8 +10327,8 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox .topBo
   background: linear-gradient(to bottom, #fff3d3 32%, #f2dcb6 100%);
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1137254902);
-          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1137254902);
+  -webkit-box-shadow: 0 2px 3px 1px #0000001d;
+          box-shadow: 0 2px 3px 1px #0000001d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10189,8 +10404,8 @@ html body .innerPage .center .innerMainWrap .rightSide.transfer .applyBox .input
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -10276,8 +10491,8 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyBox {
   background: linear-gradient(to bottom, #ffffff 44%, #f9f9f9 100%);
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 0 #0000002f;
+          box-shadow: 0 2px 5px 0 #0000002f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10423,8 +10638,8 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .moneyList ul 
   height: 70px;
   background: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
-          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
+  -webkit-box-shadow: 0 2px 3px 1px #0000001e;
+          box-shadow: 0 2px 3px 1px #0000001e;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -10488,8 +10703,8 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox ul l
   height: 135px;
   background: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
-          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1176470588);
+  -webkit-box-shadow: 0 2px 3px 1px #0000001e;
+          box-shadow: 0 2px 3px 1px #0000001e;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -10534,8 +10749,8 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .box
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10600,8 +10815,8 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .box
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000001d inset;
+          box-shadow: 0 2px 5px 0 #0000001d inset;
   color: #3a3a3a;
   font-size: 14px;
   font-weight: bold;
@@ -10650,8 +10865,8 @@ html body .innerPage .center .innerMainWrap .rightSide.withdrawal .applyBox .rem
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   border: none;
   padding: 16px 48px 24px;
 }
@@ -10768,8 +10983,8 @@ html body .help .center .marqueeWrap .marquee {
   background: #ffffff;
   border: solid 1px #daaf6d;
   border-radius: 30px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1725490196) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #0000002c inset;
+          box-shadow: 0 2px 5px 0 #0000002c inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10837,8 +11052,8 @@ html body .help .center .helpMainWrap {
   background: #f7f7f7;
   border-radius: 10px;
   border: solid 1px #f3d197;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2588235294) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2588235294) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #00000042 inset;
+          box-shadow: 0 2px 5px 0 #00000042 inset;
   padding: 90px 24px 24px;
   padding: 70px 24px 24px;
   margin-bottom: 42px;
@@ -11071,8 +11286,8 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .moreList li {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   overflow: hidden;
   margin-bottom: 20px;
 }
@@ -11153,8 +11368,8 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .textBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   overflow: hidden;
   padding: 24px;
 }
@@ -11313,8 +11528,8 @@ html body .help .center .helpMainWrap .rightSide .helpInfo .imgBox {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   overflow: hidden;
   padding: 32px 0;
 }
@@ -11379,8 +11594,8 @@ html body .register .box .inputBox input {
   background: #e4eaf2;
   border: none;
   border-radius: 5px;
-  -webkit-box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.1137254902), 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.1137254902), 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 -2px 5px 0 #0000001d, 0 2px 3px 0 #0000001d inset;
+          box-shadow: 0 -2px 5px 0 #0000001d, 0 2px 3px 0 #0000001d inset;
   color: #2a4858;
   font-size: 18px;
   font-weight: bold;
@@ -11468,8 +11683,8 @@ html body .register .box .checkBox input::before {
   background: #f9f9f9;
   border-radius: 50%;
   border: solid 1px #c90b0b;
-  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
-          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1137254902) inset;
+  -webkit-box-shadow: 0 2px 3px 0 #0000001d inset;
+          box-shadow: 0 2px 3px 0 #0000001d inset;
 }
 html body .register .box .checkBox input::after {
   display: none;
@@ -12089,8 +12304,8 @@ html body .agentHelp .center {
   background: #f7f7f7;
   border-radius: 10px;
   border: solid 1px #f3d197;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2588235294) inset;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2588235294) inset;
+  -webkit-box-shadow: 0 2px 5px 0 #00000042 inset;
+          box-shadow: 0 2px 5px 0 #00000042 inset;
   padding: 90px 24px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12224,8 +12439,8 @@ html body .agentHelp .center .rightSide .box {
   background: #ffffff;
   border-radius: 16px;
   border: solid 1px #daaf6d;
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2862745098);
+  -webkit-box-shadow: 0 2px 5px 1px #00000049;
+          box-shadow: 0 2px 5px 1px #00000049;
   border: none;
   padding: 24px;
 }

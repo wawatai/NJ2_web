@@ -278,7 +278,7 @@ $innerPageLeftList_iconBG: #ffffff;
     background: linear-gradient(to bottom,#ffffff 44%,#f9f9f9 100%);
     border-radius: 16px;
     border: solid 1px #daaf6d;
-    box-shadow: 0 2px 3px 1px #00000049;
+    box-shadow: 0 2px 5px 0 #0000002f;
     display: flex;
 }
 $innerBG_1_Border: #daaf6d;
@@ -315,7 +315,18 @@ $innerPage_Sercurity_unCheck: #929292;
 $innerPage_Sercurity_Check: #b8151a;
 
 @mixin levelCardStyle_1 {
-    background: linear-gradient(to top,#f8e2d2 4%,#dcb194 34%,#f8e2d2 72%);
+    background: linear-gradient(to bottom,#f8ea9f 10%,#d8ff9a 56%,#94d858 100%);
+    border-radius: 32px;
+    border: solid 2px #168508;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+$levelCardStyle_1_innerBorder: #49bd43;
+$levelCardStyle_1_innerTitle: #146e0f;
+@mixin levelCardStyle_2 {
+    background: linear-gradient(to bottom,#ffe8d3 31%,#ffc99e 100%);
     border-radius: 32px;
     border: solid 2px #9f6f4e;
     display: flex;
@@ -323,8 +334,52 @@ $innerPage_Sercurity_Check: #b8151a;
     justify-content: center;
     overflow: hidden;
 }
-$levelCardStyle_1_innerBorder: #dea076;
-$levelCardStyle_1_innerTitle: #8d5128;
+$levelCardStyle_2_innerBorder: #dea076;
+$levelCardStyle_2_innerTitle: #8d5128;
+@mixin levelCardStyle_3 {
+    background: linear-gradient(to bottom,#feffae 15%,#ffef6a 100%);
+    border-radius: 32px;
+    border: solid 2px #b98700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+$levelCardStyle_3_innerBorder: #ebc501;
+$levelCardStyle_3_innerTitle: #e18700;
+@mixin levelCardStyle_4 {
+    background: linear-gradient(to bottom,#f0f0f0 31%,#c5c5c5 72%,#f0f0f0 89%);
+    border-radius: 32px;
+    border: solid 2px #7a7b89;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+$levelCardStyle_4_innerBorder: #a7a8b3;
+$levelCardStyle_4_innerTitle: #6a6d7e;
+@mixin levelCardStyle_5 {
+    background: linear-gradient(to bottom,#fff9d0 38%,#fce4a4 74%,#fff9d0 100%);
+    border-radius: 32px;
+    border: solid 2px #b57b23;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+$levelCardStyle_5_innerBorder: #d9b759;
+$levelCardStyle_5_innerTitle: #ad720b;
+@mixin levelCardStyle_6 {
+    background: linear-gradient(to bottom,#ffffff 0%,#f4f4f4 100%);
+    border-radius: 32px;
+    border: solid 2px #b50809;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+$levelCardStyle_6_innerBorder: #e7bb6c;
+$levelCardStyle_6_innerTitle: #d57f00;
 
 @mixin inviteBox {
     background: linear-gradient(to bottom,#fdeec6 32%,#e2c28d 100%);
@@ -335,6 +390,12 @@ $levelCardStyle_1_innerTitle: #8d5128;
     align-items: center;
     justify-content: space-around;
 }
+$inviteBox_vipLevelBG_1: linear-gradient(to bottom,#f8ea9f 10%,#d8ff9a 56%,#94d858 100%);
+$inviteBox_vipLevelBG_2: linear-gradient(to bottom,#ffe8d3 31%,#ffc99e 100%);
+$inviteBox_vipLevelBG_3: linear-gradient(to bottom,#feffae 15%,#ffef6a 100%);
+$inviteBox_vipLevelBG_4: linear-gradient(to bottom,#f0f0f0 31%,#c5c5c5 72%,#f0f0f0 89%);
+$inviteBox_vipLevelBG_5: linear-gradient(to bottom,#fff9d0 38%,#fce4a4 74%,#fff9d0 100%);
+$inviteBox_vipLevelBG_6: linear-gradient(to bottom,#ffffff 0%,#f4f4f4 100%);
 @mixin inviteBtn {
     background: linear-gradient(to bottom,#caab5a 0%,#ebd3a8 100%);
     border-radius: 50%;

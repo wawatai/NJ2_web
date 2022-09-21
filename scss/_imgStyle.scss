@@ -266,7 +266,27 @@ footer .qs {
 
 //innerPage
 .innerPage .medal div {
-    background: url("../images/levelMedal01_active.png") no-repeat;
+    background: url("../images/levelMedal02.png") no-repeat;
+    background-size: contain;
+}
+.innerPage .vip2 .medal div {
+    background: url("../images/levelMedal03.png") no-repeat;
+    background-size: contain;
+}
+.innerPage .vip3 .medal div {
+    background: url("../images/levelMedal04.png") no-repeat;
+    background-size: contain;
+}
+.innerPage .vip4 .medal div {
+    background: url("../images/levelMedal05.png") no-repeat;
+    background-size: contain;
+}
+.innerPage .vip5 .medal div {
+    background: url("../images/levelMedal06.png") no-repeat;
+    background-size: contain;
+}
+.innerPage .vip6 .medal div {
+    background: url("../images/levelMedal07.png") no-repeat;
     background-size: contain;
 }
 .innerPage .quickBtn_ic.deposit {
@@ -559,11 +579,51 @@ footer .qs {
     background-size: contain;
 }
 .innerPage .rightSide.vip .slick-center .levelMedal {
-    background: url('../images/levelMedal01_active.png') no-repeat;
+    background: url('../images/levelMedal02.png') no-repeat;
+    background-size: contain;
+}
+.innerPage .rightSide.vip .vip2.slick-center .levelMedal {
+    background: url('../images/levelMedal03.png') no-repeat;
+    background-size: contain;
+}
+.innerPage .rightSide.vip .vip3.slick-center .levelMedal {
+    background: url('../images/levelMedal04.png') no-repeat;
+    background-size: contain;
+}
+.innerPage .rightSide.vip .vip4.slick-center .levelMedal {
+    background: url('../images/levelMedal05.png') no-repeat;
+    background-size: contain;
+}
+.innerPage .rightSide.vip .vip5.slick-center .levelMedal {
+    background: url('../images/levelMedal06.png') no-repeat;
+    background-size: contain;
+}
+.innerPage .rightSide.vip .vip6.slick-center .levelMedal {
+    background: url('../images/levelMedal07.png') no-repeat;
     background-size: contain;
 }
 .innerPage .rightSide.vip .level_ic {
-    background: url('../images/levelMedal01_active.png') no-repeat center;
+    background: url('../images/levelMedal02.png') no-repeat center;
+    background-size: contain;
+}
+.innerPage .rightSide.vip .level_ic.vip2 {
+    background: url('../images/levelMedal03.png') no-repeat center;
+    background-size: contain;
+}
+.innerPage .rightSide.vip .level_ic.vip3 {
+    background: url('../images/levelMedal04.png') no-repeat center;
+    background-size: contain;
+}
+.innerPage .rightSide.vip .level_ic.vip4 {
+    background: url('../images/levelMedal05.png') no-repeat center;
+    background-size: contain;
+}
+.innerPage .rightSide.vip .level_ic.vip5 {
+    background: url('../images/levelMedal06.png') no-repeat center;
+    background-size: contain;
+}
+.innerPage .rightSide.vip .level_ic.vip6 {
+    background: url('../images/levelMedal07.png') no-repeat center;
     background-size: contain;
 }
 .innerPage .rightSide.invite .qr {

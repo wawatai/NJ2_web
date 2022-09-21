@@ -234,6 +234,92 @@
             li {
     
                 &.slick-center {
+
+                    &.vip2 {
+
+                        .levelBG {
+    
+                            .levelCnt {
+                                @include levelCardStyle_2;
+
+                                .innerBox {
+                                    border-color: $levelCardStyle_2_innerBorder;
+
+                                    .smallTitle {
+                                        color: $levelCardStyle_2_innerTitle
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.vip3 {
+    
+                        .levelBG {
+    
+                            .levelCnt {
+                                @include levelCardStyle_3;
+
+                                .innerBox {
+                                    border-color: $levelCardStyle_3_innerBorder;
+
+                                    .smallTitle {
+                                        color: $levelCardStyle_3_innerTitle
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.vip4 {
+    
+                        .levelBG {
+    
+                            .levelCnt {
+                                @include levelCardStyle_4;
+
+                                .innerBox {
+                                    border-color: $levelCardStyle_4_innerBorder;
+
+                                    .smallTitle {
+                                        color: $levelCardStyle_4_innerTitle
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.vip5 {
+    
+                        .levelBG {
+    
+                            .levelCnt {
+                                @include levelCardStyle_5;
+
+                                .innerBox {
+                                    border-color: $levelCardStyle_5_innerBorder;
+
+                                    .smallTitle {
+                                        color: $levelCardStyle_5_innerTitle
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.vip6 {
+    
+                        .levelBG {
+    
+                            .levelCnt {
+                                @include levelCardStyle_6;
+
+                                .innerBox {
+                                    border-color: $levelCardStyle_6_innerBorder;
+
+                                    .smallTitle {
+                                        color: $levelCardStyle_6_innerTitle
+                                    }
+                                }
+                            }
+                        }
+                    }
                     
                     .levelBG {
                         width: 440px;
@@ -265,6 +351,7 @@
                         flex-shrink: 0;
                         position: relative;
                         z-index: 1;
+                        filter: drop-shadow(1px 2px 3px #00000080);
                     }
 
                     .levelCnt {

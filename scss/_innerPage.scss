@@ -107,6 +107,7 @@
                         div {
                             width: 82px;
                             height: 90px;
+                            filter: drop-shadow(1px 2px 3px #00000080);
                         }
                     }
 
@@ -845,8 +846,9 @@
 
                         .box {
                             width: 408px;
-                            height: calc(100% + 1px);
+                            height: calc(100% + 2px);
                             @include inviteBox;
+                            background: $inviteBox_vipLevelBG_1;
                             border-radius: 16px;
                             box-shadow: none;
                             position: absolute;
@@ -856,6 +858,22 @@
                             align-items: center;
                             justify-content: center;
 
+                            &.vip2 {
+                                background: $inviteBox_vipLevelBG_2;
+                            }
+                            &.vip3 {
+                                background: $inviteBox_vipLevelBG_3;
+                            }
+                            &.vip4 {
+                                background: $inviteBox_vipLevelBG_4;
+                            }
+                            &.vip5 {
+                                background: $inviteBox_vipLevelBG_5;
+                            }
+                            &.vip6 {
+                                background: $inviteBox_vipLevelBG_6;
+                            }
+
                             .medal {
                                 width: 82px;
                                 height: 90px;
@@ -863,6 +881,7 @@
                                 div {
                                     width: 100%;
                                     height: 100%;
+                                    filter: drop-shadow(1px 2px 3px #00000080);
                                 }
                             }
 
@@ -1155,7 +1174,7 @@
                             }
 
                             td {
-                                height: 40px;
+                                height: 53px;
                                 vertical-align: middle;
 
                                 &:first-child {
@@ -1188,6 +1207,7 @@
                                         width: 34px;
                                         height: 37px;
                                         margin-right: 10px;
+                                        filter: drop-shadow(1px 1px 2px #00000080);
                                     }
                                 }
                             }
