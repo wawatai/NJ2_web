@@ -85,6 +85,11 @@ header .gameNav ol li::before {
   background-size: contain;
 }
 
+.sideBar .inviteFriend {
+  background: url("../images/inviteFriend.gif") no-repeat;
+  background-size: 100%;
+}
+
 .sideBar .goTop i {
   background: url("../images/icon/goTop.png") no-repeat;
   background-size: contain;
@@ -2259,6 +2264,13 @@ html body .multiple-items.vip .slick-dots li button::before {
   opacity: 1;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
+}
+html body .sideBar .inviteFriend {
+  width: 125px;
+  height: 125px;
+  position: fixed;
+  top: 400px;
+  right: 10px;
 }
 html body .sideBar .goTop {
   width: 95px;

@@ -62,6 +62,11 @@ header .gameNav ol li::before {
 }
 
 //sidebar
+.sideBar .inviteFriend {
+    background: url('../images/inviteFriend.gif') no-repeat;
+    background-size: 100%;
+}
+
 .sideBar .goTop i {
     background: url('../images/icon/goTop.png') no-repeat;
     background-size: contain;
