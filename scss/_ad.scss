@@ -235,6 +235,23 @@
     
                 &.slick-center {
 
+                    &.vip0 {
+
+                        .levelBG {
+    
+                            .levelCnt {
+                                @include levelCardStyle_0;
+
+                                .innerBox {
+                                    border-color: $levelCardStyle_0_innerBorder;
+
+                                    .smallTitle {
+                                        color: $levelCardStyle_0_innerTitle
+                                    }
+                                }
+                            }
+                        }
+                    }
                     &.vip2 {
 
                         .levelBG {

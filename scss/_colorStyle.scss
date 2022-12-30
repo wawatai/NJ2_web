@@ -314,6 +314,17 @@ $innerPage_Sercurity_high: #00980c;
 $innerPage_Sercurity_unCheck: #929292;
 $innerPage_Sercurity_Check: #b8151a;
 
+@mixin levelCardStyle_0 {
+    background: linear-gradient(to bottom, #D9F1FF 0% #99D1F4 100%);
+    border-radius: 32px;
+    border: solid 2px #2A87BF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+$levelCardStyle_0_innerBorder: #2A87BF;
+$levelCardStyle_0_innerTitle: #0A2488;
 @mixin levelCardStyle_1 {
     background: linear-gradient(to bottom,#f8ea9f 10%,#d8ff9a 56%,#94d858 100%);
     border-radius: 32px;

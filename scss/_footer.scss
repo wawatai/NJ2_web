@@ -105,13 +105,28 @@ footer {
                     height: 54px;
                     @include mainBtn;
                     font-size: 18px;
+
+                    &.link {
+                        background: #ffffff;
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%,-50%);
+                            width: 121px;
+                            height: 48px;
+                        }
+                    }
                 }
 
-                iframe {
-                    width: 200px;
-                    height: 54px;
-                    @include footerBtn_2;
-                }
+                // iframe {
+                //     width: 200px;
+                //     height: 54px;
+                //     @include footerBtn_2;
+                // }
 
                 a {
                     width: 57px;

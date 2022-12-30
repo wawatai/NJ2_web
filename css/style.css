@@ -242,8 +242,8 @@ footer .qs {
   background: url("../images/partner/footer_partner/qs.png") no-repeat center;
 }
 
-.gameWrap .content .banner {
-  background: url("../images/gameWrap_TitleBG.png") no-repeat;
+footer .linkBox .link::before {
+  background: url("../images/GC-icon.png") no-repeat center;
   background-size: contain;
 }
 
@@ -735,6 +735,11 @@ footer .qs {
   background-size: contain;
 }
 
+.innerPage .rightSide.vip .vip0.slick-center .levelMedal {
+  background: url("../images/levelMedal00.png") no-repeat;
+  background-size: contain;
+}
+
 .innerPage .rightSide.vip .slick-center .levelMedal {
   background: url("../images/levelMedal02.png") no-repeat;
   background-size: contain;
@@ -762,6 +767,11 @@ footer .qs {
 
 .innerPage .rightSide.vip .vip6.slick-center .levelMedal {
   background: url("../images/levelMedal07.png") no-repeat;
+  background-size: contain;
+}
+
+.innerPage .rightSide.vip .level_ic.vip0 {
+  background: url("../images/levelMedal00.png") no-repeat center;
   background-size: contain;
 }
 
@@ -2006,6 +2016,28 @@ html body .multiple-items.vip .slick-list {
 html body .multiple-items.vip .slick-list .slick-track {
   top: 75px;
 }
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip0 .levelBG .levelCnt {
+  background: -webkit-gradient(linear, left top, left bottom, from(#D9F1FF));
+  background: linear-gradient(to bottom, #D9F1FF 0% #99D1F4 100%);
+  border-radius: 32px;
+  border: solid 2px #2A87BF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip0 .levelBG .levelCnt .innerBox {
+  border-color: #2A87BF;
+}
+html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip0 .levelBG .levelCnt .innerBox .smallTitle {
+  color: #0A2488;
+}
 html body .multiple-items.vip .slick-list .slick-track li.slick-center.vip2 .levelBG .levelCnt {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #ffe8d3), to(#ffc99e));
   background: linear-gradient(to bottom, #ffe8d3 31%, #ffc99e 100%);
@@ -2675,17 +2707,19 @@ html body footer .center .top .linkBox button:hover, html body footer .center .t
   background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
   background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
 }
-html body footer .center .top .linkBox iframe {
-  width: 200px;
-  height: 54px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ebebeb), to(#ffffff));
-  background: linear-gradient(to top, #ebebeb 0%, #ffffff 100%);
-  border-radius: 30px;
-  border: solid 1px #b74f4f;
+html body footer .center .top .linkBox button.link {
+  background: #ffffff;
+  position: relative;
 }
-html body footer .center .top .linkBox iframe:hover, html body footer .center .top .linkBox iframe:active, html body footer .center .top .linkBox iframe.active {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to bottom, #bc9c64 4%, #f3d197 93%);
+html body footer .center .top .linkBox button.link::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 121px;
+  height: 48px;
 }
 html body footer .center .top .linkBox a {
   width: 57px;
@@ -4391,41 +4425,6 @@ html body .gameWrap .content {
   width: 1400px;
   height: auto;
   margin: 0 auto 60px;
-}
-html body .gameWrap .content .banner {
-  width: 100%;
-  height: 220px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 10px 0 16px;
-}
-html body .gameWrap .content .banner .name {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-  font-size: 56px;
-  font-weight: bold;
-}
-html body .gameWrap .content .banner .text {
-  width: 870px;
-  height: auto;
-  color: #000000;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 22px;
 }
 html body .gameWrap .content .marqueeWrap {
   width: 100%;

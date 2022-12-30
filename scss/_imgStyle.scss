@@ -184,12 +184,16 @@ footer .evo {
 footer .qs {
     background: url('../images/partner/footer_partner/qs.png') no-repeat center;
 }
-
-//gameWrap
-.gameWrap .content .banner {
-    background: url('../images/gameWrap_TitleBG.png') no-repeat;
+footer .linkBox .link::before {
+    background: url('../images/GC-icon.png') no-repeat center;
     background-size: contain;
 }
+
+//gameWrap
+// .gameWrap .content .banner {
+//     background: url('../images/gameWrap_TitleBG.png') no-repeat;
+//     background-size: contain;
+// }
 .gameWrap .search_ic {
     background: url('../images/icon/search.png') no-repeat;
     background-size: contain;
@@ -583,6 +587,10 @@ footer .qs {
     background: url('../images/levelMedal01.png') no-repeat;
     background-size: contain;
 }
+.innerPage .rightSide.vip .vip0.slick-center .levelMedal {
+    background: url('../images/levelMedal00.png') no-repeat;
+    background-size: contain;
+}
 .innerPage .rightSide.vip .slick-center .levelMedal {
     background: url('../images/levelMedal02.png') no-repeat;
     background-size: contain;
@@ -605,6 +613,10 @@ footer .qs {
 }
 .innerPage .rightSide.vip .vip6.slick-center .levelMedal {
     background: url('../images/levelMedal07.png') no-repeat;
+    background-size: contain;
+}
+.innerPage .rightSide.vip .level_ic.vip0 {
+    background: url('../images/levelMedal00.png') no-repeat center;
     background-size: contain;
 }
 .innerPage .rightSide.vip .level_ic {
